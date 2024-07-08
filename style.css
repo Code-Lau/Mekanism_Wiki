@@ -1,22 +1,38 @@
 :root {
     font-family:"saira-condensed", sans-serif;
     font-weight: bold;
-    font-size: 32
+    font-size: 32px;
+    color:#162844;
 }
 
-body {
+.body {
     background-color: #F5F5F5;
+    margin:0px;
 }
 
-header {
-    box-sizing: border-box;
-    margin:auto;
-    padding:0;
-    height:403px;
+.header {
+    margin:0px;
+    height:400px;
     background-color:#162844;
     font-size:32px; 
     line-height:64px;
-    text-decoration: none;
+    text-decoration: none; 
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+    
+}
+
+.footer {
+   position: absolute;
+   width:100%;
+   height:100px;
+   left:0;
+   bottom:0;
+   background-color: #162844;
+   font-size:32px;
+   line-height:64px;
+   text-align: left;
 }
 
 li {
@@ -31,16 +47,28 @@ a, a:link, a:visited {
 
 ul {
     list-style-type: none;
-    margin:0;
-    padding:0;
-    overflow: hideen;
+    position:absolute;
+    right:25px;
+    top:40px;
+    overflow: hidden;
+}
+
+.footerbuttons {
+    list-style-type: none;
+    position:absolute;
+    right:25px;
+    top:40px;
+    overflow: visible;
+    list-style: none;
+
 }
 
 button {
+    margin-left: 30px;
     padding:10px
     background-color #162844;
     border: none;
-    border-radius:50px
+    border-radius:10px
     transition all 0.3s ease 0s;
 }
 
@@ -48,13 +76,7 @@ button:hover {
     background-color: grey;
 }
 
-header {
- display: flex;
- justify-content: flex-end;
- align-items: center;
- padding: 30px 10%;
 
-}
 
 .nav_links {
     list-style: none;
@@ -75,13 +97,16 @@ header {
 
 .logo {
     cursor:pointer;
-    margin-right: auto;
+    position:absolute;
+    left:40px;
+    top:25px;
+    
 }
 
 .separator {
     width:0;
     height:0;
-    border-right: 100vw solid transparent;
-    border-bottom: 12.9vw solid red;
-    margin-top:-13.9vw;
+    border-left: 100vw solid transparent;
+    border-bottom: 13.3vw solid #F5F5F5;
+    margin-top:-13.3vw;
 }
