@@ -11,12 +11,12 @@
 }
 
 .body {
-    background-color: #F5F5F5;
+    background-color: white;
     margin:0px;
 }
 
 .header {
-    height:400px;
+    height: 400px;
     background-color:#162844;
     font-size:32px; 
     line-height:64px;
@@ -45,7 +45,7 @@ li {
 a, a:link, a:visited {
     display:block;
     text-decoration: none;
-    color:#F5F5F5;
+    color:white;
 }
 
 .ulhead {
@@ -64,7 +64,6 @@ a, a:link, a:visited {
     overflow: hidden;
 }
 
-
 button {
     margin-left: 30px;
     padding:10px
@@ -77,8 +76,6 @@ button {
 button:hover {
     background-color: slategrey;
 }
-
-
 
 .nav_links {
     list-style: none;
@@ -109,6 +106,6 @@ button:hover {
     width:0;
     height:0;
     border-left: 100vw solid transparent;
-    border-bottom: 13.3vw solid #F5F5F5;
+    border-bottom: 13.3vw solid white;
     margin-top:-13.3vw;
 }
