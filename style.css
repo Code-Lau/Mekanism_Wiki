@@ -5,13 +5,17 @@
     color:#162844;
 }
 
+*, html {
+    margin:0;
+    padding:0;
+}
+
 .body {
     background-color: #F5F5F5;
     margin:0px;
 }
 
 .header {
-    margin:0px;
     height:400px;
     background-color:#162844;
     font-size:32px; 
@@ -26,17 +30,16 @@
 .footer {
    position: absolute;
    width:100%;
-   height:100px;
-   left:0;
-   bottom:0;
    background-color: #162844;
    font-size:32px;
    line-height:64px;
    text-align: left;
+   height:80px;
 }
 
 li {
     float: left;
+    margin: 15px;
 }
 
 a, a:link, a:visited {
@@ -45,23 +48,22 @@ a, a:link, a:visited {
     color:#F5F5F5;
 }
 
-ul {
+.ulhead {
     list-style-type: none;
     position:absolute;
     right:25px;
-    top:40px;
+    top:25px;
     overflow: hidden;
 }
 
-.footerbuttons {
+.ulfoot {
     list-style-type: none;
     position:absolute;
-    right:25px;
-    top:40px;
-    overflow: visible;
-    list-style: none;
-
+    left:20px;
+    bottom:0px;
+    overflow: hidden;
 }
+
 
 button {
     margin-left: 30px;
@@ -73,7 +75,7 @@ button {
 }
 
 button:hover {
-    background-color: grey;
+    background-color: slategrey;
 }
 
 
@@ -82,16 +84,16 @@ button:hover {
     list-style: none;
 }
 
-.nav_links li {
+.ulhead li, .ulfoot li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.nav_links li a {
+.ulhead li a, .ulfoot li a {
     transition: all 0.3s ease 0s;
 }
 
-.nav_links li a:hover {
+.ulhead li a:hover, .ulfoot li a:hover {
     color:grey;
 }
 
