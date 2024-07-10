@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
-    font-family:"saira-condensed", sans-serif;
+    font-family: 'Saira Condensed';
     font-weight: bold;
     font-size: 32px;
     color:#162844;
+    line-height: 110%;
 }
 
 *, html {
@@ -11,12 +14,15 @@
 }
 
 .body {
+    font-family: 'Saira Condensed';
+    font-size:24px;
+    line-height:110%;
     background-color: white;
     margin:0px;
 }
 
 .header {
-    height: 400px;
+    height: 250px;
     background-color:#162844;
     font-size:32px; 
     line-height:64px;
@@ -28,13 +34,32 @@
 }
 
 .footer {
-   position: absolute;
+   padding: 70px 0;
    width:100%;
    background-color: #162844;
-   font-size:32px;
-   line-height:64px;
-   text-align: left;
-   height:80px;
+}
+
+.container {
+    max-width: 1170px;
+    margin:auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+.footer-col{
+    width:25%;
+    padding: 0 15px;
+}
+
+.footer-col{
+    font-size:24px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    position:relative;
 }
 
 li {
@@ -46,6 +71,24 @@ a, a:link, a:visited {
     display:block;
     text-decoration: none;
     color:white;
+}
+
+p {
+    color: #162844;
+    font-family: 'Saira Condensed';
+    font-size:24px;
+    text-align: left;
+    font-weight: 100;
+    word-spacing: 0px;
+    letter-spacing: 0%;
+    line-height: 110%;
+}
+
+h1, h2, h3 {
+    font-family: 'Saira Condensed';
+    word-spacing: 0;
+    letter-spacing: 110%;
+    font-weight: 700;
 }
 
 .ulhead {
@@ -60,11 +103,12 @@ a, a:link, a:visited {
     list-style-type: none;
     position:absolute;
     left:20px;
-    bottom:0px;
-    overflow: hidden;
+    bottom:-10px;
+    overflow: visible;
 }
 
 button {
+    font-family: 'Saira Condensed';
     margin-left: 30px;
     padding:10px
     background-color #162844;
@@ -106,6 +150,45 @@ button:hover {
     width:0;
     height:0;
     border-left: 100vw solid transparent;
-    border-bottom: 13.3vw solid white;
-    margin-top:-13.3vw;
+    border-bottom: 9.4vw solid white;
+    margin-top:-9.4vw;
+}
+
+.textblueheader {
+    font-family:"saira-condensed", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color:#162844;
+}
+
+.textwhiteheader {
+    font-family:"saira-condensed", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color:white;
+}
+
+.textwhitebody {
+    font-family:"saira-condensed", sans-serif;
+    font-size: 24px;
+    color:white;
+}
+
+.textbluebody {
+    font-family:"saira-condensed", sans-serif;
+    font-size: 24px;
+    color:#162844;
+}
+
+@media(max-width: 767px){
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .footer-col {
+        width: 100%;
+    }
 }
