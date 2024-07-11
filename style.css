@@ -9,19 +9,17 @@
 }
 
 *, html {
-    margin:0;
-    padding:0;
+    margin:auto;
 }
 
-.body {
+body {
     font-family: 'Saira Condensed';
     font-size:24px;
     line-height:110%;
     background-color: white;
-    margin:0px;
 }
 
-.header {
+header {
     height: 250px;
     background-color:#162844;
     font-size:32px; 
@@ -30,36 +28,37 @@
     display: flex;
     justify-content: space-between;
     padding: 30px 10%;
-    
 }
 
-.footer {
+footer {
    padding: 70px 0;
    width:100%;
    background-color: #162844;
 }
 
 .container {
-    max-width: 1170px;
-    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin: 50px;
+    background-color: white;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
- }
-
-.footer-col{
-    width:25%;
-    padding: 0 15px;
+img {
+    width:500px;
+    height:350px;   
 }
 
-.footer-col{
-    font-size:24px;
-    color: white;
-    text-transform: capitalize;
-    margin-bottom: 15px;
-    position:relative;
+.img-col {
+    flex-basis: 30%;
+    padding: 10px;
+    margin-left: 58px;
+    
+}
+
+.text-col {
+    padding:10px;
+    margin-left: 58px;
 }
 
 li {
@@ -99,14 +98,6 @@ h1, h2, h3 {
     overflow: hidden;
 }
 
-.ulfoot {
-    list-style-type: none;
-    position:absolute;
-    left:20px;
-    bottom:-10px;
-    overflow: visible;
-}
-
 button {
     font-family: 'Saira Condensed';
     margin-left: 30px;
@@ -121,20 +112,36 @@ button:hover {
     background-color: slategrey;
 }
 
+.button2 {
+    font-family: 'Saira Condensed';
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    background-color: #2E5592;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.button2:hover {
+    background-color: slategrey;
+}
+
 .nav_links {
     list-style: none;
 }
 
-.ulhead li, .ulfoot li {
+.ulhead li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.ulhead li a, .ulfoot li a {
+.ulhead li a {
     transition: all 0.3s ease 0s;
 }
 
-.ulhead li a:hover, .ulfoot li a:hover {
+.ulhead li a:hover {
     color:grey;
 }
 
@@ -143,52 +150,52 @@ button:hover {
     position:absolute;
     left:40px;
     top:25px;
-    
+    height: 100px;
+    width:400px;
 }
 
 .separator {
     width:0;
     height:0;
     border-left: 100vw solid transparent;
-    border-bottom: 9.4vw solid white;
-    margin-top:-9.4vw;
+    border-bottom: 9.6vw solid white;
+    margin-top:-9.6vw;
 }
 
 .textblueheader {
-    font-family:"saira-condensed", sans-serif;
+    font-family:"Saira Condensed", sans-serif;
     font-weight: bold;
     font-size: 60px;
     color:#162844;
+    margin-bottom: 20px;
 }
 
 .textwhiteheader {
-    font-family:"saira-condensed", sans-serif;
+    font-family:"Saira Condensed", sans-serif;
     font-weight: bold;
     font-size: 32px;
     color:white;
 }
 
 .textwhitebody {
-    font-family:"saira-condensed", sans-serif;
+    font-family:"Saira Condensed", sans-serif;
     font-size: 24px;
     color:white;
 }
 
 .textbluebody {
-    font-family:"saira-condensed", sans-serif;
+    font-family:"Saira Condensed", sans-serif;
     font-size: 24px;
     color:#162844;
 }
 
-@media(max-width: 767px){
-    .footer-col {
-        width: 50%;
-        margin-bottom: 30px;
-    }
+.containerdownloads {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
 }
 
-@media(max-width: 574px){
-    .footer-col {
-        width: 100%;
-    }
+.meat {
+    padding: 100px;
+
 }
