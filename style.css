@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* To Do List:
+-Fix Footer
+-Fix Link Buttons Color
+-Continue on Guide Page
+-Fix Mekanism:Generators Link on Guide Page Text Issue
+*/
+
 :root {
     font-family: 'Saira Condensed';
     font-weight: bold;
@@ -30,64 +37,32 @@ header {
     padding: 30px 10%;
 }
 
-footer {
-   padding: 70px 0;
-   width:100%;
-   background-color: #162844;
-}
-
-.container {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin: 50px;
-    background-color: white;
-}
-
-img {
-    width:500px;
-    height:350px;   
-}
-
-.img-col {
-    flex-basis: 30%;
-    padding: 10px;
-    margin-left: 58px;
-    
-}
-
-.text-col {
-    padding:10px;
-    margin-left: 58px;
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    float: left;
+    margin: 0px;
+    padding: 0px;
 }
 
 li {
+    text-decoration:none;
     float: left;
-    margin: 15px;
+    margin-bottom: 10px;
+    margin-top:10px;
 }
 
-a, a:link, a:visited {
-    display:block;
+a, a:link {
     text-decoration: none;
     color:white;
 }
 
-p {
-    color: #162844;
-    font-family: 'Saira Condensed';
-    font-size:24px;
-    text-align: left;
-    font-weight: 100;
-    word-spacing: 0px;
-    letter-spacing: 0%;
-    line-height: 110%;
+a:visited {
+    display:block;
+    text-decoration: none;
 }
-
-h1, h2, h3 {
-    font-family: 'Saira Condensed';
-    word-spacing: 0;
-    letter-spacing: 110%;
-    font-weight: 700;
+.nav_links {
+    list-style: none;
 }
 
 .ulhead {
@@ -110,26 +85,6 @@ button {
 
 button:hover {
     background-color: slategrey;
-}
-
-.button2 {
-    font-family: 'Saira Condensed';
-    font-size: 24px;
-    font-weight: 700;
-    color: white;
-    background-color: #2E5592;
-    border-radius: 10px;
-    padding: 10px;
-    margin-left: auto;
-    margin-top: 10px;
-}
-
-.button2:hover {
-    background-color: slategrey;
-}
-
-.nav_links {
-    list-style: none;
 }
 
 .ulhead li {
@@ -182,11 +137,102 @@ button:hover {
     font-size: 24px;
     color:white;
 }
-
+    
 .textbluebody {
     font-family:"Saira Condensed", sans-serif;
-    font-size: 24px;
     color:#162844;
+    font-size:30px;
+    text-align: left;
+    word-spacing: 5px;
+    letter-spacing: 15%;
+    line-height: 105%;
+    font-weight:300;
+}
+
+.container {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin: 50px;
+    background-color: white;
+}
+
+img {
+    width:500px;
+    height:350px;   
+}
+
+.guideimg {
+    width:400px;
+    height:350px;   
+}
+
+.img-col {
+    flex-basis: 30%;
+    padding: 10px;
+    margin-left: 58px;
+    
+}
+
+.text-col {
+    padding:10px;
+    margin-left: 58px;
+}
+
+h1 {
+    font-family: 'Saira Condensed';
+    word-spacing: 0;
+    letter-spacing: 110%;
+    font-weight: 700;
+}
+
+h2 {
+    font-family:"Saira Condensed", sans-serif;
+    color:#162844;
+    font-size:40px;
+    text-align: left;
+    word-spacing: 5px;
+    letter-spacing: 15%;
+    line-height: 105%;
+    font-weight:700;
+}
+
+h3 {
+    font-family:"Saira Condensed", sans-serif;
+    color:#162844;
+    font-size:30px;
+    text-align: left;
+    word-spacing: 5px;
+    letter-spacing: 15%;
+    line-height: 105%;
+    font-weight:700;
+}
+
+p {
+    font-family:"Saira Condensed", sans-serif;
+    color:#162844;
+    font-size:30px;
+    text-align: left;
+    word-spacing: 5px;
+    letter-spacing: 15%;
+    line-height: 105%;
+    font-weight:300;
+}
+
+.button2 {
+    font-family: 'Saira Condensed';
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    background-color: #2E5592;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+.button2:hover {
+    background-color: slategrey;
 }
 
 .containerdownloads {
@@ -195,7 +241,60 @@ button:hover {
     grid-template-rows: 100px 100px 100px 100px 100px 100px;
 }
 
-.meat {
-    padding: 100px;
+footer {
+    background-color: #162844;
+}
 
+.footercontainer {
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.socialicons {
+    margin-right:0;
+    display:flex;
+    justify-content: right;
+    padding-right:50px;
+}
+
+.socialicons a {
+    text-decoration:none;
+    padding:10px;
+    background-color:white;
+    margin:10px;
+    border-radius: 50%;
+}
+
+.socialicons a i {
+    font-size: 30px;
+    color: #162844;
+    opacity: 0.9;
+}
+
+.socialicons a:hover {
+    background-color: slategray;
+    transition: 0.5s;
+}
+
+.socialicons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.mail {
+    font-size: 30px;
+
+    padding: 20px 0px;
+    display: left;
+}
+
+@media (max-width: 800px){
+    .socialicons{
+        width:100%;
+    }
+
+    .footernav{
+        width:100%;
+        margin:10%;
+    }
 }
