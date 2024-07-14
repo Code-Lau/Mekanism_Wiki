@@ -26,91 +26,260 @@
     
         <div class="separator"></div>
 
-        <main>
+        <section>
             <div class="container">
-                <div class="img-col">
-                    <img class="guideimg" src="https://i.ibb.co/dL8rsXq/Osmium.png" alt="A picture of osmium ore minecraft blocks">
+                <figure class="img-col">
+                    <img src="https://i.ibb.co/dL8rsXq/Osmium.png" alt="A picture of osmium ore blocks" class="guideimg">
+                    <figcaption>Osmium Ore</figcaption>
+                </figure>  
+                <div class="text-col">
+                    <h2 style="margin-bottom: 30px;">GETTING STARTED</h2>
+                    <span class="textbluebody">
+                        Mekanism adds a few ores to the mix, but the most important one is Osmium ore. 
+                        Though brittle in real life, this is the key metal in Mekanism crafting alongside Iron. It is recommended to collect 
+                        a lot of it throughout your trip to the mines. Once you’re set up and ready to start, the first step is to get some 
+                        basic machines up and running. These machines will enable you to make key crafting components for the rest of the 
+                        modded items and machinery.
+                    </span>
                 </div>
-                    <div class="text-col">
-                        <h2 >GETTING STARTED</h2>
-                        <ul>
-                            <li>
-                                <span class="textbluebody">
-                                    Mekanism adds a few ores to the mix, but the most important one is Osmium ore. 
-                                    Though brittle in real life, this is the key metal in Mekanism crafting alongside Iron. It is recommended to collect 
-                                    a lot of it throughout your trip to the mines. Once you’re set up and ready to start, the first step is to get some 
-                                    basic machines up and running. These machines will enable you to make key crafting components for the rest of the 
-                                    modded items and machinery.
-                                </span>
-                            </li>
+            </div>
+        </section>
 
-                            <li>
-                                <span class="textbluebody">
-                                    Assuming you don’t have any other mods installed, the first thing we’re going to make is the 
-                                    Heat Generator. If this isn’t showing up in your Creative Menu or JEI, perhaps you missed the add-on mod,
-                                    <a href="https://www.curseforge.com/minecraft/mc-mods/mekanism-generators" target="_blank">Mekanism: Generators.</a>
-                                    If you do have other mods installed or are using a modpack, the power systems are generally interchangeable. 
-                                    You can plug in your machines to a pre-existing power source or make beginner generators from other mods to substitute Mekanism’s.
-                                </span>
-                            </li> 
-                        </ul>
+        <section>
+            <div class="container">
+                    <figure class="img-col">
+                        <img src="https://i.ibb.co/D9TDB9R/Heat-Generator.png" alt="A picture of the heat generator" class="guideimg">
+                        <figcaption>The Heat Generator</figcaption>
+                    </figure>
+                    <div class="text-col">
+                        <span class="textbluebody">
+                            Assuming you don’t have any other mods installed, the first thing we’re going to make is the 
+                            Heat Generator. If this isn’t showing up in your Creative Menu or JEI, perhaps you missed the add-on mod,
+                            <a class="textbluebodybold" href="https://www.curseforge.com/minecraft/mc-mods/mekanism-generators" target="_blank">Mekanism: Generators.</a>
+                            If you do have other mods installed or are using a modpack, the power systems are generally interchangeable. 
+                            You can plug in your machines to a pre-existing power source or make beginner generators from other mods to substitute Mekanism’s.
+                        </span>
+                    </div>  
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                    <figure class="img-col">
+                        <img src="https://i.ibb.co/x1X2qzB/Heat-Generator-UI.png" alt="A picture of the heat generator's UI" class="guideimg">
+                        <figcaption>The Heat Generator UI</figcaption>
+                    </figure>
+                    <div class="text-col">
+                        <span class="textbluebody">
+                            The Heat Generator takes a fuel input, this can be any basic minecraft fuel type (wooden materials, 
+                            coal, charcoal, lava, kelp blocks, blaze rods, bee nests and hives) as well as Mekanism’s own fuel types and converts it 
+                            into Forge Energy (FE). FE is an energy type used by a lot of different mods, so Mekanism adopted it for convenience. 
+                            Redstone Flux (RF), Joules (J) and Energy Units (EU) are other types used by some popular mods. The fuel will convert to 
+                            a set amount of energy that will be stored in the machine up to 64FE. In order for the Heat Generator to transfer its stored 
+                            power, the machine or block you want to power must be in front of it, on the side with the green square outline.
+                        </span>
+                    </div>      
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+                    <figure class="img-col">
+                        <img src="https://i.ibb.co/8b42CPL/Metallurgic-Infuser.png" alt="A picture of the metallurgic infuser" class="guideimg">
+                        <figcaption>The Metallurgic Infuser</figcaption>
+                    </figure>
+                    <div class="text-col">
+                        <span class="textbluebody">
+                            Your first and most important machine to make is the Metallurgic (Met-all-ur-jic) Infuser. This takes a 
+                            fuel input of a certain material, and combines that material with your second input. For example, with the first input of carbon, 
+                            putting an iron ingot into the second input will output enriched iron. This, like all other machines, requires power. Here we have 
+                            a Metallurgic Infuser in front of a fuelled Heat Generator. The power will automatically transfer to the Metallurgic Infuser, filling 
+                            up the green bar on the right in the UI. In the UI, you will notice the bar on the left side, which currently is empty. This is the 
+                            first input, and can take a variety of materials which includes:
+                        </span>
+                    </div>      
+            </div>
+        </section>
+
+        <section>
+            <table class="fueltable" style="text-align: center;">
+                                <tr class="tableheader">
+                                    <th style="width:300px">Material</th>
+                                    <th style="width:200px">Fuel Type</th>
+                                    <th style="width:250px">Fuel Amount Per Piece</th>
+                                </tr>
+                                <tr class="carbon">
+                                    <td >Coal</td>
+                                    <td>Carbon</td>
+                                    <td>10Mb</td>
+                                </tr>
+                                <tr class="carbon">
+                                    <td>Charcoal</td>
+                                    <td>Carbon</td>
+                                    <td>10Mb</td>
+                                </tr>
+                                <tr class="carbon">
+                                    <td>Block of Coal</td>
+                                    <td>Carbon</td>
+                                    <td>90Mb</td>
+                                </tr>
+                                <tr class="carbon">
+                                    <td>Enriched coal</td>
+                                    <td>Carbon</td>
+                                    <td>80Mb</td>
+                                </tr>
+                                <tr class="redstone">
+                                    <td>Redstone Dust</td>
+                                    <td>Redstone</td>
+                                    <td>10Mb</td>
+                                </tr>
+                                <tr class="redstone">
+                                    <td>Block of Redstone</td>
+                                    <td>Redstone</td>
+                                    <td>90Mb</td>
+                                </tr>
+                                <tr class="redstone">
+                                    <td>Enriched Redstone</td>
+                                    <td>Redstone</td>
+                                    <td>Mb</td>
+                                </tr>
+                                <tr class="diamond">
+                                    <td>Diamond</td>
+                                    <td>Diamond</td>
+                                    <td>10Mb</td>
+                                </tr>
+                                <tr class="diamond">
+                                    <td>Diamond Dust</td>
+                                    <td>Diamond</td>
+                                    <td>10mb?</td>
+                                </tr>
+                                <tr class="diamond">
+                                    <td>Enriched Diamond</td>
+                                    <td>Diamond</td>
+                                    <td>80Mb</td>
+                                </tr>
+                                <tr class="refinedobsidian">
+                                    <td>Refined Obsidian Dust</td>
+                                    <td>Refined Obsidian</td>
+                                    <td>10Mb</td>
+                                </tr>
+                                <tr class="refinedobsidian">
+                                    <td>Enriched Obsidian</td>
+                                    <td>Refined Obsidian</td>
+                                    <td>80Mb</td>
+                                </tr>
+                                <tr class="gold">
+                                    <td>Gold Dust</td>
+                                    <td>Gold</td>
+                                    <td>10Mb</td>
+                                </tr>
+                                <tr class="gold">
+                                    <td>Enriched Gold</td>
+                                    <td>Gold</td>
+                                    <td>80Mb</td>
+                                </tr>
+                                <tr class="biomass">
+                                    <td>Biomass</td>
+                                    <td>Biofuel</td>
+                                    <td>10mb?</td>
+                                </tr>
+                                <tr class="tin">
+                                    <td>Tin Dust</td>
+                                    <td>Tin</td>
+                                    <td>10Mb</td>
+                                </tr>
+                                <tr class="tin">
+                                    <td>Enriched Tin</td>
+                                    <td>Tin</td>
+                                    <td>80Mb</td>
+                                </tr>
+                                <tr class="any">
+                                    <td>Any chemical tank that contains the corresponding fuel</td>
+                                    <td>Any</td>
+                                    <td>Any</td>
+                                </tr>
+            </table>
+
+        </section>
+
+        <section>
+            <div class="container">
+                    <figure class="img-col">
+                        <img src="https://i.ibb.co/j4XWqSP/Metallurgic-Infuser-UI-Carbon.png" alt="A picture of the metallurgic infuser's UI: hovering over the fuel gauge" class="guideimg">
+                        <figcaption>The Metallurgic Infuser's UI: Hovering over the fuel gauge</figcaption>
+                    </figure>
+                    <div class="text-col">
+                        <span class="textbluebody">
+                            To input one of these fuel types, simply place the item in the fuel slot box outlined in yellow 
+                            next to the fuel bar. All the basic forms of the listed materials should give you 10mb. Should you no longer need 
+                            what’s stored in the fuel bar, you can click the, “DUMP” button to empty it. The box outlined in red is your input slot, this is where 
+                            you put items in to be changed by the fuel type. By hovering over the fuel bar, you can see how much 
+                            of each material is stored. The conversion rate is a set amount, for example, you would need 10mb of 
+                            carbon to turn an iron ingot into enriched iron. One of the early goals is to make Steel. Steel is 
+                            made by converting iron ingots into enriched iron, and then placing the enriched iron back in to 
+                            make steel dust using a carbon fuel input. Enriched iron also takes 10mb of carbon to convert.
+                        </span>
+                    </div>      
+            </div>
+        </section>
+            
+        <section>
+            <div class="container">
+                    <figure class="img-col">
+                        <img src="https://i.ibb.co/X49JNT2/Metallurgic-Infuser-UI-Enriched-Iron.png" alt="A picture of the metallurgic infuser's UI: making enriched iron" class="guideimg">
+                        <figcaption>The Metallurgic Infuser's UI: Making enriched iron</figcaption>
+                    </figure>
+                    <div class="text-col">
+                        <span class="textbluebodybold">
+                            So the method is: 
+                            <ul class="textbluebody">
+                                <li></li>
+                                <li>10mb of Carbon + 1 Iron Ingot = 1 Enriched Iron</li>
+                                <li>10mb of Carbon + 1 Enriched Iron = 1 Steel Dust</li>
+                                <li>Once you have the steel dust, you can cook it by any means available to make a steel ingot.</li>
+                            </ul>
+                        </span>
+                    </div>      
+            </div>
+        </section>
+            
+            
+            
+            
+            
+            
+            
+           <!-- 
+
+        <section>
+            <div class="container">
+                    <figure class="img-col">
+                        <img src="" alt="" class="guideimg">
+                        <figcaption></figcaption>
+                    </figure>
+                    <div class="text-col">
+                        <span class="textbluebody">
+                            
+                        </span>
+                    </div>      
+            </div>
+        </section>
+
+
+
+
+
+           
+        <footer>
+            <div class="footercontainer">
+                    <div class="mail">    
+                        <a href="mailto:laurenleighwoods@gmail.com"><i class="fa-solid fa-envelope" style=padding-right:10px></i>info@mekanism.com</a>
+                    </div>
+                    <div class="socialicons">
+                        <a href="https://x.com/aidancbrady" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://github.com/aidancbrady" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/aidancbrady/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
             </div>
-            <div class="container">
-                <div class="img-col">
-                    <img class="guideimg" src="https://i.ibb.co/D9TDB9R/Heat-Generator.png" alt="A picture of Mekanism's heat generator">
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <span class="textbluebody">The Heat Generator takes a fuel input, this can be any basic minecraft fuel type (wooden materials, 
-                                    coal, charcoal, lava, kelp blocks, blaze rods, bee nests and hives) as well as Mekanism’s own fuel types and converts it 
-                                    into Forge Energy (FE). FE is an energy type used by a lot of different mods, so Mekanism adopted it for convenience. 
-                                    Redstone Flux (RF), Joules (J) and Energy Units (EU) are other types used by some popular mods. The fuel will convert to 
-                                    a set amount of energy that will be stored in the machine up to 64FE. In order for the Heat Generator to transfer its stored 
-                                    power, the machine or block you want to power must be in front of it, on the side with the green square outline. 
-                            </span>
-                        </li>
-                    </ul>
-                </div>    
-            </div>
-            <div class="container">
-                <div class="img-col">
-                    <img class="guideimg" src="https://i.ibb.co/8b42CPL/Metallurgic-Infuser.png" alt=""><img class="guideimg" src="https://i.ibb.co/qg4WNtG/Metallurgic-Infuser-UI.png" alt="">
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <span class="textbluebody">
-                            </span>
-                        </li>
-                    </ul>
-                </div>    
-            </div>
-            <div class="container">
-                <div class="img-col">
-                    <img class="guideimg" src="" alt="">
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <span class="textbluebody">
-                            </span>
-                        </li>
-                    </ul>
-                </div>    
-            </div>
-            <div class="container">
-                <div class="img-col">
-                    <img class="guideimg" src="" alt="">
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <span class="textbluebody">
-                            </span>
-                        </li>
-                    </ul>
-                </div>    
-            </div>
-        </main>
+        </footer>

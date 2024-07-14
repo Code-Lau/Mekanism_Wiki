@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* To Do List:
--Fix Footer
--Fix Link Buttons Color
--Continue on Guide Page
--Fix Mekanism:Generators Link on Guide Page Text Issue
+-Fix Footer []
+-Fix Link Buttons Color [x]
+-Continue on Guide Page []
+-Fix Mekanism:Generators Link on Guide Page Text Issue [x]
+-Research Mb values
 */
 
 :root {
@@ -149,6 +150,17 @@ button:hover {
     font-weight:300;
 }
 
+.textbluebodybold {
+    font-family:"Saira Condensed", sans-serif;
+    color:#162844;
+    font-size:30px;
+    text-align: left;
+    word-spacing: 5px;
+    letter-spacing: 15%;
+    line-height: 105%;
+    font-weight:500;
+}
+
 .container {
     display:flex;
     align-items:center;
@@ -159,6 +171,11 @@ button:hover {
 
 img {
     width:500px;
+    height:350px;   
+}
+
+figure {
+    width:400px;
     height:350px;   
 }
 
@@ -175,8 +192,7 @@ img {
 }
 
 .text-col {
-    padding:10px;
-    margin-left: 58px;
+    margin: 150px;
 }
 
 h1 {
@@ -297,4 +313,61 @@ footer {
         width:100%;
         margin:10%;
     }
+}
+
+.fueltable  {
+    border: 10px;
+    background-color: #162844;
+    border: 1px solid #162844;
+}
+
+table, th, td {
+    border: 1px solid #162844;
+    
+}
+
+.tableheader {
+    background-color: white;
+}
+
+.carbon {
+    background-color: gray;
+}
+
+.redstone {
+    background-color: tomato;
+}
+
+.diamond {
+    background-color: lightskyblue
+}
+
+.gold {
+    background-color: gold;
+}
+
+.biomass {
+    background-color: green;
+}
+
+.tin {
+    background-color: cadetblue;
+}
+
+.refinedobsidian {
+    background-color: mediumpurple;
+}
+
+.any {
+    background-color: bisque;
+}
+
+.containerguide {
+    display: flex;
+
+}
+
+.item {
+    gap: 10px;
+    order: 3;
 }
