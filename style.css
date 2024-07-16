@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* To Do List:
--Fix Footer []
+-Fix Footer [x]
 -Fix Link Buttons Color [x]
--Continue on Guide Page []
+-Continue on Guide Page [x]
 -Fix Mekanism:Generators Link on Guide Page Text Issue [x]
--Research Mb values
+-Research Mb values []
+-fix social media icons []
+-wind generator image []
 */
 
 :root {
-    font-family: 'Saira Condensed';
+    font-family: 'Saira Condensed', 'Trebuchet MS', sans-serif;
     font-weight: bold;
     font-size: 32px;
     line-height: 110%;
@@ -23,7 +25,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Saira Condensed';
 }
 
 .opener {
@@ -51,16 +52,16 @@ body {
 }
 
 .two {
-    background: powderblue;
+    background: white;
     position: relative;
     z-index: 10;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 21vw), 0 100%);
-    margin-bottom: -10.1vw;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 9.7vw), 0 40%);
+    margin-bottom: -9.85vw;
   }
   
 .three {
     background: #162844;
-    margin-bottom:-21vw;
+    margin-bottom:-10vw;
   }
 
 section.type-a {
@@ -133,10 +134,10 @@ a:visited {
     left: 25px;
     margin-bottom: 10px;
     overflow:hidden;
+    margin-top:20px;
 }
 
 button {
-    font-family: 'Saira Condensed';
     margin-left: 30px;
     padding:10px
     background-color #162844;
@@ -172,7 +173,6 @@ button:hover {
 }
 
 .textblueheader {
-    font-family:"Saira Condensed", sans-serif;
     font-weight: bold;
     font-size: 60px;
     color:#162844;
@@ -180,20 +180,17 @@ button:hover {
 }
 
 .textwhiteheader {
-    font-family:"Saira Condensed", sans-serif;
     font-weight: bold;
     font-size: 32px;
     color:white;
 }
 
 .textwhitebody {
-    font-family:"Saira Condensed", sans-serif;
     font-size: 24px;
     color:white;
 }
     
 .textbluebody {
-    font-family:"Saira Condensed", sans-serif;
     color:#162844;
     font-size:30px;
     text-align: left;
@@ -204,7 +201,6 @@ button:hover {
 }
 
 .textbluebodybold {
-    font-family:"Saira Condensed", sans-serif;
     color:#162844;
     font-size:30px;
     text-align: left;
@@ -230,28 +226,28 @@ button:hover {
     display:flex;
     align-items:center;
     justify-content:center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin-right: 0px;
     margin-left:0px;
     background-color: white;
     position: relative;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 
 .container-b {
     display:flex;
     align-items:center;
     justify-content:center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin-right: 0px;
     margin-left:0px;
     background-color: powderblue;
     position: relative;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .container-b::after,
@@ -309,14 +305,12 @@ figure {
 }
 
 h1 {
-    font-family: 'Saira Condensed';
     word-spacing: 0;
     letter-spacing: 110%;
     font-weight: 700;
 }
 
 h2 {
-    font-family:"Saira Condensed", sans-serif;
     color:#162844;
     font-size:40px;
     text-align: left;
@@ -327,7 +321,6 @@ h2 {
 }
 
 h3 {
-    font-family:"Saira Condensed", sans-serif;
     color:#162844;
     font-size:30px;
     text-align: left;
@@ -338,7 +331,6 @@ h3 {
 }
 
 p {
-    font-family:"Saira Condensed", sans-serif;
     color:#162844;
     font-size:30px;
     text-align: left;
@@ -349,7 +341,6 @@ p {
 }
 
 .button2 {
-    font-family: 'Saira Condensed';
     font-size: 24px;
     font-weight: 700;
     color: white;
@@ -368,6 +359,14 @@ p {
     display: grid;
     grid-template-columns: 100px 100px 100px 100px 100px 100px;
     grid-template-rows: 100px 100px 100px 100px 100px 100px;
+}
+
+.icons {
+    position: absolute;
+    right: 25px;
+    margin-bottom: 10px;
+    overflow:hidden;
+    margin-top:5px;
 }
 
 .socialicons {
