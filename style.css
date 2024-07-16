@@ -42,12 +42,38 @@ body {
     width: 100%;
     height: 200px;
     background: white;
-    clip-path:polygon(100% 10%, 0 100%, 100% 100%);
+    clip-path:polygon(100% 20%, 0 100%, 100% 100%);
   }
 
- 
+.one {
+    background-color: green;
+    position: relative;
+}
+
+.two {
+    background: powderblue;
+    position: relative;
+    z-index: 10;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 21vw), 0 100%);
+    margin-bottom: -10.1vw;
+  }
+  
+.three {
+    background: #162844;
+    margin-bottom:-21vw;
+  }
+
+section.type-a {
+    padding:0px;
+}
+
+section {
+    padding: 10vh 0;
+    background-color: white;
+  }
+
 .wrapper {
-    padding: 60px;
+    padding: 30px;
     background-color: #162844;
   }
 
@@ -92,6 +118,21 @@ a:visited {
     right:25px;
     top:25px;
     overflow: hidden;
+}
+
+.ulfoot {
+    list-style-type: none;
+    position:absolute;
+    right:25px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.footemail {
+    position: absolute;
+    left: 25px;
+    margin-bottom: 10px;
+    overflow:hidden;
 }
 
 button {
@@ -182,14 +223,56 @@ button:hover {
     margin-right: 50px;
     margin-left:50px;
     background-color: white;
+    position: relative;
 }
 
-.container-2 {
+.container-w {
     display:flex;
-    align-items:left;
-    justify-content:left;
+    align-items:center;
+    justify-content:center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left:0px;
     background-color: white;
-    margin: 50px;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.container-b {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left:0px;
+    background-color: powderblue;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.container-b::after,
+.container-b::before {
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 150px;
+    background: powderblue;
+    bottom: -27px;
+    z-index: 100;
+}
+
+.container-b::before {
+    right:50%;
+    transform: skew(0, 20deg);
+}
+
+.container-b::after {
+    left: 50%;
+    transform: skew(0, -20deg);
 }
 
 img {
@@ -211,6 +294,13 @@ figure {
     flex-basis: 30%;
     padding: 10px;
     margin-left: 58px;
+    
+}
+
+.img-col-r {
+    flex-basis: 30%;
+    padding: 10px;
+    margin-right: 58px;
     
 }
 
@@ -292,7 +382,7 @@ p {
     padding:10px;
     background-color:white;
     margin:10px;
-    border-radius: 50%;
+    border-radius: 70%;
 }
 
 .socialicons a i {

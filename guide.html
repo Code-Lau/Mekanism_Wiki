@@ -12,22 +12,24 @@
     </head>
 
     <body>
-        <header class="header">
-            <a href="index.html"><img class="logo" src="https://i.ibb.co/jzMh43G/mekanism-white.png" alt="mekanism logo"></a>
-            <nav>
+        <header class="opener">
+            <div>
+                <a href="index.html"><img class="logo" src="https://i.ibb.co/jzMh43G/mekanism-white.png" alt="mekanism logo"></a>
+                <nav class="wrapper">
                 <ul class="ulhead">
                     <li><a href="index.html"><h1>HOME</h1></a></li>
                     <li><a href="about.html"><h1>ABOUT</h1></a></li>
                     <li><a href="guide.html"><h1>GUIDE</h1></a></li>
                     <li><a href="download.html"><h1>DOWNLOAD</h1></a></li>
                 </ul>
-            </nav>
+                </nav>
+            </div>
         </header>
     
         <div class="separator"></div>
 
         <section>
-            <div class="container">
+            <div class="container-w">
                 <figure class="img-col">
                     <img src="https://i.ibb.co/dL8rsXq/Osmium.png" alt="A picture of osmium ore blocks" class="guideimg">
                     <figcaption>Osmium Ore</figcaption>
@@ -45,8 +47,8 @@
             </div>
         </section>
 
-        <section style="background-color: powderblue;">
-            <div class="container" style="background-color: powderblue;">
+        <section >
+            <div class="container-b">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/D9TDB9R/Heat-Generator.png" alt="A picture of the heat generator" class="guideimg">
                         <figcaption>The Heat Generator</figcaption>
@@ -65,7 +67,7 @@
         </section>
 
         <section>
-            <div class="container">
+            <div class="container-w">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/x1X2qzB/Heat-Generator-UI.png" alt="A picture of the heat generator's UI" class="guideimg">
                         <figcaption>The Heat Generator UI</figcaption>
@@ -84,8 +86,8 @@
         </section>
 
 
-        <section style="background-color: powderblue;">
-            <div class="container" style="background-color: powderblue;">
+        <section>
+            <div class="container-b">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/8b42CPL/Metallurgic-Infuser.png" alt="A picture of the metallurgic infuser" class="guideimg">
                         <figcaption>The Metallurgic Infuser</figcaption>
@@ -94,15 +96,14 @@
                         <h2 style="margin-bottom: 30px;">THE METALLURGIC INFUSER</h2>
                         <span class="textbluebody">
                             Your first and most important machine to make is the Metallurgic (Met-all-ur-jic) Infuser. This takes a 
-                            fuel input of a certain material, and combines that material with your second input. For example, with the first input of carbon, 
-                            putting an iron ingot into the second input will output enriched iron. This, like all other machines, requires power. Here we have 
+                            fuel input of a certain material, and combines that material with your second input. Here we have 
                             a Metallurgic Infuser in front of a fuelled Heat Generator. The power will automatically transfer to the Metallurgic Infuser, filling 
                             up the green bar on the right in the UI. In the UI, you will notice the bar on the left side, which currently is empty. This is the 
                             first input, and can take a variety of materials which includes:
                         </span>
                     </div>    
                     <aside>
-                        <figure>
+                        <figure class="img-col-r">
                             <img src="https://i.ibb.co/qg4WNtG/Metallurgic-Infuser-UI.png" alt="A picture of the metallurgic infuser's UI" class="guideimg">
                             <figcaption>The Metallurgic Infuser's UI</figcaption>
                         </figure>
@@ -111,7 +112,7 @@
         </section>
 
         <section>
-            <div class="container">
+            <div class="container-w">
                 <div class="text-col">
                     <h2 style="margin-bottom: 30px;text-align: center;">FUEL TO MB RATES</h2>
                     <table class="fueltable">
@@ -215,8 +216,8 @@
             </div>
         </section>
 
-        <section style="background-color: powderblue;">
-            <div class="container" style="background-color: powderblue;">
+        <section>
+            <div class="container-b">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/j4XWqSP/Metallurgic-Infuser-UI-Carbon.png" alt="A picture of the metallurgic infuser's UI: hovering over the fuel gauge" class="guideimg">
                         <figcaption>Hovering over the fuel gauge</figcaption>
@@ -227,38 +228,38 @@
                             next to the fuel bar. All the basic forms of the listed materials should give you 10mb. Should you 
                             no longer need what’s stored in the fuel bar, you can click the, “DUMP” button to empty it. The box 
                             outlined in red is your input slot, this is where you put items in to be changed by the fuel type. 
-                            By hovering over the fuel bar, you can see how much of each material is stored. One of the early goals 
-                            is to make Steel. Steel is made by converting iron ingots into enriched iron, and then placing the 
-                            enriched iron back in to make steel dust using a carbon fuel input. Enriched iron also takes 10mb of 
-                            carbon to convert.
+                            By hovering over the fuel bar, you can see how much of each material is stored. 
                         </span>
                     </div>      
             </div>
         </section>
             
         <section>
-            <div class="container">
+            <div class="container-w">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/X49JNT2/Metallurgic-Infuser-UI-Enriched-Iron.png" alt="A picture of the metallurgic infuser's UI: making enriched iron" class="guideimg">
                         <figcaption>Making enriched iron</figcaption>
                     </figure>
                     <div class="text-col">
                         <h2 style="margin-bottom: 30px;">STEEL INGOTS</h2>
-                        <span class="textbluebodybold">
-                            So the method is: 
-                            <ul class="textbluebody">
-                                <li></li>
-                                <li>10mb of Carbon + 1 Iron Ingot = 1 Enriched Iron</li>
-                                <li>10mb of Carbon + 1 Enriched Iron = 1 Steel Dust</li>
-                                <li>Once you have the steel dust, you can cook it by any means available to make a steel ingot.</li>
-                            </ul>
+                        <span class="textbluebody">
+                             One of the early goals is to make Steel. Once you have the steel dust, you can cook it by 
+                             any means available to make a steel ingot.
                         </span>
-                    </div>      
+                        <span class="textbluebodybold">
+                             So the method is:
+                             
+                        <span class="textbluebody">
+                                10mb of Carbon + 1 Iron Ingot = 1 Enriched Iron.
+                                10mb of Carbon + 1 Enriched Iron = 1 Steel Dust.
+                        </span>
+                    </span>
+                </div>      
             </div>
         </section>
         
-        <section style="background-color: powderblue;">
-            <div class="container" style="background-color: powderblue;">
+        <section>
+            <div class="container-b">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/74qvYXQ/Alloys-Circuits.png" alt="A picture of the metallurgic infuser's UI: making basic alloys" class="guideimg">
                         <figcaption>Making basic alloys</figcaption>
@@ -281,7 +282,7 @@
         </section>
             
         <section>
-            <div class="container">
+            <div class="container-w">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/Ptv7nBX/Crafting-Table-Steel-Frame.png" alt="A picture of the crafting recipe for the steel frame" class="guideimg">
                         <figcaption>Crafting the steel frame</figcaption>
@@ -297,8 +298,8 @@
             </div>
         </section>
             
-        <section style="background-color: powderblue;">
-            <div class="container" style="background-color: powderblue;">
+        <section>
+            <div class="container-b">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/4MnCZvp/Crafting-Table-Enrichment-C.png" alt="A picture of the crafting recipe for the enrichment chamber" class="guideimg">
                         <figcaption>Crafting the enrichment chamber</figcaption>
@@ -314,7 +315,7 @@
                         </span>
                     </div>    
                     <aside>
-                        <figure>
+                        <figure class="img-col-r">
                             <img src="https://i.ibb.co/v1jz16w/Enrichment-Chamber.png" alt="A picture of the enrichment chamber making enriched coal" class="guideimg">
                             <figcaption>Making enriched coal</figcaption>
                         </figure>
@@ -324,7 +325,7 @@
         </section>
             
         <section>
-            <div class="container">
+            <div class="container-w">
                         <figure class="img-col">
                             <img src="https://i.ibb.co/QK4rc20/Generators.png" alt="A picture of various power sources" class="guideimg">
                             <figcaption>Various early-game power sources</figcaption>
@@ -343,8 +344,8 @@
             </div>
         </section>   
         
-        <section style="background-color: powderblue;">
-            <div class="container" style="background-color: powderblue;">
+        <section>
+            <div class="container-b">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/NKGJbyW/Energy-Tablet.png" alt="A picture of the energy tablet" class="guideimg">
                         <figcaption>An energy tablet</figcaption>
@@ -368,7 +369,7 @@
         </section>   
         
         <section>
-            <div class="container">
+            <div class="container-w">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/Qj3XJjh/Solar-Panel.png" alt="A picture of the crafting recipe for solar panels" class="guideimg">
                         <figcaption>Crafting the solar panel</figcaption>
@@ -381,15 +382,15 @@
                             will produce energy on its own, but if you want more FE, you can make the advanced solar generator.
                         </span>
                     </div> 
-                    <figure class="img-col">
+                    <figure class="img-col-r">
                         <img src="https://i.ibb.co/JyB1HxB/SolarGen.png" alt="A picture of the crafting recipe for the solar generator" class="guideimg">
                         <figcaption>Crafting the solar generator</figcaption>
                     </figure>     
             </div>
         </section>
 
-        <section style="background-color: powderblue;">
-            <div class="container" style="background-color: powderblue;">
+        <section>
+            <div class="container-b">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/QnRmkks/Advanced-Solar-Gen.png" alt="A picture of the crafting recipe for the advanced solar generator" class="guideimg">
                         <figcaption>Crafting the advanced solar generator</figcaption>
@@ -407,7 +408,7 @@
         </section>
 
         <section>
-            <div class="container">
+            <div class="container-w">
                     <figure class="img-col">
                         <img src="" alt="A picture of the crafting recipe for the wind generator" class="guideimg">
                         <figcaption>Crafting a wind generator</figcaption>
@@ -422,15 +423,15 @@
                             1 piece of redstone. This can be expensive very early in the game.
                         </span>
                     </div>
-                    <figure class="img-col">
+                    <figure class="img-col-r">
                         <img src="https://i.ibb.co/XZkzWx5/Basic-Cable.png" alt="A picture of the crafting recipe for the basic cable" class="guideimg">
                         <figcaption>Crafting a basic cable</figcaption>
                     </figure>      
             </div>
         </section>
         
-        <section style="background-color: powderblue;">
-            <div class="container" style="background-color: powderblue;">
+        <section>
+            <div class="container-b">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/1vGBWnG/BioGen.png" alt="A picture of the crafting recipe for the bio generator" class="guideimg">
                         <figcaption>Crafting the bio generator</figcaption>
@@ -447,7 +448,7 @@
                         </span>
                         
                     </div>
-                    <figure class="img-col">
+                    <figure class="img-col-r">
                             <img src="https://i.ibb.co/ZxF9cWY/Crusher.png" alt="A picture of the crafting recipe for the crusher" class="guideimg">
                             <figcaption>Crafting the crusher</figcaption>
                     </figure>      
@@ -455,7 +456,7 @@
         </section>
 
         <section>
-            <div class="container">
+            <div class="container-w">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/jHx81wr/Crusher-UI.png" alt="A picture of the crusher making biomass" class="guideimg">
                         <figcaption>Making biomass</figcaption>
@@ -498,21 +499,16 @@
                     </div>      
             </div>
         </section>
-
-
-
-
-
-           
-        <footer>
-            <div class="footercontainer">
-                    <div class="mail">    
-                        <a href="mailto:laurenleighwoods@gmail.com"><i class="fa-solid fa-envelope" style=padding-right:10px></i>info@mekanism.com</a>
-                    </div>
-                    <div class="socialicons">
-                        <a href="https://x.com/aidancbrady" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://github.com/aidancbrady" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/aidancbrady/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-            </div>
-        </footer>
+    -->    
+    <footer>
+        <div class="wrapper">
+                <section>    
+                    <a href="mailto:laurenleighwoods@gmail.com"><i class="fa-solid fa-envelope" style=padding-right:10px></i>info@mekanism.com</a>
+                </section>
+                <section class="socialicons">
+                    <a href="https://x.com/aidancbrady" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://github.com/aidancbrady" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aidancbrady/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </section>
+        </div>
+    </footer>
