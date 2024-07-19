@@ -5,9 +5,12 @@
 -Fix Link Buttons Color [x]
 -Continue on Guide Page [x]
 -Fix Mekanism:Generators Link on Guide Page Text Issue [x]
--Research Mb values []
+-Research Mb values [x]
+-wind generator image [x]
+-deleted unused CSS calls []
+-redo about page []
+-fix overlapping images on downloads []
 -fix social media icons []
--wind generator image []
 */
 
 :root {
@@ -232,7 +235,7 @@ button:hover {
     margin-left:0px;
     background-color: white;
     position: relative;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
@@ -283,7 +286,8 @@ figure {
 
 .guideimg {
     width:400px;
-    height:350px;   
+    height:350px; 
+    padding: 10px;  
 }
 
 .img-col {
@@ -340,7 +344,7 @@ p {
     font-weight:300;
 }
 
-.button2 {
+.buttonteachme {
     font-size: 24px;
     font-weight: 700;
     color: white;
@@ -351,7 +355,7 @@ p {
     margin-top: 15px;
 }
 
-.button2:hover {
+.buttonteachme:hover {
     background-color: slategrey;
 }
 
