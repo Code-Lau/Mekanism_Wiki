@@ -7,12 +7,13 @@
 -Fix Mekanism:Generators Link on Guide Page Text Issue [x]
 -Research Mb values [x]
 -wind generator image [x]
--deleted unused CSS calls []
+-deleted unused CSS calls [x]
 -redo about page []
 -fix overlapping images on downloads []
 -fix social media icons []
 */
 
+/* Main File */
 :root {
     font-family: 'Saira Condensed', 'Trebuchet MS', sans-serif;
     font-weight: bold;
@@ -25,17 +26,15 @@
     margin:0;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
+/* Header */
 .opener {
-    background-color: #162844;
-    color: white;
-    position: relative;
     width: 100%;
     height: 30vh;
+    background-image:url("https://i.ibb.co/S784VYQ/MainPage.png"), linear-gradient(90deg, rgba(22, 40, 68, 1), rgba(62, 91, 135, 1));
+    position: relative;
+    background-image: no-repeat;
+    background-position: center left;
+    background-size: 100%;
   }
 
 .opener::before {
@@ -49,42 +48,9 @@ body {
     clip-path:polygon(100% 20%, 0 100%, 100% 100%);
   }
 
-.one {
-    background-color: green;
-    position: relative;
-}
-
-.two {
-    background: white;
-    position: relative;
-    z-index: 10;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 9.7vw), 0 40%);
-    margin-bottom: -9.85vw;
-  }
-  
-.three {
-    background: #162844;
-    margin-bottom:-10vw;
-  }
-
-section.type-a {
-    padding:0px;
-}
-
-section {
-    padding: 10vh 0;
-    background-color: white;
-  }
-
 .wrapper {
     padding: 30px;
     background-color: #162844;
-  }
-
-  
-.content {
-    position: relative;
-    max-width: 900px;
   }
 
 ul {
@@ -124,22 +90,6 @@ a:visited {
     overflow: hidden;
 }
 
-.ulfoot {
-    list-style-type: none;
-    position:absolute;
-    right:25px;
-    margin-bottom: 10px;
-    overflow: hidden;
-}
-
-.footemail {
-    position: absolute;
-    left: 25px;
-    margin-bottom: 10px;
-    overflow:hidden;
-    margin-top:20px;
-}
-
 button {
     margin-left: 30px;
     padding:10px
@@ -174,6 +124,44 @@ button:hover {
     height: 100px;
     width:400px;
 }
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.one {
+    background-color: green;
+    position: relative;
+}
+
+.two {
+    background: white;
+    position: relative;
+    z-index: 10;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 9.7vw), 0 40%);
+    margin-bottom: -9.85vw;
+  }
+  
+.three {
+    background: #162844;
+    margin-bottom:-10vw;
+  }
+
+section.type-a {
+    padding:0px;
+}
+
+section {
+    padding: 10vh 0;
+    background-color: white;
+  }
+
+.content {
+    position: relative;
+    max-width: 900px;
+  }
 
 .textblueheader {
     font-weight: bold;
@@ -279,11 +267,6 @@ img {
     height:350px;   
 }
 
-figure {
-    width:400px;
-    height:350px;   
-}
-
 .guideimg {
     width:400px;
     height:350px; 
@@ -305,7 +288,10 @@ figure {
 }
 
 .text-col {
-    margin: 150px;
+    margin-top: 150px;
+    margin-bottom: 200px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 h1 {
@@ -365,64 +351,10 @@ p {
     grid-template-rows: 100px 100px 100px 100px 100px 100px;
 }
 
-.icons {
-    position: absolute;
-    right: 25px;
-    margin-bottom: 10px;
-    overflow:hidden;
-    margin-top:5px;
-}
-
-.socialicons {
-    margin-right:0;
-    display:flex;
-    justify-content: right;
-    padding-right:50px;
-}
-
-.socialicons a {
-    text-decoration:none;
-    padding:10px;
-    background-color:white;
-    margin:10px;
-    border-radius: 70%;
-}
-
-.socialicons a i {
-    font-size: 30px;
-    color: #162844;
-    opacity: 0.9;
-}
-
-.socialicons a:hover {
-    background-color: slategray;
-    transition: 0.5s;
-}
-
-.socialicons a:hover i {
-    color: white;
-    transition: 0.5s;
-}
-
-.mail {
-    font-size: 30px;
-
-    padding: 20px 0px;
-    display: left;
-}
-
-@media (max-width: 800px){
-    .socialicons{
-        width:100%;
-    }
-
-    .footernav{
-        width:100%;
-        margin:10%;
-    }
-}
-
 .fueltable  {
+    width: 150%;
+    margin: 100px;
+    margin-left: 150px;
     border: 10px;
     background-color: #162844;
     border: 1px solid #162844;
@@ -475,7 +407,75 @@ table, th, td {
 
 }
 
-.item {
-    gap: 10px;
-    order: 3;
+/* Footer */
+.ulfoot {
+    list-style-type: none;
+    position:absolute;
+    right:25px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.footemail {
+    position: absolute;
+    left: 25px;
+    margin-bottom: 10px;
+    overflow:hidden;
+    margin-top:20px;
+}
+
+.icons {
+    position: absolute;
+    right: 25px;
+    margin-bottom: 10px;
+    overflow:hidden;
+    margin-top:5px;
+}
+
+.socialicons {
+    margin-right:0;
+    display:flex;
+    justify-content: right;
+    padding-right:50px;
+}
+
+.socialicons a {
+    text-decoration:none;
+    padding:10px;
+    background-color:white;
+    margin:10px;
+    border-radius: 70%;
+}
+
+.socialicons a i {
+    font-size: 30px;
+    color: #162844;
+    opacity: 0.9;
+}
+
+.socialicons a:hover {
+    background-color: slategray;
+    transition: 0.5s;
+}
+
+.socialicons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.mail {
+    font-size: 30px;
+    padding: 20px 0px;
+    display: left;
+}
+
+@media (max-width: 800px){
+    .socialicons{
+        width:100%;
+    }
+
+    .footernav{
+        width:100%;
+        margin:10%;
+    }
 }
