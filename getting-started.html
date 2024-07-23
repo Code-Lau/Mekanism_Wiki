@@ -3,56 +3,77 @@
     <head>
         <meta charset="UTF-8">
         <meta name="decription" content="Mekanism mod page">
-        <meta name="keywords" content="minecraft, mod, modding, modded, mekanism, mekanism:generators, modded minecraft, guide, modded minecraft guide, mekanism guide, mekanism walkthrough, video game,">
+        <meta name="keywords" content="minecraft, mod, modding, modded, mekanism, mekanism:generators, modded minecraft, guide, 
+        modded minecraft guide, mekanism guide, mekanism walkthrough, video game,">
         <meta name="author" content="Lauren Woods">
-        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta name="viewport" content="width=device-width, intial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
         <title>Mekanism Mod Page</title>
     </head>
-
-        
     <body>
-        <header class="opener">
-            <div>
-                <a href="index.html"><img class="logo" src="https://i.ibb.co/jzMh43G/mekanism-white.png" alt="mekanism logo"></a>
-                <nav>
-                <ul class="ulhead">
-                    <li><a href="index.html"><h1>HOME</h1></a></li>
-                    <li><a href="about.html"><h1>ABOUT</h1></a></li>
-                    <li><a href="guide.html"><h1>GUIDE</h1></a></li>
-                    <li><a href="download.html"><h1>DOWNLOAD</h1></a></li>
-                </ul>
-                </nav>
-            </div>       
-        </header>
-        
-        <nav>
-            <ul id="primary-navigation" class="primary-navigation flex">
-                <li class="active">
-                    <a href="index.html">
-                    <span aria-hidden="true">00</span>Home
-                    </a>
-                <li>
-                    <a href="guide.html">
-                        <span aria-hidden="true">01</span>Getting Started
-                        </a>
-                <li>
-                    <a href="guide-p2.html">
-                        <span aria-hidden="true">01</span>Ore Processing
-                    </a>
+        <header>
+            <a href="index.html" class="logo">MEKANISM</a>
+            <ul class="navlist">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="getting_started.html">GUIDE</a></li>
+                <li><a href="downloads.html">DOWNLOAD</a></li>
+                <div><i class="fa-solid fa-bars" id="menu-icon"></i></div>
             </ul>
-        </nav>
-<!--
-        <section class="type-a" id="getting-started">
+        </header>
+    </body>
+
+    <button type="submit" onclick="topFunction()" id="arrow" class="arrow">
+        <img src="https://i.ibb.co/4mpCXNx/minecraft-pickaxe.png" alt="a small image of a minecraft pickaxe acting as the return to top button" style="height:50px;width:50px;">
+    </button> 
+
+    <nav class="content">
+		<menu>
+			<li id="demo1">
+				<a>Content</a>
+				<menu>
+					<li id="demo3">
+							<a href="getting-started.html">#1 Getting Started</a>
+								<menu>
+									<li><a href="#the-heat-generator">The Heat Generator</a></li>
+									<li><a href="#the-metallurgic-infuser">The Metallurgic Infuser</a></li>
+                                    <li><a href="#fuel-table">Fuel Table</a></li>
+                                    <li><a href="#steel-ingots">Steel Ingots</a></li>
+                                    <li><a href="#fuel-efficiency">Fuel Efficiency</a></li>
+                                    <li><a href="#steel-frames">Steel Frames</a></li>
+                                    <li><a href="#the-enrichment-chamber">The Enrichment Chamber</a></li>
+                                    <li><a href="#power">Power</a></li>
+                                    <li><a href="#energy-per-tick">Energy Per Tick</a></li>
+                                    <li><a href="#the-solar-gen">The Solar Gen</a></li>
+                                    <li><a href="#the-advanced-solar-gen">Advanced Solar Gen</a></li>
+                                    <li><a href="#the-wind-generator">The Wind Generator</a></li>
+                                    <li><a href="#the-bio-generator">The Bio Generator</a></li>
+                                    <li><a href="#the-crusher">The Crusher</a></li>
+								</menu>
+                    </li>
+                    <li id="demo3">
+                            <a href="ore-processing.html">#2 Ore Processing</a>
+                                <menu>
+                                    <li><a href="#tier-one">Tier One</a></li>
+                                    <li><a href="#"></a></li>
+                                </menu>    
+					</li>
+                </menu>		
+		</menu>
+	</nav>
+
+      </div> 
+
+        <section id="getting-started" style="margin-top:100px;">
             <div class="container-w">
                 <figure class="img-col">
-                    <img src="https://i.ibb.co/dL8rsXq/Osmium.png" alt="A picture of osmium ore blocks" class="guideimg">
-                    <figcaption>Osmium Ore</figcaption>
+                    <img src="https://i.ibb.co/dL8rsXq/Osmium.png" alt="A picture of osmium ore blocks" class="guideimgr">
+                    <figcaption>Different types of Osmium Ore</figcaption>
                 </figure>  
                 <div class="text-col">
-                    <h2 style="margin-bottom: 30px;">GETTING STARTED</h2>
-                    <span class="textbluebody">
+                    <h5 class="hero-text-h5">GETTING STARTED</h5>
+                    <span class="hero-text-span">
                         Mekanism adds a few ores to the mix, but the most important one is Osmium ore. 
                         Though brittle in real life, this is the key metal in Mekanism crafting alongside Iron. It is recommended to collect 
                         a lot of it throughout your trip to the mines. Once you’re set up and ready to start, the first step is to get some 
@@ -63,18 +84,18 @@
             </div>
         </section>
 
-        <section class="type-a">
+        <section id="the-heat-generator">
             <div class="container-b">
                     <figure class="img-col">
-                        <img src="https://i.ibb.co/D9TDB9R/Heat-Generator.png" alt="A picture of the heat generator" class="guideimg">
+                        <img src="https://i.ibb.co/D9TDB9R/Heat-Generator.png" alt="A picture of the heat generator" class="guideimgr">
                         <figcaption>The Heat Generator</figcaption>
                     </figure>
                     <div class="text-col">
-                        <h2 style="margin-bottom: 30px;">THE HEAT GENERATOR</h2>
-                        <span class="textbluebody">
+                        <h5 class="hero-text-h5">THE HEAT GENERATOR</h5>
+                        <span class="hero-text-span">
                             Assuming you don’t have any other mods installed, the first thing we’re going to make is the 
                             Heat Generator. If this isn’t showing up in your Creative Menu or JEI, perhaps you missed the add-on mod,
-                            <a class="textbluebodybold" style="text-decoration: underline;" href="https://www.curseforge.com/minecraft/mc-mods/mekanism-generators" target="_blank">Mekanism: Generators.</a>
+                            <a style="text-decoration: underline;font-weight: 400;" href="https://www.curseforge.com/minecraft/mc-mods/mekanism-generators" target="_blank">Mekanism: Generators.</a>
                             If you do have other mods installed or are using a modpack, the power systems are generally interchangeable. 
                             You can plug in your machines to a pre-existing power source or make beginner generators from other mods to substitute Mekanism’s.
                         </span>
@@ -82,14 +103,14 @@
             </div>
         </section>
 
-        <section class="type-a"> 
+        <section> 
             <div class="container-w">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/m9YPX21/Heat-Gen-Craft.png" alt="A picture of the crafting recipe for the heat generator" class="guideimg">
                         <figcaption>Crafting the Heat Generator</figcaption>
                     </figure>
                     <div class="text-col">
-                        <span class="textbluebody">
+                        <span class="hero-text-span">
                             The Heat Generator takes a fuel input, this can be any basic minecraft fuel type (wooden materials, 
                             coal, charcoal, lava, kelp blocks, blaze rods, bee nests and hives) as well as Mekanism’s own fuel types and converts it 
                             into Forge Energy (FE). FE is an energy type used by a lot of different mods, so Mekanism adopted it for convenience. 
@@ -108,15 +129,15 @@
         </section>
 
 
-        <section class="type-a">
+        <section id="the-metallurgic-infuser">
             <div class="container-b">
                     <figure class="img-col">
-                        <img src="https://i.ibb.co/8b42CPL/Metallurgic-Infuser.png" alt="A picture of the metallurgic infuser" class="guideimg">
+                        <img src="https://i.ibb.co/8b42CPL/Metallurgic-Infuser.png" alt="A picture of the metallurgic infuser" class="guideimgr">
                         <figcaption>The Metallurgic Infuser</figcaption>
                     </figure>
                     <div class="text-col">
-                        <h2 style="margin-bottom: 30px;">THE METALLURGIC INFUSER</h2>
-                        <span class="textbluebody">
+                        <h5 class="hero-text-h5">THE METALLURGIC INFUSER</h5>
+                        <span class="hero-text-span">
                             Your first and most important machine to make is the Metallurgic (Met-all-ur-jic) Infuser. This takes a 
                             fuel input of a certain material, and combines that material with your second input. Here we have 
                             a Metallurgic Infuser in front of a fuelled Heat Generator. The power will automatically transfer to the Metallurgic Infuser, filling 
@@ -132,7 +153,7 @@
             </div>
         </section>
 
-        <section class="type-a">
+        <section id="fuel-table">
             <div class="container-w">
                 <div>
                     <table class="fueltable">
@@ -235,9 +256,9 @@
                     </table> 
                 </div> 
                 <aside>
-                    <div class="text-col" style="margin-left: 700px;">
-                        <h2 style="margin-bottom: 30px;">FUEL TO MB RATES</h2>
-                        <span class="textbluebody">This table shows all the available sources of each material and their corresponding Mb values. The enriched 
+                    <div class="text-col" style="margin-left: 450px;margin-right:100px;">
+                        <h5 class="hero-text-h5">FUEL TO MB RATES</h5>
+                        <span class="hero-text-span">This table shows all the available sources of each material and their corresponding Mb values. The enriched 
                             versions of each type are by far the best value per item. Nine coal or a block of coal will give you 90Mb of carbon, but in contrast nine 
                             enriched coal will give you 720Mb of carbon, but more on that in a minute.
                         </span>
@@ -247,14 +268,14 @@
             </div>
         </section>
 
-        <section class="type-a">
+        <section>
             <div class="container-b">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/qg4WNtG/Metallurgic-Infuser-UI.png" alt="A picture of the metallurgic infuser's UI" class="guideimg">
                         <figcaption>The Metallurgic Infuser's UI</figcaption>
                     </figure>
                     <div class="text-col">
-                        <span class="textbluebody">
+                        <span class="hero-text-span">
                             To input one of these fuel types, simply place the item in the fuel slot box outlined in yellow 
                             next to the fuel bar. All the basic forms of the listed materials should give you 10mb. Should you 
                             no longer need what’s stored in the fuel bar, you can click the, “DUMP” button to empty it. The box 
@@ -271,42 +292,44 @@
             </div>
         </section>
             
-        <section class="type-a">
+        <section id="steel-ingots">
             <div class="container-w">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/X49JNT2/Metallurgic-Infuser-UI-Enriched-Iron.png" alt="A picture of the metallurgic infuser's UI: making enriched iron" class="guideimg">
                         <figcaption>Making enriched iron</figcaption>
                     </figure>
                     <div class="text-col">
-                        <h2 style="margin-bottom: 30px;">STEEL INGOTS</h2>
-                        <span class="textbluebody">
-                             One of the early goals is to make Steel. Once you have the steel dust, you can cook it by 
-                             any means available to make a steel ingot.
+                        <h5 class="hero-text-h5">STEEL INGOTS</h5>
+                        <span class="hero-text-span">
+                             One of the early goals is to make Steel. Steel is important and used in many, many recipes and machines in this mod.
+                             Once you have the steel dust, you can cook it by any means available to make a steel ingot.
                         </span>
-                        <span class="textbluebodybold">
-                             So the method is:
-                             
-                        <span class="textbluebody">
-                                10mb of Carbon + 1 Iron Ingot = 1 Enriched Iron.
-                                10mb of Carbon + 1 Enriched Iron = 1 Steel Dust.
+                        <span class="hero-text-span" >
+                            <ul style="margin-top:10px;">
+                                <li style="font-weight:700;">So the method is:</li>
+                                <li style="margin-top:20px;">10mb of Carbon + 1 Iron Ingot = 1 Enriched Iron.</li>
+                                <li style="margin-top:20px;">10mb of Carbon + 1 Enriched Iron = 1 Steel Dust.</li>
+                            </ul>
+                                
+                                
                         </span>
                     </span>
                 </div>      
             </div>
         </section>
         
-        <section class="type-a">
+        <section id="fuel-efficiency">
             <div class="container-b">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/74qvYXQ/Alloys-Circuits.png" alt="A picture of the metallurgic infuser's UI: making basic alloys" class="guideimg">
                         <figcaption>Making basic alloys</figcaption>
                     </figure>
                     <div class="text-col">
-                        <h2 style="margin-bottom: 30px;">FUEL EFFICIENCY</h2>
-                        <span class="textbluebodybold">
+                        <h5 class="hero-text-h5">FUEL EFFICIENCY</h5>
+                        <span class="hero-text-span" style="font-weight:700;">
                             Don’t pile all of your carbon into the machine at once, 
                         </span>
-                        <span class="textbluebody">    
+                        <span class="hero-text-span">    
                             we have a few more things to make, and 
                             a way to make our fuel more efficient. The second most important use of the Metallurgic Infuser 
                             is to make alloys and circuits. The first tier of alloy is the Infused Alloy, which is red and 
@@ -318,32 +341,32 @@
             </div>
         </section>
             
-        <section class="type-a">
+        <section id="steel-frames">
             <div class="container-w">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/Ptv7nBX/Crafting-Table-Steel-Frame.png" alt="A picture of the crafting recipe for the steel frame" class="guideimg">
                         <figcaption>Crafting the steel frame</figcaption>
                     </figure>
                     <div class="text-col">
-                        <h2>STEEL FRAMES</h2>
-                        <span class="textbluebody">
+                        <h5 class="hero-text-h5">STEEL FRAMES</h5>
+                        <span class="hero-text-span">
                             With steel ingots and basic control circuits, we can make our second machine, the Enrichment 
-                            Chamber. This involves a steel frame, which is used for most machinery, made using 4 steel 
-                            ingots, 4 glass of any colour and an osmium ingot.
+                            Chamber. This involves a steel frame. Steel frames are used for most machinery frames, made using 4 steel 
+                            ingots, 4 glass of any colour and an osmium ingot. 
                         </span>
                     </div>      
             </div>
         </section>
             
-        <section class="type-a">
+        <section id="the-enrichment-chamber">
             <div class="container-b">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/4MnCZvp/Crafting-Table-Enrichment-C.png" alt="A picture of the crafting recipe for the enrichment chamber" class="guideimg">
                         <figcaption>Crafting the enrichment chamber</figcaption>
                     </figure>
-                    <div class="text-col">
-                        <h2 style="margin-bottom: 30px;">THE ENRICHMENT CHAMBER</h2>
-                        <span class="textbluebody">
+                    <div class="text-col" style="z-index:1;">
+                        <h5 class="hero-text-h5">THE ENRICHMENT CHAMBER</h5>
+                        <span class="hero-text-span">
                             The enrichment chamber only requires 1 input and FE. You can place items inside the red outlined
                              box to convert those items into their enriched version. In this example, we’re converting coal 
                              into enriched coal. Enriched coal is worth much more at 80mb, as opposed to coal’s measly 10mb. 
@@ -363,15 +386,15 @@
             </div>
         </section>
             
-        <section class="type-a">
+        <section id="power">
             <div class="container-w">
                         <figure class="img-col">
-                            <img src="https://i.ibb.co/QK4rc20/Generators.png" alt="A picture of various power sources" class="guideimg">
+                            <img src="https://i.ibb.co/QK4rc20/Generators.png" alt="A picture of various power sources" class="guideimgr">
                             <figcaption>Various early-game power sources</figcaption>
                         </figure>
                         <div class="text-col">
-                            <h2 style="margin-bottom: 30px;">POWER</h2>
-                            <span class="textbluebody">
+                            <h5 class="hero-text-h5">POWER</h5>
+                            <span class="hero-text-span">
                                 Now that we have our fuel efficiency sorted out, we can look into a more efficient power source. 
                                 We have a few options: The solar panel, the wind generator, the gas burning generator, the bio 
                                 generator, the fission reactor and turbine combo and the fusion reactor. The gas-burning generator 
@@ -383,19 +406,19 @@
             </div>
         </section>   
         
-        <section class="type-a">
+        <section id="energy-per-tick">
             <div class="container-b">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/NKGJbyW/Energy-Tablet.png" alt="A picture of the energy tablet" class="guideimg">
                         <figcaption>An energy tablet</figcaption>
                     </figure>
                     <div class="text-col">
-                        <h2 style="margin-bottom: 30px;">ENERGY PER TICK</h2>
-                        <span class="textbluebody">
+                        <h5 class="hero-text-h5">ENERGY PER TICK</h5>
+                        <span class="hero-text-span">
                                 When it comes to generators, unlike the Heat Generator which makes a 
                                 set amount of energy per burn time, these generators all run on the concept of </span>
-                                <span class="textbluebodybold">“Energy per tick”.</span>
-                                 <span class="textbluebody">
+                                <span class="hero-text-span" style="font-weight:700;">“Energy per tick”.</span>
+                                 <span class="hero-text-span">
                                 This refers to the base game’s program loop, which runs at a fixed rate of 20 ticks per second. 
                                 This means that one tick occurs every 0.05s. These generators will be outputting their set FE amount 
                                 based on their criteria per tick. Meaning that whatever the machine says it’s outputting “FE/t”, 
@@ -407,15 +430,15 @@
             </div>
         </section>   
         
-        <section class="type-a">
+        <section id="the-solar-gen">
             <div class="container-w">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/Qj3XJjh/Solar-Panel.png" alt="A picture of the crafting recipe for solar panels" class="guideimg">
                         <figcaption>Crafting the solar panel</figcaption>
                     </figure>
                     <div class="text-col">
-                        <h2 style="margin-bottom: 30px;">THE SOLAR GENERATOR</h2>
-                        <span class="textbluebody">
+                        <h5 class="hero-text-h5">THE SOLAR GENERATOR</h5>
+                        <span class="hero-text-span">
                             Using osmium, glass panes, redstone and infused alloys we can make solar panels. Using 3 of these, 
                             an energy tablet, more infused alloys and osmium we can make a solar generator. The solar generator 
                             will produce energy on its own, but if you want more FE, you can make the advanced solar generator.
@@ -428,15 +451,15 @@
             </div>
         </section>
 
-        <section class="type-a">
+        <section id="the-advanced-solar-gen">
             <div class="container-b">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/QnRmkks/Advanced-Solar-Gen.png" alt="A picture of the crafting recipe for the advanced solar generator" class="guideimg">
                         <figcaption>Crafting the advanced solar generator</figcaption>
                     </figure>
                     <div class="text-col">
-                        <h2 style="margin-bottom: 30px;">THE ADVANCED SOLAR GENERATOR</h2>
-                        <span class="textbluebody">
+                        <h5 class="hero-text-h5">THE ADVANCED SOLAR GENERATOR</h5>
+                        <span class="hero-text-span">
                             The advanced solar generator is 4 solar generators, 2 infused alloys and 3 iron ingots. The solar 
                             generator alone will produce 17.84FE/t, whereas the advanced solar generator will produce 106.89FE/t. 
                             This is a fantastic upgrade if you can afford all the iron and osmium it will cost. The only drawback 
@@ -446,15 +469,15 @@
             </div>
         </section>
 
-        <section class="type-a">
+        <section id="the-wind-generator">
             <div class="container-w">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/h8c3Pwt/Wind-Gen-Craft.png" alt="A picture of the crafting recipe for the wind generator" class="guideimg">
                         <figcaption>Crafting a wind generator</figcaption>
                     </figure>
                     <div class="text-col">
-                        <h2 style="margin-bottom: 30px;">THE WIND GENERATOR</h2>
-                        <span class="textbluebody">
+                        <h5 class="hero-text-h5">THE WIND GENERATOR</h5>
+                        <span class="hero-text-span">
                             Another option is the wind generator, which produces its energy based on the Y height of where it is placed. 
                             The base level is 9.6FE/t, while the maximum amount is 76.8FE/t. However, there is also the limitation of 
                             being able to connect to them. It’s possible you may need a lot of cables to be able to reach a desired FE/t 
@@ -469,15 +492,15 @@
             </div>
         </section>
         
-        <section class="type-a">
+        <section id="the-bio-generator">
             <div class="container-b">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/1vGBWnG/BioGen.png" alt="A picture of the crafting recipe for the bio generator" class="guideimg">
                         <figcaption>Crafting the bio generator</figcaption>
                     </figure>
                     <div class="text-col">
-                        <h2 style="margin-bottom: 30px;">THE BIO GENERATOR</h2>
-                        <span class="textbluebody">
+                        <h5 class="hero-text-h5">THE BIO GENERATOR</h5>
+                        <span class="hero-text-span">
                             The last beginner option is the bio-generator. This generator requires a bit of setup, but can be very reliable. 
                             This doesn’t have the previous limitations of nature in the physical sense, it requires biofuel. Biofuel is made 
                             using a crusher, by inputting any organic matter. It is possible to create automatic farms that feed into the 
@@ -494,41 +517,38 @@
             </div>
         </section>
 
-        <section class="type-a">
+        <section id="the-crusher">
             <div class="container-w" style="margin-bottom:50px;">
                     <figure class="img-col">
                         <img src="https://i.ibb.co/jHx81wr/Crusher-UI.png" alt="A picture of the crusher making biomass" class="guideimg">
                         <figcaption>Making biomass</figcaption>
                     </figure>
                     <div class="text-col">
-                        <h2 style="margin-bottom: 30px;">THE CRUSHER</h2>
-                        <span class="textbluebody">
+                        <h5 class="hero-text-h5">THE CRUSHER</h5>
+                        <span class="hero-text-span">
                             The crusher looks and functions similarly to the enrichment chamber. You put the item you want crushed in the red outlined 
                             input slot, and it comes out in dust/paste form. The amount of biofuel you get out depends on what organic matter you put in, 
                             every item has its own output value. It would be wise to pick something that’s easy to grow/automate that gives a high output 
                             value, like melons/melon slices.
                         </span>
-                        <span class="textbluebody">
+                        <p class="hero-text-span" style="margin-top:20px;">
                             Once you have a basic power source, your basic crafting material making-machines and lots of resources, we can move on to some 
                             more advanced prospects of the mod, such as personal equipment like jetpacks or ore processing.
-                            <a href="guide-p2.html"><button class="buttonteachme">NEXT SECTION</button></a>
-                        </span>
-                        
+                        </p>
+                        <a href="ore-processing.html"><button class="buttonnextsection">NEXT SECTION</button></a>
                     </div>
-                        
             </div>
         </section>
-
-    <section class="two"></section>
-    <section class="three">
-        <nav class="footemail">
-        <a href="mailto:laurenleighwoods@gmail.com"><i class="fa-solid fa-envelope" style=padding-right:10px></i>info@mekanism.com</a>
-        </nav>
-        <nav class="icons">
-            <ul class="ulfoot">
-                <li class="socialicons"><a href="https://x.com/aidancbrady" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-                <li class="socialicons"><a href="https://github.com/aidancbrady" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                <li class="socialicons"><a href="https://www.linkedin.com/in/aidancbrady/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-            </ul>
-        </nav> 
-    </section>
+        <footer>
+            <div>
+                <ul class="socialicons">
+                    <div >
+                    <li><a href="mailto:laurenleighwoods@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style=padding-right:10px></i>info@mekanism.com</a></li>
+                    </div>
+                    <li style="margin-left:70vw;"><a href="https://x.com/aidancbrady" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://github.com/aidancbrady" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/aidancbrady/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+      
