@@ -11,39 +11,45 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
         <title>Mekanism Mod Page</title>
         <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="/JS/"></script>
     </head>
+
+    <!-- TO DO:
+    -Add Alts to every image 
+    -fix burger x
+    -->
     <body>
         <header>
             <a href="/index.html" class="logo">MEKANISM</a>
-            <ul class="navlist">
-                <li><a href="/index.html">HOME</a></li>
-                <li><a href="/Main_Pages/about.html">ABOUT</a></li>
-                <li><a href="/Main_Pages/getting-started.html">GUIDE</a></li>
-                <li><a href="/Main_Pages/download.html">DOWNLOAD</a></li>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/index.html" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="/Main_Pages/about.html" class="nav-link">ABOUT</a></li>
+                <li class="nav-item"><a href="/Main_Pages/getting-started.html" class="nav-link">GUIDE</a></li>
+                <li class="nav-item"><a href="/Main_Pages/download.html" class="nav-link">DOWNLOAD</a></li>
             </ul>
-            <div class="fa-solid fa-bars" id="menu-icon"></div>
-        </header>
-    
-  <section>
-        <div class="container">
-            <div>
-                <img src="https://i.ibb.co/BNTQss6/Various-Machines.png" class="hero-img">
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-            <div class="hero-text"> 
-            <h4 class="hero-text-h4" style="margin-left:20px;">DIVE INTO MEKANISM</h4> 
+        </header>
+
+    
+
+    <script src="/JS/script.js"></script>
+        <div class="wrapper">
+            <img src="https://i.ibb.co/BNTQss6/Various-Machines.png" class="hero-img" alt="A picture of various Mekanism machines">
+            <article class="hero-text"> 
+            <h4 class="hero-text-h4">DIVE INTO MEKANISM</h4> 
                     <p class="hero-text p">Mekanism is an independent tech mod that brings low, mid, and high tier machinery to Minecraft. 
                     Mekanism aims to make your life easier with automation, 5x ore processing, nuclear reactors, robots, 
                     digital miners, jetpacks and many other additions. This involves a scientific and chemistry based 
                     approach, which if you’re not sure about, we can help you in any stage of the process.</p>
-                    <a href="/Main_Pages/getting-started.html"><button class="buttonteachme">Teach me</button></a>
-            </div>
+                    <a class="teachme" href="/Main_Pages/getting-started.html">Teach me</a>
+            </article>
         </div>
-    </section>
 
     
   <footer>
-            
             <ul class="socialicons">
                 <li><a href="mailto:laurenleighwoods@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
                 <li><a href="https://x.com/aidancbrady" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>

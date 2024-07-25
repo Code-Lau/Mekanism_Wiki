@@ -1,12 +1,17 @@
-let menu = document.querySelector('#menu-icon');
-let navlist = document.querySelector('.navlist');
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-menu.onclick = () => {
-    menu.classList.toggle('bx-x');
-    navlist.classList.toggle('open');
-};
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
 
-const sr = ScrollReveal ({
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}))
+
+/* const sr = ScrollReveal ({
     distance:'65px',
     duration: 2600,
     delay:450,
@@ -18,7 +23,7 @@ sr.reveal('.hero-img',{delay:300, origin:'top'});
 sr.reveal('.navlist-2',{delay:400, origin:'left'});
 
 // Get the button:
-let mybutton = document.getElementById("arrow");
+const mybutton = document.getElementById("arrow");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -35,4 +40,4 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-} 
+}  */
