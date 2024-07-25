@@ -13,18 +13,23 @@
     </head>
     <body>
         <header>
-            <a href="/index.html" class="logo">MEKANISM</a>
-            <ul class="navlist">
-                <li><a href="/index.html">HOME</a></li>
-                <li><a href="/Main_Pages/about.html">ABOUT</a></li>
-                <li><a href="/Main_Pages/getting-started.html">GUIDE</a></li>
-                <li><a href="/Main_Pages/download.html">DOWNLOAD</a></li>
-                <div><i class="fa-solid fa-bars" id="menu-icon"></i></div>
+            <a href="/index.html" class="logo" alt="Mekanism Logo">MEKANISM</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/index.html" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="/Main_Pages/about.html" class="nav-link">ABOUT</a></li>
+                <li class="nav-item"><a href="/Main_Pages/getting-started.html" class="nav-link">GUIDE</a></li>
+                <li class="nav-item"><a href="/Main_Pages/download.html" class="nav-link">DOWNLOAD</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </header>
-    </body>
 
-    <button type="submit" onclick="topFunction()" id="arrow" class="arrow">
+    </body>
+    <script src="/JS/script.js"></script>
+    <button type="submit" onclick="topFunction()" class="arrow">
         <img src="https://i.ibb.co/4mpCXNx/minecraft-pickaxe.png" alt="a small image of a minecraft pickaxe acting as the return to top button" style="height:50px;width:50px;">
     </button> 
 
@@ -156,7 +161,7 @@
         <section id="fuel-table">
             <div class="container-w">
                 <div>
-                    <table class="fueltable">
+                    <table class="fueltable" alt="A multicolored table containing info about fuel types">
                                         <tr class="tableheader">
                                             <th style="width:300px">Material</th>
                                             <th style="width:200px">Fuel Type</th>
@@ -285,7 +290,7 @@
                     </div>
                     <aside>
                         <figure class="img-col-r">
-                            <img src="https://i.ibb.co/j4XWqSP/Metallurgic-Infuser-UI-Carbon.png" alt="A picture of the metallurgic infuser's UI: hovering over the fuel gauge" class="guideimg">
+                            <img src="https://i.ibb.co/j4XWqSP/Metallurgic-Infuser-UI-Carbon.png" alt="A picture of the player hovering over the fuel gauge in the Metallurgic Infuser's UI" class="guideimg">
                             <figcaption>Hovering over the fuel gauge</figcaption>
                         </figure>
                     </aside>        
@@ -295,7 +300,7 @@
         <section id="steel-ingots">
             <div class="container-w">
                     <figure class="img-col">
-                        <img src="https://i.ibb.co/X49JNT2/Metallurgic-Infuser-UI-Enriched-Iron.png" alt="A picture of the metallurgic infuser's UI: making enriched iron" class="guideimg">
+                        <img src="https://i.ibb.co/X49JNT2/Metallurgic-Infuser-UI-Enriched-Iron.png" alt="A picture of the player making enriched iron" class="guideimg">
                         <figcaption>Making enriched iron</figcaption>
                     </figure>
                     <div class="text-col">
@@ -321,7 +326,7 @@
         <section id="fuel-efficiency">
             <div class="container-b">
                     <figure class="img-col">
-                        <img src="https://i.ibb.co/74qvYXQ/Alloys-Circuits.png" alt="A picture of the metallurgic infuser's UI: making basic alloys" class="guideimg">
+                        <img src="https://i.ibb.co/74qvYXQ/Alloys-Circuits.png" alt="A picture of the player making basic alloys" class="guideimg">
                         <figcaption>Making basic alloys</figcaption>
                     </figure>
                     <div class="text-col">
@@ -379,7 +384,7 @@
                     </div>    
                     <aside>
                         <figure class="img-col-r">
-                            <img src="https://i.ibb.co/v1jz16w/Enrichment-Chamber.png" alt="A picture of the enrichment chamber making enriched coal" class="guideimg">
+                            <img src="https://i.ibb.co/v1jz16w/Enrichment-Chamber.png" alt="A picture of the player making enriched coal" class="guideimg">
                             <figcaption>Making enriched coal</figcaption>
                         </figure>
                     </aside>    
@@ -520,7 +525,7 @@
         <section id="the-crusher">
             <div class="container-w" style="margin-bottom:50px;">
                     <figure class="img-col">
-                        <img src="https://i.ibb.co/jHx81wr/Crusher-UI.png" alt="A picture of the crusher making biomass" class="guideimg">
+                        <img src="https://i.ibb.co/jHx81wr/Crusher-UI.png" alt="A picture of the player making biomass" class="guideimg">
                         <figcaption>Making biomass</figcaption>
                     </figure>
                     <div class="text-col">
@@ -540,15 +545,13 @@
             </div>
         </section>
         <footer>
-            <div>
                 <ul class="socialicons">
-                    <div >
-                    <li><a href="mailto:laurenleighwoods@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style=padding-right:10px></i>info@mekanism.com</a></li>
-                    </div>
-                    <li style="margin-left:70vw;"><a href="https://x.com/aidancbrady" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-                    <li><a href="https://github.com/aidancbrady" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/aidancbrady/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="mailto:laurenleighwoods@gmail.com" target="_blank" alt="An icon of an envelope"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="https://x.com/aidancbrady" target="_blank" alt="An icon of X's logo"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://github.com/aidancbrady" target="_blank" alt="An icon of Github's logo"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/aidancbrady/" target="_blank" alt="An icon of Linkedin's logo"><i class="fa-brands fa-linkedin"></i></a></li>
                 </ul>
-            </div>
         </footer>
       
+    </body>
+    </html>
