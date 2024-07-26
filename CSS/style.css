@@ -64,12 +64,16 @@ a {
 
 .nav-menu a {
     color:white;
-    font-size:50px;
-    font-weight:700;
+    margin-left:60px;
+    font-size:32px;
+    font-weight:600;
     line-height: 110%;
     transition: all .55s ease;
-    margin-left:0;
    
+}
+
+.nav-item{
+    margin:10px;
 }
 
 .nav-menu a:visited, .socialicons a:visited  {
@@ -77,21 +81,21 @@ a {
     text-decoration: none;
 }
 
-/* .nav-menu a:hover, .socialicons a:hover {
+.nav-menu a:hover, .socialicons a:hover {
     color:grey;
-} */
+}
 
 /* Hamburger (also referenced from above link)*/
 .hamburger {
+    display:none;
     z-index:12;
     cursor:pointer;
-    display: block;
     position: relative;
     padding:17px 0px;
 }
 
 .bar{
-    display: block;
+    display: none;
     width:25px;
     height:5px;
     margin:5px auto;
@@ -100,35 +104,6 @@ a {
     background-color: white;
 }
 
-.hamburger.active .bar:nth-child(2){/* middle bar */
-    opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1){
-    transform:translateY(10px) rotate(45deg);/* top bar */
-}
-
-.hamburger.active .bar:nth-child(3){
-    transform:translateY(-10px) rotate(-45deg);/* bottom bar */
-}
-
-.nav-menu{
-    position: fixed;
-    left: 0px;
-    top: -400px;
-    flex-direction: column;
-    background-color: #162844;
-    width: 100%;
-    transition: 0.3s;
-}
-
-.nav-item{
-    margin:10px;
-}
-
-.nav-menu.active{
-    top:0;
-}
 
 /* Body & Hero */
 .arrow {
@@ -578,7 +553,65 @@ li > menu > li.hover > menu > li{
     opacity: 1;
 } */
 
-
+@media only screen and (min-width:320px) and (max-width:479px){
+    .hamburger{
+        display:block;
+    }
+    .bar{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform:translateY(10px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform:translateY(-10px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: 0px;
+        top: -400px;
+        flex-direction: column;
+        align-items: center;
+        background-color: #162844;
+        width: 100%;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin:10px;
+    }
+    .nav-menu a {
+        color:white;
+        font-size:32px;
+        font-weight:600;
+        line-height: 110%;
+        margin-left:20px;
+        transition: all .55s ease;
+    }
+    .nav-menu.active{
+        top:0;
+    }
+    .hero-img{
+        padding:20px;
+        border-radius:15%;
+        width:100%;
+        height: 50%;
+        z-index:1;
+    }
+    .hero-text h4 {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .hero-text p{
+        margin: 0px 0px 0px 10px;
+        word-spacing: 10%;
+    }
+    .teachme {
+        margin: 10px 100px 30px 100px;
+    }
+}
 @media only screen and (min-width:480px) and (max-width:767px){
     .hamburger{
         display:block;
@@ -609,8 +642,8 @@ li > menu > li.hover > menu > li{
         top:0;
     }
     .hero-img{
-        width:100%vw;
-        height:50%vh;
+        width:100%;
+        height:50%;
         z-index:1;
     }
     .hero-text h4 {
@@ -738,6 +771,9 @@ li > menu > li.hover > menu > li{
     .hamburger{
         display:none;
     }
+    .bar{
+        display:none;
+    }
     .nav-menu {
         display:flex;
     }
@@ -780,5 +816,131 @@ li > menu > li.hover > menu > li{
     }
 }
 @media only screen and (min-width: 1200px){
-    
+    .hamburger{
+        display:none;
+    }
+    .bar{
+        display:none;
+    }
+    .logo {
+        font-size: 60px;
+        font-weight: 700;
+        line-height:100%;
+        position:absolute;
+        color: white;
+        cursor:pointer;
+    }
+    header {
+        position:relative;
+        right:0;
+        top: 0;
+        z-index:1000;
+        width:100%;
+        height:30vh;
+        display:flex;
+        align-items:flex-start;
+        justify-content:space-between;
+        padding: 10px 30px 0 30px;
+        background-image:url("https://i.ibb.co/HGLsDxR/mainimgae.png");
+        background-position: center left;
+        background-color:#162844;
+        background-size: 100%;
+    }
+    header::before {
+        display:block;
+        position:absolute;
+        content:'';
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 180px;
+        background: white;
+        clip-path:polygon(100% 20%, 0 100%, 100% 100%);
+    }
+    .nav-menu {
+        display:flex;
+        list-style-type: none;
+        text-decoration: none;
+        position:absolute;
+        right:20px;
+        top:8px;
+        overflow: hidden;
+    }
+    .nav-menu a {
+        color:white;
+        margin-left:60px;
+        font-size:45px;
+        font-weight:600;
+        transition: all .55s ease;
+    }
+    .nav-menu a:visited{
+        display:block;
+        text-decoration: none;
+    }
+    .nav-menu a:hover{
+        color:grey;
+    }
+    .wrapper{
+        display:flex;
+        align-items:center;
+        width:100%;
+        min-height:75vh;
+        background-color:white;
+        position:relative;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .img-col{
+        margin-left:0px;
+        z-index:1;
+        background-color: red;
+    }
+    .hero-img{
+        border-radius:15%;
+        width:30vw;
+        height:40vh;
+        z-index:1;
+    }
+    .hero-text{
+        width:100%;
+        
+        background-color:yellow;
+        position:relative;
+        display:grid;
+    }
+    .hero-text a {
+        display: inline-block;
+        color:white;
+        background-color: #162844;
+        border:1px solid transparent;
+        font-size: 24px;
+        line-height: 110%;
+        font-weight: 700;
+        border-radius: 30px;
+        margin-left: 30px;
+        text-transform: uppercase;
+        transition: all .55s ease;
+        padding: 10px;
+        margin: auto;
+    }
+    .hero-text a:hover {
+        background-color: #2E5592;
+        transform: translateY(6px);
+    }
+    .hero-text h4 {
+        font-size: 60px;
+        font-weight: bold;
+        text-align: left;
+        background-color: violet;
+    }
+    .hero-text p{
+        color:#162844;
+    font-size:30px;
+    text-align: left;
+    word-spacing: 5px;
+    letter-spacing: 15%;
+    line-height: 105%;
+    font-weight:300;
+    }
 }
