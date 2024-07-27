@@ -66,7 +66,7 @@ a {
     color:white;
     margin-left:60px;
     font-size:32px;
-    font-weight:600;
+    font-weight:700;
     line-height: 110%;
     transition: all .55s ease;
    
@@ -74,15 +74,6 @@ a {
 
 .nav-item{
     margin:10px;
-}
-
-.nav-menu a:visited, .socialicons a:visited  {
-    display:block;
-    text-decoration: none;
-}
-
-.nav-menu a:hover, .socialicons a:hover {
-    color:grey;
 }
 
 /* Hamburger (also referenced from above link)*/
@@ -552,13 +543,13 @@ li > menu > li.hover > menu > li{
     transform:translateX(0) translateY(0%);
     opacity: 1;
 } */
-
+/* Mobile Media Queries */
 @media only screen and (min-width:320px) and (max-width:479px){
     .hamburger{
         display:block;
     }
     .bar{
-        display: block;
+        display:block;
     }
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
@@ -574,92 +565,85 @@ li > menu > li.hover > menu > li{
         left: 0px;
         top: -400px;
         flex-direction: column;
-        align-items: center;
         background-color: #162844;
         width: 100%;
+        text-align: left;
         transition: 0.3s;
     }
     .nav-item{
         margin:10px;
     }
-    .nav-menu a {
-        color:white;
-        font-size:32px;
-        font-weight:600;
-        line-height: 110%;
-        margin-left:20px;
-        transition: all .55s ease;
-    }
     .nav-menu.active{
         top:0;
     }
-    .hero-img{
-        padding:20px;
-        border-radius:15%;
+    .wrapper{
         width:100%;
-        height: 50%;
+    }
+    .container {
+        display:grid;
+        height:auto;
+    }
+    .hero-img{
+        border-radius:15%;
+        width:90vw;
+        height:30vh;
+        margin-top:-8vh;
+        margin-bottom:3vh;
         z-index:1;
+    }
+    .hero-text{
+        width:100%;
+        margin: 10px 20px 30px 0px;
+        position:relative;
+        display:grid;
+        background-position: center;
+    }
+    .hero-text a {
+        display: inline-block;
+        color:white;
+        background-color: #162844;
+        border:1px solid transparent;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 110%;
+        border-radius: 30px;
+        text-transform: uppercase;
+        transition: all .55s ease;
+        padding: 10px;
+        margin-right:auto;
+        margin-left:auto;
+        margin-bottom:0;
+    }
+    /* Ripple Effect referenced here https://codepen.io/finnhvman/post/pure-css-ripple-with-minimal-effort */
+    .hero-text a:hover {
+        background:  #2E5592 radial-gradient(circle, transparent 1%,#162844 1%) center/15000%;
+        }
+    .hero-text a:active {
+        background-color: #2E5592;
+        background-size: 100%;
+        transition: 0s;
     }
     .hero-text h4 {
         font-size: 35px;
-        margin-bottom: 10px;
+        font-weight: bold;
+        text-align: center;
     }
-    .hero-text p{
-        margin: 0px 0px 0px 10px;
-        word-spacing: 10%;
-    }
-    .teachme {
-        margin: 10px 100px 30px 100px;
+    span{
+        color:#162844;
+        font-size:24px;
+        text-align: center;
+        word-spacing: 2px;
+        letter-spacing: 15%;
+        line-height: 110%;
+        font-weight:300;
+        margin-bottom:20px;
     }
 }
 @media only screen and (min-width:480px) and (max-width:767px){
     .hamburger{
         display:block;
     }
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1){
-        transform:translateY(10px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3){
-        transform:translateY(-10px) rotate(-45deg);
-    }
-    .nav-menu{
-        position: fixed;
-        left: 0px;
-        top: -400px;
-        flex-direction: column;
-        background-color: #162844;
-        width: 100%;
-        text-align: left;
-        transition: 0.3s;
-    }
-    .nav-item{
-        margin:10px;
-    }
-    .nav-menu.active{
-        top:0;
-    }
-    .hero-img{
-        width:100%;
-        height:50%;
-        z-index:1;
-    }
-    .hero-text h4 {
-        font-size: 40px;
-        margin-bottom: 10px;
-    }
-    .hero-text p{
-        margin: 0px 0px 0px 10px;
-    }
-    .teachme {
-        margin: 10px 170px 30px 170px;
-    }
-}
-/* footer problems */
-@media only screen and (min-width: 768px) and (max-width: 979px){
-    .hamburger{
+    .bar{
         display:block;
     }
     .hamburger.active .bar:nth-child(2){
@@ -687,37 +671,166 @@ li > menu > li.hover > menu > li{
     .nav-menu.active{
         top:0;
     }
+    .wrapper{
+        width:100%;
+    }
+    .container {
+        display:grid;
+        height:65vh;
+    }
     .hero-img{
-        margin:30px 20px 10px 75px;
-        padding:0px 30px 0 30px;
         border-radius:15%;
-        width:80%;
-        height:auto;
+        width:90vw;
+        height:30vh;
+        margin-top:-6vh;
+        margin-bottom:1vh;
         z-index:1;
     }
     .hero-text{
-        height:auto;
+        width:100%;
+        margin: 10px 20px 30px 0px;
+        position:relative;
+        display:grid;
+        background-position: center;
+    }
+    .hero-text a {
+        display: inline-block;
+        color:white;
+        background-color: #162844;
+        border:1px solid transparent;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 110%;
+        border-radius: 30px;
+        text-transform: uppercase;
+        transition: all .55s ease;
+        padding: 10px;
+        margin-right:auto;
+        margin-left:auto;
+        margin-bottom:0;
+    }
+    /* Ripple Effect referenced here https://codepen.io/finnhvman/post/pure-css-ripple-with-minimal-effort */
+    .hero-text a:hover {
+        background:  #2E5592 radial-gradient(circle, transparent 1%,#162844 1%) center/15000%;
+        }
+    .hero-text a:active {
+        background-color: #2E5592;
+        background-size: 100%;
+        transition: 0s;
     }
     .hero-text h4 {
-        font-size: 40px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .hero-text p{
+        font-size: 45px;
+        font-weight: bold;
         text-align: center;
-        margin:10px 30px 10px 30px;
     }
-    .teachme {
-        margin: 10px 310px 20px 310px;
+    span{
+        color:#162844;
+        font-size:26px;
+        text-align: center;
+        word-spacing: 2px;
+        letter-spacing: 15%;
+        line-height: 110%;
+        font-weight:300;
+        margin-bottom:20px;
     }
-    .socialicons{
-        margin:0px;
+}
+@media only screen and (min-width: 768px) and (max-width: 979px){
+    .hamburger{
+        display:block;
+    }
+    .bar{
+        display:block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform:translateY(10px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform:translateY(-10px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: 0px;
+        top: -400px;
+        flex-direction: column;
+        background-color: #162844;
+        width: 100%;
+        text-align: left;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin:10px;
+    }
+    .nav-menu.active{
+        top:0;
+    }
+    .container {
+        display:grid;
+        height:80vh;
+    }
+    .hero-img{
+        border-radius:15%;
+        width:100%;
+        height:auto;
+        margin-top:-5vh;
+        margin-bottom:3vh;
+        z-index:1;
+    }
+    .hero-text{
+        width:100%;
+        margin: 10px 10px 30px 10px;
+        position:relative;
+        display:grid;
+        background-position: center;
+    }
+    .hero-text a {
+        display: inline-block;
+        color:white;
+        background-color: #162844;
+        border:1px solid transparent;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 110%;
+        border-radius: 30px;
+        text-transform: uppercase;
+        transition: all .55s ease;
+        padding: 10px;
+        margin:auto;
+    }
+    /* Ripple Effect referenced here https://codepen.io/finnhvman/post/pure-css-ripple-with-minimal-effort */
+    .hero-text a:hover {
+        background:  #2E5592 radial-gradient(circle, transparent 1%,#162844 1%) center/15000%;
+        }
+    .hero-text a:active {
+        background-color: #2E5592;
+        background-size: 100%;
+        transition: 0s;
+    }
+    .hero-text h4 {
+        font-size: 45px;
+        font-weight: bold;
+        text-align: center;
+    }
+    span{
+        color:#162844;
+        font-size:26px;
+        text-align: left;
+        word-spacing: 5px;
+        letter-spacing: 15%;
+        line-height: 110%;
+        font-weight:300;
+        margin-bottom:20px;
     }
 }
 @media only screen and (min-width: 980px) and (max-width: 1023px){
     .hamburger{
         display:block;
     }
+    .bar{
+        display:block;
+    }
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
     }
@@ -731,7 +844,6 @@ li > menu > li.hover > menu > li{
         position: fixed;
         left: 0px;
         top: -400px;
-        gap: 0;
         flex-direction: column;
         background-color: #162844;
         width: 100%;
@@ -744,29 +856,71 @@ li > menu > li.hover > menu > li{
     .nav-menu.active{
         top:0;
     }
-    .hero-img{
-        margin:50px 0px 0px 200px;
-        padding:0px;
-        border-radius:15%;
-        width:60vw;
-        height:40vh;
+    .wrapper{
+        display:flex;
+        position:relative;
+        width:100%;
+        min-height:75vh;
+        background-color:white;
+    }
+    .img-col{
+        margin-left:10px;
         z-index:1;
+    }
+    .hero-img{
+        border-radius:15%;
+        width:45vw;
+        z-index:1;
+    }
+    .hero-text{
+        width:95%;
+        margin-left:30px;
+        position:relative;
+        display:grid;
+        background-position: center;
+    }
+    .hero-text a {
+        display: inline-block;
+        color:white;
+        background-color: #162844;
+        border:1px solid transparent;
+        font-size: 24px;
+        line-height: 110%;
+        font-weight: 700;
+        border-radius: 30px;
+        margin-left: 30px;
+        text-transform: uppercase;
+        transition: all .55s ease;
+        padding: 10px;
+        margin-right:auto;
+    }
+    /* Ripple Effect referenced here https://codepen.io/finnhvman/post/pure-css-ripple-with-minimal-effort */
+    .hero-text a:hover {
+        background:  #2E5592 radial-gradient(circle, transparent 1%,#162844 1%) center/15000%;
+        }
+    .hero-text a:active {
+        background-color: #2E5592;
+        background-size: 100%;
+        transition: 0s;
     }
     .hero-text h4 {
         font-size: 40px;
-        margin-top: 20px;
-        margin-bottom: 15px;
+        font-weight: bold;
+        text-align: left;
+        margin-left:30px;
     }
-    .hero-text p{
-        margin:10px 15px 10px 20px;
-        font-size: 30px;
-        font-weight: 200;
-        word-spacing: 70%;
-    }
-    .teachme {
-        margin: 20px 430px 40px 430px;
+    span{
+        color:#162844;
+        font-size:24px;
+        text-align: left;
+        word-spacing: 5px;
+        letter-spacing: 15%;
+        line-height: 110%;
+        font-weight:300;
+        margin-bottom:20px;
     }
 }
+/* PC Media Queries */
 @media only screen and (min-width: 1024px) and (max-width: 1199px){
     .hamburger{
         display:none;
@@ -774,15 +928,55 @@ li > menu > li.hover > menu > li{
     .bar{
         display:none;
     }
+    .logo {
+        font-size: 60px;
+        font-weight: 700;
+        line-height:100%;
+        position:absolute;
+        color: white;
+        cursor:pointer;
+    }
+    header {
+        position:relative;
+        right:0;
+        top: 0;
+        z-index:1000;
+        width:100%;
+        height:30vh;
+        display:flex;
+        align-items:flex-start;
+        justify-content:space-between;
+        padding: 10px 30px 0 30px;
+        background-image:url("https://i.ibb.co/HGLsDxR/mainimgae.png");
+        background-position: center left;
+        background-color:#162844;
+        background-size: 100%;
+    }
+    header::before {
+        display:block;
+        position:absolute;
+        content:'';
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 180px;
+        background: white;
+        clip-path:polygon(100% 20%, 0 100%, 100% 100%);
+    }
     .nav-menu {
         display:flex;
+        list-style-type: none;
+        text-decoration: none;
+        position:absolute;
+        right:20px;
+        top:8px;
+        overflow: hidden;
     }
     .nav-menu a {
         color:white;
-        margin-left:60px;
-        font-size:32px;
-        font-weight:600;
-        line-height: 110%;
+        margin-left:30px;
+        font-size:45px;
+        font-weight:700;
         transition: all .55s ease;
     }
     .nav-menu a:visited{
@@ -792,27 +986,61 @@ li > menu > li.hover > menu > li{
     .nav-menu a:hover{
         color:grey;
     }
-    .hero-img{
-        margin:50px 0px 0px 200px;
-        padding:0px;
-        border-radius:15%;
-        width:50vw;
-        height:40vh;
+    .container {
+        display:flex;
+        height:auto;
+    }
+    .img-col{
         z-index:1;
     }
+    .hero-img{
+        border-radius:15%;
+        width:45vw;
+        height:30vh;
+        z-index:1;
+    }
+    .hero-text{
+        width:95%;
+        margin-left:30px;
+        position:relative;
+        display:grid;
+    }
+    .hero-text a {
+        display: inline-block;
+        color:white;
+        background-color: #162844;
+        border:1px solid transparent;
+        font-size: 24px;
+        line-height: 110%;
+        font-weight: 700;
+        border-radius: 30px;
+        margin-left: 30px;
+        text-transform: uppercase;
+        transition: all .55s ease;
+        padding: 10px;
+        margin-right:auto;
+    }
+    .hero-text a:hover {
+        background-color: #2E5592;
+        transform: translateY(6px);
+    }
     .hero-text h4 {
-        font-size: 40px;
-        margin-top: 20px;
-        margin-bottom: 15px;
+        font-size: 35px;
+        font-weight: bold;
+        text-align: left;
+        margin-left:30px;
     }
-    .hero-text p{
-        margin:10px 15px 10px 20px;
-        font-size: 30px;
-        font-weight: 200;
-        word-spacing: 70%;
-    }
-    .teachme {
-        margin: 20px 430px 40px 430px;
+    span{
+        color:#162844;
+        font-size:24px;
+        text-align: left;
+        word-spacing: 5px;
+        letter-spacing: 15%;
+        line-height: 110%;
+        font-weight:300;
+        margin-bottom:20px;
+
+        
     }
 }
 @media only screen and (min-width: 1200px){
@@ -870,7 +1098,7 @@ li > menu > li.hover > menu > li{
         color:white;
         margin-left:60px;
         font-size:45px;
-        font-weight:600;
+        font-weight:700;
         transition: all .55s ease;
     }
     .nav-menu a:visited{
@@ -880,32 +1108,18 @@ li > menu > li.hover > menu > li{
     .nav-menu a:hover{
         color:grey;
     }
-    .wrapper{
-        display:flex;
-        align-items:center;
-        width:100%;
-        min-height:75vh;
-        background-color:white;
-        position:relative;
-        display:grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-    }
     .img-col{
-        margin-left:0px;
+        margin-left:10px;
         z-index:1;
-        background-color: red;
     }
     .hero-img{
         border-radius:15%;
         width:30vw;
-        height:40vh;
         z-index:1;
     }
     .hero-text{
-        width:100%;
-        
-        background-color:yellow;
+        width:95%;
+        margin-left:30px;
         position:relative;
         display:grid;
     }
@@ -922,25 +1136,28 @@ li > menu > li.hover > menu > li{
         text-transform: uppercase;
         transition: all .55s ease;
         padding: 10px;
-        margin: auto;
+        margin-right:auto;
     }
     .hero-text a:hover {
         background-color: #2E5592;
         transform: translateY(6px);
     }
     .hero-text h4 {
-        font-size: 60px;
+        font-size: 45px;
         font-weight: bold;
         text-align: left;
-        background-color: violet;
+        margin-left:30px;
     }
-    .hero-text p{
+    span{
         color:#162844;
-    font-size:30px;
-    text-align: left;
-    word-spacing: 5px;
-    letter-spacing: 15%;
-    line-height: 105%;
-    font-weight:300;
+        font-size:30px;
+        text-align: left;
+        word-spacing: 5px;
+        letter-spacing: 15%;
+        line-height: 110%;
+        font-weight:300;
+        margin-bottom:20px;
+
+        
     }
 }
