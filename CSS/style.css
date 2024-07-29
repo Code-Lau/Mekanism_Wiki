@@ -625,6 +625,11 @@ table, th, td {
         font-weight:300;
         margin-bottom:20px;
     }
+    .container-w{
+        width:100%;
+        height:auto;
+        margin
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px){
     .hamburger{
