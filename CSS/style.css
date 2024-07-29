@@ -456,6 +456,31 @@ table, th, td {
         background-size: 100%;
         transition: 0s;
     }
+    h1 {
+        font-size:35px;
+        font-weight:bold;
+        text-align: center;
+    }
+    .item-1{
+        margin-left:20vw;
+        width:;
+        height:auto;
+    }
+    .item-2{
+        margin-left:20vw;
+        width:;
+        height:auto;
+    }
+    .item-3{
+        margin-left:20vw;
+        width:;
+        height:auto;
+    }
+    .item-4{
+        margin-left:20vw;
+        width:;
+        height:auto;
+    }
     .hero-text h4 {
         font-size: 35px;
         font-weight: bold;
@@ -470,6 +495,40 @@ table, th, td {
         line-height: 110%;
         font-weight:300;
         margin-bottom:20px;
+    }
+    footer {
+            display:flex;
+            position:relative;
+            justify-content:center;
+            width:100%;
+            padding: 20px 50px;
+            background: #162844;
+    }
+    footer .socialicons {
+        position: relative;
+        display:flex;
+        margin: 10px 0;
+        color:white;
+    }
+    
+    footer .socialicons li {
+        list-style: none;   
+    }
+    
+    footer .socialicons li a {
+        font-size: 45px;
+        color: white;
+        margin: 0 20px;
+        display: inline-block;
+        transition: 0.5s;
+    }
+    video {
+        margin-top:3vh;
+        margin-left:5vw; 
+    }
+    .containerabout {
+        margin-left:10vw;
+        margin-right:10vw;
     }
 }
 @media only screen and (min-width:480px) and (max-width:767px){
@@ -1171,7 +1230,7 @@ table, th, td {
     ul li ul.dropdown {
         width:100%;/* auto */
         position:absolute;
-        display: none;
+        display: none;Z
         z-index:1015;
     }
     
