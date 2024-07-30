@@ -279,51 +279,6 @@ figcaption {
     transform: translateY(-3px);
 } */
 
-
-
-.container-w {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    margin-right: 0px;
-    margin-left:0px;
-    background-color: white;
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    z-index:1;
-}
-.container-b {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin: 0px;
-    background-color: powderblue;
-    position: relative;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    z-index:1;
-}
-.container-b::after,
-.container-b::before {
-    position: absolute;
-    content: '';
-    width: 150px;
-    height: 150px;
-    background: powderblue;
-    bottom: -27px;
-    z-index: 0;
-}
-.container-b::before {
-    right:50%;
-    transform: skew(0, 20deg);
-}
-.container-b::after {
-    left: 50%;
-    transform: skew(0, -20deg);
-}
 .fueltable  {
     width: 150%;
     margin: 90px;
@@ -463,22 +418,22 @@ table, th, td {
     }
     .item-1{
         margin-left:20vw;
-        width:;
+        width:20px;
         height:auto;
     }
     .item-2{
         margin-left:20vw;
-        width:;
+        width:20px;
         height:auto;
     }
     .item-3{
         margin-left:20vw;
-        width:;
+        width:20px;
         height:auto;
     }
     .item-4{
         margin-left:20vw;
-        width:;
+        width:20px;
         height:auto;
     }
     .hero-text h4 {
@@ -628,7 +583,6 @@ table, th, td {
     .container-w{
         width:100%;
         height:auto;
-        margin
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px){
@@ -881,7 +835,7 @@ table, th, td {
         text-decoration: none;
     }
     .nav-menu a:hover{
-        color:grey;
+        color:powderblue;
     }
     .container {
         display:flex;
@@ -1007,11 +961,7 @@ table, th, td {
         text-decoration: none;
     }
     .nav-menu a:hover{
-        color:grey;
-    }
-    .img-col{
-        margin-left:10px;
-        z-index:1;
+        color:powderblue;
     }
     .hero-img{
         border-radius:15%;
@@ -1147,7 +1097,7 @@ table, th, td {
         width:30vw;
         height:45vh;
       }
-      .arrow {
+    .arrow {
           position:fixed;
           right:20px;
           bottom:1.5vh;
@@ -1160,11 +1110,11 @@ table, th, td {
           background-image: url(https://i.ibb.co/4mpCXNx/minecraft-pickaxe.png);
           transition: 1s;
         }   
-        h5 {
+    h5 {
             font-size: 35px;
             color:#162844;
         }
-        .fueltable  {
+    .fueltable  {
             width: 150%;
             margin: 90px;
             margin-left: 150px;
@@ -1178,14 +1128,14 @@ table, th, td {
             z-index:1;
             border-radius: 1%;
         }
-        table, th, td {
+    table, th, td {
             border: 1px solid #162844;
             
         }
-        th, tr {
+    th, tr {
             color:#162844;
         }
-        .nextsection {
+    .nextsection {
         display: block;
         font-size: 24px;
         font-weight: 700;
@@ -1200,7 +1150,58 @@ table, th, td {
         margin-left:auto;
         text-transform: uppercase;
         transition: all .55s ease;
+    } 
+    .nextsection:hover{
+        background-color: #2E5592;
+        transform: translateY(6px);
     }
+    .content {
+        width:100%;
+    }
+    .container-w {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-right: 0px;
+        margin-left:0px;
+        background-color: white;
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        z-index:1;
+    }
+    .container-b {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin: 0px;
+        background-color: powderblue;
+        position: relative;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        z-index:1;
+    }
+    .container-b::after,
+    .container-b::before {
+        position: absolute;
+        content: '';
+        width: 150px;
+        height: 150px;
+        background: powderblue;
+        bottom: -27px;
+        z-index: 0;
+    }
+    .container-b::before {
+        right:50%;
+        transform: skew(0, 20deg);
+    }
+    .container-b::after {
+        left: 50%;
+        transform: skew(0, -20deg);
+    }
+    /*
     .dropdown {
         display:none;
     }
@@ -1233,7 +1234,7 @@ table, th, td {
         margin: 2px 0px;
     }
     ul li ul.dropdown {
-        width:100%;/* auto */
+        width:100%;/* auto 
         position:absolute;
         display: none;Z
         z-index:1015;
@@ -1241,8 +1242,8 @@ table, th, td {
     
     ul li:hover ul.dropdown{
         display: block;
-    }
-/*
+    } 
+
     nav li > menu {
         position: absolute;
         pointer-events:none;
