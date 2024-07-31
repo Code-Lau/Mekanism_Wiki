@@ -44,12 +44,12 @@ img {
 
 /* Logo & Navbar stuffs Code Referenced from  https://www.youtube.com/watch?v=IXucQAEkIMo&t=358s*/
 .logo {
-    font-size: 60px;
+    font-size: 3em;
     font-weight: 700;
-    line-height: 110%;
     color: white;
     cursor: pointer;
 }
+
 
 footer a, .nav-menu a, .btn {
     color: white;
@@ -139,14 +139,17 @@ a:not(footer a):not(header a):not(.btn) {
     position: absolute;
     color: white;
     background-color: #162844;
-    min-width: 300px;
+    min-width: 250px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 100;
-    right: 0;
+    right: 0; 
+    font-size: 10px;
+    border-radius: 2em;
 }
 
 .dropdown-content a {
     padding: 0.25em;
+   
     display: block;
     text-align: right;
 }
@@ -155,24 +158,28 @@ a:not(footer a):not(header a):not(.btn) {
     display: block;
 }
 
-
 figure {
     padding: 1em;
     width: 100%;
 }
 
 .hero-img {
-    height: 40vh;
     width: 100%;
 }
 
 .hero-text {
     width: 100%;
+    color: #162844;
+    font-size: 24px;
+    text-align: center;
+    word-spacing: 2px;
+    line-height: 110%;
+    font-weight: 300;
 }
 
 .hero-text p {
     text-align: center;
-    margin: 2em auto;
+    margin: 1em 0 1.5em 0;
 }
 
 .hero-text p a {
@@ -180,10 +187,37 @@ figure {
     text-decoration: underline;
 }
 
+.hero-text h2 {
+
+}
+
 main {
     margin: 1em;
 }
 
+.btn {
+    background-color: #162844;
+    border: 1px solid transparent;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 1em;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    transition: all .5s ease;
+    padding: 10px;
+    margin: 1em;
+}
+/* Ripple Effect referenced here https://codepen.io/finnhvman/post/pure-css-ripple-with-minimal-effort */
+.btn:hover {
+    background: #2E5592 radial-gradient(circle, transparent 1%, #162844 1%) center/15000%;
+    transform: translateY(6px);
+}
+
+.btn:active {
+    background-color: #2E5592;
+    background-size: 100%;
+    transition: 0s;
+}
 footer {
     display: flex;
     flex-direction: column;
@@ -205,8 +239,13 @@ footer ul li {
     margin: 0.5em;
 }
 
+/* About */
+video {
+    width: 100%;
+    height: 45vh;
+}
 
-/* Guide Page */
+/* Guide */
 .arrow {
     position: fixed;
     right: 20px;
@@ -224,6 +263,7 @@ section.container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height:60vh;
 }
 
 section.type-a {
@@ -237,21 +277,6 @@ figcaption {
     color: #162844;
     text-align: center;
 }
-
-.hero-text {
-    color: #162844;
-    font-size: 24px;
-    text-align: center;
-    word-spacing: 2px;
-    line-height: 110%;
-    font-weight: 300;
-}
-
-video {
-    width: 100%;
-    height: 45vh;
-}
-
 .fueltable {
     background-color: #162844;
     border: 1px solid #162844;
@@ -309,37 +334,6 @@ thead {
     background-color: thistle;
 }
 
-.btn {
-    background-color: #162844;
-    border: 1px solid transparent;
-    font-size: 24px;
-    font-weight: 700;
-    border-radius: 1em;
-    text-transform: uppercase;
-    text-decoration: none !important;
-    transition: all .5s ease;
-    padding: 10px;
-    margin: 1em;
-}
-
-/* Ripple Effect referenced here https://codepen.io/finnhvman/post/pure-css-ripple-with-minimal-effort */
-.btn:hover {
-    background: #2E5592 radial-gradient(circle, transparent 1%, #162844 1%) center/15000%;
-    transform: translateY(6px);
-}
-
-.btn:active {
-    background-color: #2E5592;
-    background-size: 100%;
-    transition: 0s;
-}
-
-h1 {
-    font-size: 35px;
-    font-weight: bold;
-    text-align: center;
-}
-
 main#main-guide {
     margin: 0;
 }
@@ -381,7 +375,7 @@ main#main-guide section {
 #steel-ingots ul li {
     margin-top: 1em;
 }
-
+/* Downloads */
 #download-container {
     margin-top: 5em;
     display: flex;
@@ -394,17 +388,20 @@ main#main-guide section {
     object-fit: contain;
 }
 
-/* media queries */
+/* Media Queries */
 @media only screen and (min-width: 980px) {
     .hamburger,
     .bar {
         display: none;
     }
-
+    #top {
+        
+    }
     header {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        padding: 1em 0 2.5em 1em;
         background-image: url("https://i.ibb.co/HGLsDxR/mainimgae.png");
         background-position: center left;
         background-color: #162844;
@@ -420,7 +417,7 @@ main#main-guide section {
         width: 100%;
         height: 180px;
         background: white;
-        clip-path: polygon(400% 20%, 0 100%, 100% 100%);
+        clip-path: polygon(400% 30%, 0 100%, 100% 100%);
     }
 
     .nav-menu {
@@ -435,7 +432,7 @@ main#main-guide section {
     }
 
     .nav-menu a {
-        font-size: 2em;
+        font-size: 2.6em;
         font-weight: 700;
         transition: all .55s ease;
     }
@@ -454,7 +451,11 @@ main#main-guide section {
     }
 
     .hero-img {
-        height: 60vh;
+        border-radius: 1em;
+    }
+
+    .guideimg {
+        border-radius: 1em;
     }
 
     video {
@@ -471,7 +472,6 @@ main#main-guide section {
 
 }
 
-/* PC Media Queries */
 @media only screen and (min-width: 1200px) {
     footer {
         flex-direction: row;
