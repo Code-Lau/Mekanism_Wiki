@@ -1,0 +1,500 @@
+/* All Pages */
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Condensed', 'Trebuchet MS', 'sans-serif';
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    /* https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2 */
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+}
+
+body > footer {
+    position: sticky;
+    top: 100vh;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1em;
+    background-image: url("https://i.ibb.co/HGLsDxR/mainimgae.png");
+    background-color: #162844;
+    background-position: center left;
+    background-size: 100%;
+    position: relative;
+}
+
+img {
+    object-fit: contain;
+    border-radius: 1em;
+}
+
+/* Logo & Navbar stuffs Code Referenced from  https://www.youtube.com/watch?v=IXucQAEkIMo&t=358s*/
+.logo {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 110%;
+    color: white;
+    cursor: pointer;
+}
+
+footer a, .nav-menu a, .btn {
+    color: white;
+}
+
+a:not(footer a):not(header a):not(.btn) {
+    color: #162844;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0px;
+    top: -400px;
+    background-color: #162844;
+    width: 100%;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.nav-menu.active {
+    top: 0;
+}
+
+.nav-item {
+    margin: 10px auto;
+}
+
+.nav-menu a {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 110%;
+    transition: all .55s ease;
+}
+
+
+/* Hamburger (also referenced from above link)*/
+.hamburger {
+    display: block;
+    z-index: 12;
+    cursor: pointer;
+    position: relative;
+    padding: 17px 0px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 5px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+
+/* dropdown menu */
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: white;
+    background-color: #162844;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    right: 0;
+}
+
+.dropdown-content a {
+    padding: 0.25em;
+    display: block;
+    text-align: right;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+figure {
+    padding: 1em;
+    width: 100%;
+}
+
+.hero-img {
+    height: 40vh;
+    width: 100%;
+}
+
+.hero-text {
+    width: 100%;
+}
+
+.hero-text p {
+    text-align: center;
+    margin: 2em auto;
+}
+
+.hero-text p a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main {
+    margin: 1em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1em;
+    background: #162844;
+    position: relative;
+    font-size: 1.5em;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+}
+
+footer ul li {
+    margin: 0.5em;
+}
+
+
+/* Guide Page */
+.arrow {
+    position: fixed;
+    right: 20px;
+    bottom: 3vh;
+    z-index: 500;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+section.container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.type-a {
+    padding: 0 19%;
+}
+
+figcaption {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 110%;
+    color: #162844;
+    text-align: center;
+}
+
+.hero-text {
+    color: #162844;
+    font-size: 24px;
+    text-align: center;
+    word-spacing: 2px;
+    line-height: 110%;
+    font-weight: 300;
+}
+
+video {
+    width: 100%;
+    height: 45vh;
+}
+
+.fueltable {
+    background-color: #162844;
+    border: 1px solid #162844;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 110%;
+    border-radius: 1%;
+}
+
+table,
+th,
+td {
+    border: 1px solid #162844;
+}
+
+th,
+tr {
+    color: #162844;
+}
+
+thead {
+    background-color: white;
+}
+
+.carbon {
+    background-color: gray;
+}
+
+.redstone {
+    background-color: tomato;
+}
+
+.diamond {
+    background-color: lightskyblue
+}
+
+.gold {
+    background-color: gold;
+}
+
+.biomass {
+    background-color: green;
+}
+
+.tin {
+    background-color: cadetblue;
+}
+
+.refinedobsidian {
+    background-color: mediumpurple;
+}
+
+.any {
+    background-color: thistle;
+}
+
+.btn {
+    background-color: #162844;
+    border: 1px solid transparent;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 1em;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    transition: all .5s ease;
+    padding: 10px;
+    margin: 1em;
+}
+
+/* Ripple Effect referenced here https://codepen.io/finnhvman/post/pure-css-ripple-with-minimal-effort */
+.btn:hover {
+    background: #2E5592 radial-gradient(circle, transparent 1%, #162844 1%) center/15000%;
+    transform: translateY(6px);
+}
+
+.btn:active {
+    background-color: #2E5592;
+    background-size: 100%;
+    transition: 0s;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+main#main-guide {
+    margin: 0;
+}
+
+main#main-guide section {
+    padding: 3em 2em;
+}
+
+.container:nth-child(even) {
+    background-color: powderblue;
+    position: relative;
+}
+
+.container:nth-child(even)::after,
+.container:nth-child(even)::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 50px;
+    background: powderblue;
+    bottom: -20px;
+    z-index: -1;
+}
+
+.container:nth-child(even)::before {
+    right: 50%;
+    transform: skew(0, 20deg);
+}
+
+.container:nth-child(even)::after {
+    left: 50%;
+    transform: skew(0, -20deg);
+}
+
+#steel-ingots ul li:first-child {
+    font-weight: bold;
+}
+
+#steel-ingots ul li {
+    margin-top: 1em;
+}
+
+#download-container {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#download-container img {
+    width: 50vw;
+    object-fit: contain;
+}
+
+/* media queries */
+@media only screen and (min-width: 980px) {
+    .hamburger,
+    .bar {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        background-image: url("https://i.ibb.co/HGLsDxR/mainimgae.png");
+        background-position: center left;
+        background-color: #162844;
+        background-size: 100%;
+    }
+
+    header::before {
+        display: block;
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 180px;
+        background: white;
+        clip-path: polygon(400% 20%, 0 100%, 100% 100%);
+    }
+
+    .nav-menu {
+        flex-direction: row;
+        position: unset;
+        background-color: transparent;
+        justify-content: end;
+    }
+
+    .nav-item {
+        margin: 1em;
+    }
+
+    .nav-menu a {
+        font-size: 2em;
+        font-weight: 700;
+        transition: all .55s ease;
+    }
+
+    .nav-menu a:hover {
+        color: powderblue;
+    }
+
+    section.container:not(#fuel-table) {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    section.container#fuel-table {
+        padding-top: 5em;
+    }
+
+    .hero-img {
+        height: 60vh;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    #download-container {
+        flex-direction: row;
+    }
+
+    #download-container img {
+        width: 20vw;
+    }
+
+}
+
+/* PC Media Queries */
+@media only screen and (min-width: 1200px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 111px;
+    }
+
+    footer::before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: -1px;
+        left: 0;
+        width: 100%;
+        height: 111px;
+        background: white;
+        clip-path: polygon(0 0, 100% 0, -400% 150%, 0 0);
+    }
+
+    .container:nth-child(even)::after,
+    .container:nth-child(even)::before {
+        width: 150px;
+        height: 150px;
+        bottom: -27px;
+    }
+}
