@@ -20,8 +20,8 @@ html, body {
 }
 
 body > footer {
-    position: sticky;
-    top: 100vh;
+    position:relative;
+    top: 100vh; /* This is causing the gap */
 }
 
 header {
@@ -29,7 +29,7 @@ header {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 1em;
+    padding:10px 20px;;
     background-image: url("https://i.ibb.co/HGLsDxR/mainimgae.png");
     background-color: #162844;
     background-position: center left;
@@ -40,55 +40,16 @@ header {
 img {
     object-fit: contain;
     border-radius: 1em;
+    width:100%;
 }
 
-/* Logo & Navbar stuffs Code Referenced from  https://www.youtube.com/watch?v=IXucQAEkIMo&t=358s*/
+/*https://www.youtube.com/watch?v=IXucQAEkIMo&t=358s*/
 .logo {
     font-size: 3em;
     font-weight: 700;
     color: white;
     cursor: pointer;
 }
-
-
-footer a, .nav-menu a, .btn {
-    color: white;
-}
-
-a:not(footer a):not(header a):not(.btn) {
-    color: #162844;
-}
-
-.nav-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    left: 0px;
-    top: -400px;
-    background-color: #162844;
-    width: 100%;
-    text-align: left;
-    transition: all 0.3s ease-in-out;
-    z-index: 10;
-}
-
-.nav-menu.active {
-    top: 0;
-}
-
-.nav-item {
-    margin: 10px auto;
-}
-
-.nav-menu a {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 110%;
-    transition: all .55s ease;
-}
-
 
 /* Hamburger (also referenced from above link)*/
 .hamburger {
@@ -109,7 +70,112 @@ a:not(footer a):not(header a):not(.btn) {
     background-color: white;
 }
 
+.nav-menu {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 0px;
+    z-index: 10;
+    background-color: #162844;
+}
 
+.nav-item {
+    margin: 10px auto;
+}
+
+.nav-menu a {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 110%;
+    transition: all .55s ease;
+}
+
+.submenu {
+    position: static;
+    width: 100%;
+}
+
+.submenu a {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.nav-menu ul {
+    flex-direction: column;
+}
+
+.nav-menu ul li {
+    width: 100%;
+}
+
+.nav-menu ul li ul {
+    position: relative;
+    width: 100%;
+}
+header ul {
+    position: relative;
+}
+
+header ul li {
+    list-style: none;
+    position: relative;
+    float:left;
+}
+header ul li a {
+    padding:5px;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+}
+header ul li ul {
+    position: absolute;
+    left:0;
+    width:200px;
+    background-color: #162844;
+    display:none;
+}
+header ul li:hover > ul {
+    display:block;
+}
+header ul li ul li {
+    position: relative;
+    width:100%;
+    /* box styling */
+}
+header ul li ul li ul {
+    top:0;
+    left:200px;
+}
+header nav {
+    position: absolute;
+    width:100%;
+    left:0;
+    display:none;
+}
+header.active nav{
+    display: block;
+    top:0;
+}
+
+header nav ul li {
+    width: 100%;
+}
+header nav ul li ul {
+    position:relative;   
+    width:100%;
+    left:0;
+}
+header ul li ul li ul {
+    top:0;
+    left:0;
+}
+header nav ul li ul li:hover {
+    background-color: #264577;
+}
+header nav ul li ul li:hover ul li {
+    background-color: #193058;
+}
 .hamburger.active .bar:nth-child(2) {
     opacity: 0;
 }
@@ -121,41 +187,15 @@ a:not(footer a):not(header a):not(.btn) {
 .hamburger.active .bar:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
 }
-
-
-/* dropdown menu */
-/* https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
-.dropbtn {
-    cursor: pointer;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
+                                                                  
+footer a,
+.nav-menu a,
+.btn {
     color: white;
-    background-color: #162844;
-    min-width: 250px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 100;
-    right: 0; 
-    font-size: 10px;
-    border-radius: 2em;
 }
 
-.dropdown-content a {
-    padding: 0.25em;
-   
-    display: block;
-    text-align: right;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+a:not(footer a):not(header a):not(.btn) {
+    color: #162844;
 }
 
 figure {
@@ -163,14 +203,10 @@ figure {
     width: 100%;
 }
 
-.hero-img {
-    width: 100%;
-}
-
 .hero-text {
     width: 100%;
     color: #162844;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     word-spacing: 2px;
     line-height: 110%;
@@ -180,15 +216,12 @@ figure {
 .hero-text p {
     text-align: center;
     margin: 1em 0 1.5em 0;
+    
 }
 
 .hero-text p a {
     font-weight: bold;
-    text-decoration: underline;
-}
-
-.hero-text h2 {
-
+    text-decoration: none;
 }
 
 main {
@@ -199,13 +232,22 @@ main {
     background-color: #162844;
     border: 1px solid transparent;
     font-size: 24px;
+    font-weight: bold;
+    border-radius: 1em;
+    text-transform: uppercase;
+    transition: all .5s ease;
+    padding: 10px;
+}
+h2.btn {
+    background-color:#162844;
+    border: 1px solid transparent;
+    font-size: 24px;
     font-weight: 700;
     border-radius: 1em;
     text-transform: uppercase;
-    text-decoration: none !important;
+    text-decoration: none;
     transition: all .5s ease;
     padding: 10px;
-    margin: 1em;
 }
 /* Ripple Effect referenced here https://codepen.io/finnhvman/post/pure-css-ripple-with-minimal-effort */
 .btn:hover {
@@ -220,14 +262,12 @@ main {
 }
 footer {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     padding: 1em;
     background: #162844;
-    position: relative;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 footer ul {
@@ -246,7 +286,7 @@ video {
 }
 
 /* Guide */
-.arrow {
+.pickaxe {
     position: fixed;
     right: 20px;
     bottom: 3vh;
@@ -263,7 +303,7 @@ section.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height:60vh;
+    height:100%;
 }
 
 section.type-a {
@@ -272,7 +312,7 @@ section.type-a {
 
 figcaption {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 110%;
     color: #162844;
     text-align: center;
@@ -394,9 +434,6 @@ main#main-guide section {
     .bar {
         display: none;
     }
-    #top {
-        
-    }
     header {
         display: flex;
         align-items: flex-start;
@@ -424,7 +461,6 @@ main#main-guide section {
         flex-direction: row;
         position: unset;
         background-color: transparent;
-        justify-content: end;
     }
 
     .nav-item {
@@ -441,47 +477,116 @@ main#main-guide section {
         color: powderblue;
     }
 
+    header ul li a {
+        color: white;
+        font-size:20px;
+        padding:15px 25px;
+        text-decoration: none;
+    }
+    header ul li ul {
+        position: absolute;
+        left:0;
+        width:200px;
+        background-color: #162844;
+        display:none;
+    }
+    header ul li:hover > ul {
+        display:block;
+    }
+    header ul li ul li {
+        position: relative;
+        width:100%;
+    }
+    header ul li ul li ul {
+        top:0;
+        left:200px;
+    }
+    header nav {
+        position: absolute;
+        width:100%;
+        left:0;
+        display:none;
+    }
+    header.active nav{
+        display: block;
+        top:0;
+    }
+    
+    header nav ul li {
+        width: 100%;
+    }
+    header nav ul li ul {
+        position:relative;   
+        width:100%;
+        left:0;
+    }
+    header ul li ul li ul {
+        top:0;
+        left:0;
+    }
     section.container:not(#fuel-table) {
         flex-direction: row;
         justify-content: space-evenly;
     }
-
+    
     section.container#fuel-table {
         padding-top: 5em;
     }
-
+    
     .hero-img {
         border-radius: 1em;
     }
-
     .guideimg {
         border-radius: 1em;
     }
-
+    
     video {
         width: 100%;
     }
-
+    
     #download-container {
         flex-direction: row;
     }
-
+    
     #download-container img {
         width: 20vw;
     }
-
+    
+    .hero-text {
+        margin: 1em 0 1.5em 0;
+    }
+    .hero-text h2 {
+        text-decoration: none;
+    }
+    figure {
+        padding: 2em 5em 2em 5em;
+    }
+    figcaption {
+        font-size:24px;
+    }
+    main {
+        margin: 1em 1em 10em 1em;
+    }
+    .footer {
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between;
+        font-size:2em;
+        margin-top:1em;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
     footer {
-        flex-direction: row;
+        flex-direction: row;/* remove? */
         justify-content: space-around;
         height: 111px;
     }
-
+    
     footer::before {
         display: block;
-        position: absolute;
+        position: relative;
         content: '';
         top: -1px;
         left: 0;
