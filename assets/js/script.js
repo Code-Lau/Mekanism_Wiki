@@ -11,7 +11,7 @@ sr.reveal('.hero-img',{delay:300, origin:'top'});
 sr.reveal('.navlist-2',{delay:400, origin:'left'});
 
 // Arrow Jump back to Top
-const mybutton = document.getElementById("arrow");
+const mybutton = document.getElementById("pickaxe");
 
 window.onscroll = function() {scrollFunction()};
 
