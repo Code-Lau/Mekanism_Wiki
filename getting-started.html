@@ -21,52 +21,49 @@
 <body id="top">
     <header>
         <a href="index.html" class="logo" alt="Mekanism Logo">MEKANISM</a>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
         <nav>
             <ul class="nav-menu">
-                    <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
-                    <li class="nav-item"><a href="getting-started.html" class="nav-link">GUIDE
-                        <span class="arrow">&#x25BC;</span>
-                    </a>
+                <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+                <input id="check01" type="checkbox" name="menu">
+                <label for="check01" class="nav-item"><a class="nav-link">GUIDE<span class="arrow">&#x25BC;</span></a></label>
+                <ul class="submenu">
+                    <li><input id="check02" type="checkbox" name="menu">
+                        <label for="check02">#1 Getting Started<span class="arrow">&#x25BC;</span></label>
                         <ul class="submenu">
-                            <li><a href="getting-started.html">#1 Getting Started
-                                <span class="arrow">&#x25BC;</span>
-                            </a>
-                                <ul>
-                                    <li><a href="#the-heat-generator">The Heat Generator</a></li>
-                                    <li><a href="#the-metallurgic-infuser">The Metallurgic Infuser</a></li>
-                                    <li><a href="#fuel-table">Fuel Table</a></li>
-                                    <li><a href="#steel-ingots">Steel Ingots</a></li>
-                                    <li><a href="#fuel-efficiency">Fuel Efficiency</a></li>
-                                    <li><a href="#steel-frames">Steel Frames</a></li>
-                                    <li><a href="#the-enrichment-chamber">The Enrichment Chamber</a></li>
-                                    <li><a href="#power">Power</a></li>
-                                    <li><a href="#energy-per-tick">Energy Per Tick</a></li>
-                                    <li><a href="#the-solar-gen">The Solar Gen</a></li>
-                                    <li><a href="#the-advanced-solar-gen">Advanced Solar Gen</a></li>
-                                    <li><a href="#the-wind-generator">The Wind Generator</a></li>
-                                    <li><a href="#the-bio-generator">The Bio Generator</a></li>
-                                    <li><a href="#the-crusher">The Crusher</a></li>
-                                </ul> 
-                            </li>
-                            <li><a href="ore-processing.html">#2 Ore Processing
-                                <span class="arrow">&#x25BC;</span>
-                            </a>
-                                <ul>
-                                    <li><a href="#minecraft-fortune">Minecraft's Fortune</a></li>
-                                    <li><a href="#flowchart">Flowchart</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="#the-heat-generator">The Heat Generator</a></li>
+                            <li><a href="#the-metallurgic-infuser">The Metallurgic Infuser</a></li>
+                            <li><a href="#fuel-table">Fuel Table</a></li>
+                            <li><a href="#steel-ingots">Steel Ingots</a></li>
+                            <li><a href="#fuel-efficiency">Fuel Efficiency</a></li>
+                            <li><a href="#steel-frames">Steel Frames</a></li>
+                            <li><a href="#the-enrichment-chamber">The Enrichment Chamber</a></li>
+                            <li><a href="#power">Power</a></li>
+                            <li><a href="#energy-per-tick">Energy Per Tick</a></li>
+                            <li><a href="#the-solar-gen">The Solar Gen</a></li>
+                            <li><a href="#the-advanced-solar-gen">Advanced Solar Gen</a></li>
+                            <li><a href="#the-wind-generator">The Wind Generator</a></li>
+                            <li><a href="#the-bio-generator">The Bio Generator</a></li>
+                            <li><a href="#the-crusher">The Crusher</a></li>
+                        </ul> 
+                    </li>
+                    <li><input id="check03" type="checkbox" name="menu">
+                        <label for="check03" class="nav-item">#2 Ore Processing<span class="arrow">&#x25BC;</span></label>
+                        <ul class="submenu">
+                            <li><a href="#minecraft-fortune">Minecraft's Fortune</a></li>
+                            <li><a href="#flowchart">Flowchart</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="download.html" class="nav-link">DOWNLOAD</a></li>
-            </ul>
-        </nav>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="download.html" class="nav-link">DOWNLOAD</a></li>
+        </ul>
+    </nav>
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
     </header>
 
     <a href="#top" class="pickaxe">
@@ -169,52 +166,41 @@
 
                 <p>
 
-                    The Heat Generator takes a fuel input, this can be any basic minecraft fuel type (wooden materials,
-
-                    coal, charcoal, lava, kelp blocks, blaze rods, bee nests and hives) as well as Mekanism’s own fuel
+                    The Heat Generator takes a fuel input, this can be any basic minecraft fuel type as well as Mekanism’s own fuel
 
                     types and converts it into Forge Energy (FE). FE is an energy type used by a lot of different mods,
 
                     so Mekanism adopted it for convenience.
 
-                    Redstone Flux (RF), Joules (J) and Energy Units (EU) are other types used by some popular mods. The
-
-                    fuel will convert to a set amount of energy that will be stored in the machine up to 64FE.
-
-                    In order for the Heat Generator to transfer its stored power, the machine or block you want
-
-                    to power must be in front of it, on the side with the green square outline.
+                    Redstone Flux (RF), Joules (J) and Energy Units (EU) are other types used by some popular mods.
 
                 </p>
 
             </div>
-
-            <figure>
-
-                <img style="border-radius:0;" src="/assets/images/HeatGenerator_UI.png" alt="A picture of the heat generator's UI"
-                    class="guide-img">
-
-                <figcaption>The Heat Generator UI</figcaption>
-
-            </figure>
-
         </section>
 
-        ​
-
-        ​
+        <section class="container">
+            <figure>
+                <img style="border-radius:0;" src="/assets/images/HeatGenerator_UI.png"
+                    alt="A picture of the heat generator's UI" class="guide-img" >
+                <figcaption>The Heat Generator UI</figcaption>
+            </figure>
+            <div class="hero-text">
+                <p>The fuel will convert to a set amount of energy that will be stored in the machine up to 64FE.
+                    In order for the Heat Generator to transfer its stored power, the machine or block you want
+                    to power must be in front of it, on the side with the green square outline.</p>
+            </div>
+        </section>
+    
 
         <section id="the-metallurgic-infuser" class="container">
 
-            <figure>
-
-                <img src="/assets/images/MetallurgicInfuser.png" alt="A picture of the metallurgic infuser"
-                    class="guide-img">
-
-                <figcaption>The Metallurgic Infuser</figcaption>
-
+            
+ <figure>
+                <img style="border-radius:0;" src="/assets/images/MetallurgicInf_Craft.png"
+                    alt="A picture of the crafting recipe for the metallurgic infuserI" class="guide-img" >
+                <figcaption>Crafting the Metallurgic Infuser</figcaption>
             </figure>
-
             <div class="hero-text">
 
                 <h2>THE METALLURGIC INFUSER</h2>
@@ -225,30 +211,31 @@
 
                     This takes a fuel input of a certain material, and combines that material with your second input.
 
-                    Here we have a Metallurgic Infuser in front of a fuelled Heat Generator.
+                    
+
+                </p>
+
+            </div>
+        </section>
+        <section class="container">
+           <figure>
+
+                <img src="/assets/images/MetallurgicInfuser.png" alt="A picture of the metallurgic infuser"
+                    class="guide-img">
+
+                <figcaption>The Metallurgic Infuser</figcaption>
+
+            </figure>
+            <div class="hero-text">
+                <p>Here we have a Metallurgic Infuser in front of a fuelled Heat Generator.
 
                     The power will automatically transfer to the Metallurgic Infuser, filling
 
                     up the green bar on the right in the UI. This machine can take a variety of materials which
 
-                    includes:
-
-                </p>
-
+                    includes:</p>
             </div>
-
-            <figure>
-
-                <img style="border-radius:0;" src="/assets/images/MetallurgicInf_Craft.png"
-                    alt="A picture of the crafting recipe for the metallurgic infuser" class="guide-img">
-
-                <figcaption>Crafting the Metallurgic Infuser</figcaption>
-
-            </figure>
-
         </section>
-
-        ​
 
         <section id="fuel-table" class="container">
 
@@ -479,15 +466,12 @@
         ​
 
         <section class="container">
-
             <figure>
-
-                <img style="border-radius:0;" src="/assets/images/MetallurgicInfuser_UI.png"
-                    alt="A picture of the metallurgic infuser's UI" class="guide-img">
-
-                <figcaption>The Metallurgic Infuser's UI</figcaption>
-
+                <img style="border-radius:0;" src="/assets/images/MetallurgicInfuser_UI_Carbon.png"
+                    alt="A picture of the player hovering over the fuel gauge in the Metallurgic Infuser's UI" class="guide-img" >
+                <figcaption>Hovering over the fuel gauge</figcaption>
             </figure>
+            
 
             <div class="hero-text">
 
@@ -506,20 +490,7 @@
                 </p>
 
             </div>
-
-            <figure>
-
-                <img style="border-radius:0;" src="/assets/images/MetallurgicInfuser_UI_Carbon.png"
-                    alt="A picture of the player hovering over the fuel gauge in the Metallurgic Infuser's UI"
-                    class="guide-img">
-
-                <figcaption>Hovering over the fuel gauge</figcaption>
-
-            </figure>
-
         </section>
-
-        ​
 
         <section id="steel-ingots" class="container">
 
@@ -579,15 +550,11 @@
 
                 <h2>FUEL EFFICIENCY</h2>
 
-                <p>
+                <p style="font-weight:bold;">
 
-                    Don’t pile all of your carbon into the machine at once,
-
-                </p>
-
-                <p>
-
-                    we have a few more things to make, and
+                    Don’t pile all of your carbon into the machine at once!
+                </p><p>
+                    We have a few more things to make, and
 
                     a way to make our fuel more efficient. The second most important use of the Metallurgic Infuser
 
@@ -656,8 +623,24 @@
                 <h2>THE ENRICHMENT CHAMBER</h2>
 
                 <p>
+                     The enrichment chamber has two very important roles. The first is turning items into 
+                     their enriched counterparts for better fuel efficiency. The second is the ability to 
+                     multiply ores. By placing 3 of any raw ore in, you will get 4 dusts, which can be smelted 
+                     into 4 ingots. We will talk more about this in the next section, but for now it's important to 
+                     mention.
+                </p>
 
-                    The enrichment chamber only requires 1 input and FE. You can place links inside the red outlined
+            </div>
+</section>
+
+​<section class="container">
+    <figure>
+        <img style="border-radius:0;" src="/assets/images/EnrichmentChamber.png"
+            alt="A picture of the player making enriched coal" class="guide-img" >
+        <figcaption>Making enriched coal</figcaption>
+    </figure>
+    <div class="hero-text">
+        <p>The enrichment chamber only requires 1 input and FE. You can place links inside the red outlined
 
                     box to convert those links into their enriched version. In this example, we’re converting coal
 
@@ -665,32 +648,10 @@
 
                     This is a much more efficient use of fuel, and all enriched versions can be put into the
 
-                    Metallurgic Infuser fuel slot just like their normal counterparts. Another very important role of
-
-                    the enrichment chamber is the ability to multiply ores. By placing 3 of any raw ore in, you will get
-
-                    4
-
-                    dusts, which can be smelted into 4 ingots. We will talk more about this in the next section, but for
-
-                    now it's important to mention.
-
-                </p>
-
-            </div>
-
-            <figure>
-
-                <img style="border-radius:0;" src="/assets/images/EnrichmentChamber.png"
-                    alt="A picture of the player making enriched coal" class="guide-img">
-
-                <figcaption>Making enriched coal</figcaption>
-
-            </figure>
-
-        </section>
-
-        ​
+                    Metallurgic Infuser fuel slot just like their normal counterparts.</p>
+    </div>
+</section>
+          
 
         <section id="power" class="container">
 
@@ -741,16 +702,11 @@
             <div class="hero-text">
 
                 <h2>ENERGY PER TICK</h2>
-
                 <p>
-
                     When it comes to generators, unlike the Heat Generator which makes a
 
                     set amount of energy per burn time, these generators all run on the concept of
-
-                </p>
-
-                <p>“Energy per tick”.</p>
+                “Energy per tick”.
 
                 <p>
 
@@ -791,28 +747,29 @@
 
                 <p>
 
-                    Using osmium, glass panes, redstone and infused alloys we can make solar panels. Using 3 of these,
-
-                    an energy tablet, more infused alloys and osmium we can make a solar generator. The solar generator
-
-                    will produce energy on its own, but if you want more FE, you can make the advanced solar generator.
+                    Using osmium, glass panes, redstone and infused alloys we can make solar panels. These 
+                    are a key component in making the solar generator.
 
                 </p>
 
             </div>
 
-            <figure>
-
-                <img style="border-radius:0;" src="/assets/images/SolarGen.png"
-                    alt="A picture of the crafting recipe for the solar generator" class="guide-img">
-
-                <figcaption>Crafting the solar generator</figcaption>
-
-            </figure>
-
         </section>
 
-        ​
+        ​<section class="container">
+            <figure>
+                <img style="border-radius:0;" src="/assets/images/SolarGen.png"
+                    alt="A picture of the crafting recipe for the solar generator" class="guide-img" >
+                <figcaption>Crafting the solar generator</figcaption>
+            </figure>
+            <div class="hero-text">
+                <p>Using 3 of these,
+
+                    an energy tablet, more infused alloys and osmium we can make a solar generator. The solar generator
+
+                    will produce energy on its own, but if you want more FE, you can make the advanced solar generator.</p>
+            </div>
+        </section>
 
         <section id="the-advanced-solar-gen" class="container">
 
@@ -878,7 +835,26 @@
 
                     of
 
-                    being able to connect to them. It’s possible you may need a lot of cables to be able to reach a
+                    being able to connect to them. 
+                </p>
+
+            </div>
+
+            
+
+        </section>
+
+        ​<section class="container">
+            <figure>
+
+                <img style="border-radius:0;" src="/assets/images/BasicCable.png"
+                    alt="A picture of the crafting recipe for the basic cable" class="guide-img">
+
+                <figcaption>Crafting a basic cable</figcaption>
+
+            </figure>
+            <div class="hero-text">
+                <p>It’s possible you may need a lot of cables to be able to reach a
 
                     desired
 
@@ -890,25 +866,10 @@
 
                     and
 
-                    1 piece of redstone. This can be expensive very early in the game.
-
-                </p>
-
+                    1 piece of redstone. Crafting many of these can be expensive very early in the game.
+</p>
             </div>
-
-            <figure>
-
-                <img style="border-radius:0;" src="/assets/images/BasicCable.png"
-                    alt="A picture of the crafting recipe for the basic cable" class="guide-img">
-
-                <figcaption>Crafting a basic cable</figcaption>
-
-            </figure>
-
         </section>
-
-        ​
-
         <section id="the-bio-generator" class="container">
 
             <figure>
@@ -944,20 +905,17 @@
 
                     crusher, which then feeds the biofuel into the bio generator. It outputs 500FE at a rate of 1FE/t.
 
-                    The
-
-                    bio generator
-
-                    is made using 2 iron ingots, 2 infused alloys, 2 biofuel and a basic circuit. This will require the
-
-                    crusher being
-
-                    made first, which is a steel frame, 2 buckets of lava, 2 basic circuits and 4 redstone.
+                    
 
                 </p>
 
             </div>
 
+            
+
+        </section>
+
+        ​<section class="container">
             <figure>
 
                 <img style="border-radius:0;" src="/assets/images/Crusher.png" alt="A picture of the crafting recipe for the crusher"
@@ -966,10 +924,18 @@
                 <figcaption>Crafting the crusher</figcaption>
 
             </figure>
+            <div class="hero-text">
+                <p>The
 
+                    bio generator
+
+                    is made using 2 iron ingots, 2 infused alloys, 2 biofuel and a basic circuit. This will require the
+
+                    crusher being
+
+                    made first, which is a steel frame, 2 buckets of lava, 2 basic circuits and 4 redstone.</p>
+            </div>
         </section>
-
-        ​
 
         <section id="the-crusher" class="container">
 
