@@ -17,17 +17,49 @@
 <body>
     <header>
         <a href="index.html" class="logo" alt="Mekanism Logo">MEKANISM</a>
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
-            <li class="nav-item"><a href="getting-started.html" class="nav-link">GUIDE</a></li>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+                <input id="check01" type="checkbox" name="menu">
+                <label for="check01" class="dropdown">GUIDE<span class="arrow">&#x25BC;</span></label>
+                <ul class="submenu">
+                    <li><input id="check02" type="checkbox" name="menu">
+                        <label for="check02">#1 Getting Started<span class="arrow">&#x25BC;</span></label>
+                        <ul class="submenu">
+                            <li><a href="#the-heat-generator">The Heat Generator</a></li>
+                            <li><a href="#the-metallurgic-infuser">The Metallurgic Infuser</a></li>
+                            <li><a href="#fuel-table">Fuel Table</a></li>
+                            <li><a href="#steel-ingots">Steel Ingots</a></li>
+                            <li><a href="#fuel-efficiency">Fuel Efficiency</a></li>
+                            <li><a href="#steel-frames">Steel Frames</a></li>
+                            <li><a href="#the-enrichment-chamber">The Enrichment Chamber</a></li>
+                            <li><a href="#power">Power</a></li>
+                            <li><a href="#energy-per-tick">Energy Per Tick</a></li>
+                            <li><a href="#the-solar-gen">The Solar Gen</a></li>
+                            <li><a href="#the-advanced-solar-gen">Advanced Solar Gen</a></li>
+                            <li><a href="#the-wind-generator">The Wind Generator</a></li>
+                            <li><a href="#the-bio-generator">The Bio Generator</a></li>
+                            <li><a href="#the-crusher">The Crusher</a></li>
+                        </ul> 
+                    </li>
+                    <li><input id="check03" type="checkbox" name="menu">
+                        <label for="check03" class="nav-item">#2 Ore Processing<span class="arrow">&#x25BC;</span></label>
+                        <ul class="submenu">
+                            <li><a href="#minecraft-fortune">Minecraft's Fortune</a></li>
+                            <li><a href="#flowchart">Flowchart</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
             <li class="nav-item"><a href="download.html" class="nav-link">DOWNLOAD</a></li>
         </ul>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
+    </nav>
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
     </header>
 
     <main>
