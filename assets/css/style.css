@@ -20,7 +20,7 @@ html, body {
 }
 
 body > footer {
-    position:relative;
+    position:sticky;
     top: 100vh; /* This is causing the gap */
 }
 
@@ -70,12 +70,34 @@ img {
     background-color: white;
 }
 
+/*hide the inputs/checkmarks and submenu*/
+input, ul.submenu {
+    display: none;
+}
+  
+label {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color:white;
+    font-size:24px;
+    font-weight:700;
+    line-height:110%;
+}
+  
+  /*show the submenu when input is checked*/
+input:checked~ul.submenu {
+    display: block;
+}
 .nav-menu {
     display: flex;
     position: fixed;
     flex-direction: column;
     justify-content: space-between;
     left: 0px;
+    top:0px;
+    width:100%;
     z-index: 10;
     background-color: #162844;
 }
@@ -123,7 +145,6 @@ header ul li {
     float:left;
 }
 header ul li a {
-    padding:5px;
     text-decoration: none;
     display:flex;
     justify-content: center;
@@ -135,7 +156,7 @@ header ul li ul {
     background-color: #162844;
     display:none;
 }
-header ul li:hover > ul {
+header ul li:active > ul {
     display:block;
 }
 header ul li ul li {
@@ -394,7 +415,7 @@ main#main-guide section {
     width: 100px;
     height: 50px;
     background: powderblue;
-    bottom: -20px;
+    bottom: -18px;
     z-index: -1;
 }
 
@@ -456,21 +477,27 @@ main#main-guide section {
         background: white;
         clip-path: polygon(400% 30%, 0 100%, 100% 100%);
     }
-
     .nav-menu {
+        display:flex;
         flex-direction: row;
+        
+        margin-left:20vw;
+        align-items: right;
+        justify-content: right;
         position: unset;
         background-color: transparent;
+        padding:15px;
     }
-
-    .nav-item {
-        margin: 1em;
-    }
-
-    .nav-menu a {
+    .nav-link {
         font-size: 2.6em;
+        display:inline;
+    }
+  
+    .nav-menu a {
         font-weight: 700;
         transition: all .55s ease;
+        margin:0px;
+        padding:0px;
     }
 
     .nav-menu a:hover {
@@ -488,8 +515,8 @@ main#main-guide section {
         left:0;
         width:200px;
         background-color: #162844;
-        display:none;
-    }
+       
+    } 
     header ul li:hover > ul {
         display:block;
     }
@@ -505,7 +532,8 @@ main#main-guide section {
         position: absolute;
         width:100%;
         left:0;
-        display:none;
+        display:flex;
+        flex-direction: row;
     }
     header.active nav{
         display: block;
@@ -523,7 +551,7 @@ main#main-guide section {
     header ul li ul li ul {
         top:0;
         left:0;
-    }
+    } 
     section.container:not(#fuel-table) {
         flex-direction: row;
         justify-content: space-evenly;
@@ -533,12 +561,6 @@ main#main-guide section {
         padding-top: 5em;
     }
     
-    .hero-img {
-        border-radius: 1em;
-    }
-    .guideimg {
-        border-radius: 1em;
-    }
     
     video {
         width: 100%;
@@ -559,13 +581,13 @@ main#main-guide section {
         text-decoration: none;
     }
     figure {
-        padding: 2em 5em 2em 5em;
+        padding: 1em;
     }
     figcaption {
         font-size:24px;
     }
     main {
-        margin: 1em 1em 10em 1em;
+        margin: 5em 1em 5em 1em;
     }
     .footer {
         display:flex;
@@ -579,7 +601,7 @@ main#main-guide section {
 
 @media only screen and (min-width: 1200px) {
     footer {
-        flex-direction: row;/* remove? */
+        flex-direction: row;
         justify-content: space-around;
         height: 111px;
     }
