@@ -11,4 +11,13 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   hamburger.classList.remove("active");
   header.classList.remove("active");
 })) 
+/* Toggle between adding and removing the "responsive" class to nav-menu when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("mynav-menu");
+  if (x.className === "nav-menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav-menu";
+  }
+} 
 
