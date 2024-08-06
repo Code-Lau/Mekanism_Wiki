@@ -7,7 +7,7 @@
         modded minecraft guide, mekanism guide, mekanism walkthrough, video game,">
     <meta name="author" content="Lauren Woods">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://i.ibb.co/BNTQss6/Various-Machines.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://i.ibb.co/BNTQss6/Various-Machines.webp" type="image/x-icon">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -17,17 +17,28 @@
 <body>
     <header>
         <a href="index.html" class="logo" alt="Mekanism Logo">MEKANISM</a>
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
-            <li class="nav-item"><a href="getting-started.html" class="nav-link">GUIDE</a></li>
-            <li class="nav-item"><a href="download.html" class="nav-link">DOWNLOAD</a></li>
-        </ul>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <div class="nav-menu" id="mynav-menu">
+            
+        <a href="index.html" class="active">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <div class="dropdown">
+          <button class="dropbtn">GUIDE
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Tools</a>
+            <a href="getting-started.html">Getting Started</a>
+            <a href="ore-processing.html">Ore Processing</a>
+            <a href="#">Reactors</a>
+            <a href="#">End Game</a>
+          </div>
         </div>
+        <a href="download.html">DOWNLOAD</a>
+        <div class="hamburger" onclick="myFunction()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
     </header>
 <!-- class="wrapper" -->
     <main>
@@ -35,7 +46,7 @@
             <!-- https://www.w3schools.com/html/html5_video.asp -->
             <figure>
                 <video controls>
-                    <source src="https://www.youtube.com/watch?v=GVTRJa4B4fY&t=445s" type="video/mp4">
+                    <source src="assets/video/MekanismShowcase_Test.mp4" type="video/mp4">
                     Your browser does not support the video tag
                 </video>
             </figure>
@@ -46,11 +57,10 @@
                     redstone,
                     but redstone machines are often very complicated and hard to understand for the average player.
                     Mekanism aims to make your resources worth more, and to cut down on base game grinds.
-                    Mekanism can be complicated itself, but you don't have to jump into the deep end of large factories.
-                    Some players
-                    only use it to double their raw ores through the enrichment chamber, or to get more planks with the
-                    sawmill.
-                    If factories don't interest you, perhaps the mod's many gadjets will. Mekanism offers a jetpack, a
+                    You don't have to jump into the deep end of large factories,
+                    some players
+                    only use the gadjets.
+                    Mekanism offers a jetpack, a
                     robot companion,
                     an everything-in-one super tool, a meka suit and much more. If you would like to learn how to make
                     these things,
