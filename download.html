@@ -7,7 +7,7 @@
         modded minecraft guide, mekanism guide, mekanism walkthrough, video game,">
     <meta name="author" content="Lauren Woods">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://i.ibb.co/BNTQss6/Various-Machines.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://i.ibb.co/BNTQss6/Various-Machines.webp" type="image/x-icon">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -17,17 +17,28 @@
 <body>
     <header>
         <a href="index.html" class="logo" alt="Mekanism Logo">MEKANISM</a>
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
-            <li class="nav-item"><a href="getting-started.html" class="nav-link">GUIDE</a></li>
-            <li class="nav-item"><a href="download.html" class="nav-link">DOWNLOAD</a></li>
-        </ul>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <div class="nav-menu" id="mynav-menu">
+            
+        <a href="index.html" class="active">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <div class="dropdown">
+          <button class="dropbtn">GUIDE
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Tools</a>
+            <a href="getting-started.html">Getting Started</a>
+            <a href="ore-processing.html">Ore Processing</a>
+            <a href="#">Reactors</a>
+            <a href="#">End Game</a>
+          </div>
         </div>
+        <a href="download.html">DOWNLOAD</a>
+        <div class="hamburger" onclick="myFunction()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
     </header>
 
     <main class="wrapper">
@@ -36,25 +47,25 @@
             <a href="https://www.curseforge.com/minecraft/mc-mods/mekanism" target="_blank" rel="noopener noreferrer">
                 <h2 class="btn">Mekanism</h2>
                 <figure>
-                    <img src="https://media.forgecdn.net/avatars/thumbnails/492/672/256/256/637801316302309362.png">
+                    <img src="https://media.forgecdn.net/avatars/thumbnails/492/672/256/256/637801316302309362.webp">
                 </figure>
             </a>
             <a href="https://www.curseforge.com/minecraft/mc-mods/mekanism-generators" target="_blank" rel="noopener noreferrer">
                 <h2 class="btn">Generators</h2>
                 <figure>
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwiki.aidancbrady.com%2Fw%2Fimages%2Faidancbrady%2Fthumb%2Ff%2Ffe%2FHeat_Generator.png%2F300px-Heat_Generator.png&f=1&nofb=1&ipt=0d67a944cf0ef4791c9db0a5b3b3df5cd9eaf6db370c801d49e35718d746e3d2&ipo=images">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwiki.aidancbrady.com%2Fw%2Fimages%2Faidancbrady%2Fthumb%2Ff%2Ffe%2FHeat_Generator.webp%2F300px-Heat_Generator.webp&f=1&nofb=1&ipt=0d67a944cf0ef4791c9db0a5b3b3df5cd9eaf6db370c801d49e35718d746e3d2&ipo=images">
                 </figure>
             </a>
             <a href="https://www.curseforge.com/minecraft/mc-mods/mekanism-tools" target="_blank" rel="noopener noreferrer">
                 <h2 class="btn">Tools</h2>
                 <figure>
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwiki.aidancbrady.com%2Fw%2Fimages%2Faidancbrady%2F9%2F99%2FGrid_Bronze_Pickaxe.png&f=1&nofb=1&ipt=a6f77b3000d9590c33d3289ee7fd75d9b45635f9e0b011bd4f4a4d339dc1a026&ipo=images">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwiki.aidancbrady.com%2Fw%2Fimages%2Faidancbrady%2F9%2F99%2FGrid_Bronze_Pickaxe.webp&f=1&nofb=1&ipt=a6f77b3000d9590c33d3289ee7fd75d9b45635f9e0b011bd4f4a4d339dc1a026&ipo=images">
                 </figure>
             </a>
             <a href="https://www.curseforge.com/minecraft/mc-mods/mekanism-additions" target="_blank" rel="noopener noreferrer">
                 <h2 class="btn">Additions</h2>
                 <figure>
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.mcmod.cn%2Fitem%2Ficon%2F128x128%2F56%2F569401.png%3Fv%3D1&f=1&nofb=1&ipt=b9376cfebfc5725e4c4c3df62e4e314d5b1c7e970351f7bb9c488ab5bd5357ca&ipo=images">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.mcmod.cn%2Fitem%2Ficon%2F128x128%2F56%2F569401.webp%3Fv%3D1&f=1&nofb=1&ipt=b9376cfebfc5725e4c4c3df62e4e314d5b1c7e970351f7bb9c488ab5bd5357ca&ipo=images">
                 </figure>
             </a>
         </section>
