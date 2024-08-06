@@ -8,7 +8,7 @@
     <meta name="keywords" content="minecraft, mod, modding, modded, mekanism, mekanism:generators, modded minecraft, guide, modded minecraft guide, mekanism guide, mekanism walkthrough, video game,">
     <meta name="author" content="Lauren Woods">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/images/InfusedAlloy.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/images/InfusedAlloy.webp" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Mekanism Mod Guide Page</title>
@@ -19,46 +19,26 @@
     <ul class="dropdown-content">
         <ul class="dropdown-content"> -->
 <body id="top">
-    <header>
-        <a href="index.html" class="logo" alt="Mekanism Logo">MEKANISM</a>
-        <nav>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
-                <input id="check01" type="checkbox" name="menu">
-                <label for="check01" class="nav-item"><a class="nav-link">GUIDE<span class="arrow">&#x25BC;</span></a></label>
-                <ul class="submenu">
-                    <li><input id="check02" type="checkbox" name="menu">
-                        <label for="check02">#1 Getting Started<span class="arrow">&#x25BC;</span></label>
-                        <ul class="submenu">
-                            <li><a href="#the-heat-generator">The Heat Generator</a></li>
-                            <li><a href="#the-metallurgic-infuser">The Metallurgic Infuser</a></li>
-                            <li><a href="#fuel-table">Fuel Table</a></li>
-                            <li><a href="#steel-ingots">Steel Ingots</a></li>
-                            <li><a href="#fuel-efficiency">Fuel Efficiency</a></li>
-                            <li><a href="#steel-frames">Steel Frames</a></li>
-                            <li><a href="#the-enrichment-chamber">The Enrichment Chamber</a></li>
-                            <li><a href="#power">Power</a></li>
-                            <li><a href="#energy-per-tick">Energy Per Tick</a></li>
-                            <li><a href="#the-solar-gen">The Solar Gen</a></li>
-                            <li><a href="#the-advanced-solar-gen">Advanced Solar Gen</a></li>
-                            <li><a href="#the-wind-generator">The Wind Generator</a></li>
-                            <li><a href="#the-bio-generator">The Bio Generator</a></li>
-                            <li><a href="#the-crusher">The Crusher</a></li>
-                        </ul> 
-                    </li>
-                    <li><input id="check03" type="checkbox" name="menu">
-                        <label for="check03" class="nav-item">#2 Ore Processing<span class="arrow">&#x25BC;</span></label>
-                        <ul class="submenu">
-                            <li><a href="#minecraft-fortune">Minecraft's Fortune</a></li>
-                            <li><a href="#flowchart">Flowchart</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item"><a href="download.html" class="nav-link">DOWNLOAD</a></li>
-        </ul>
-    </nav>
+    <body><!-- https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+        <header>
+            <a href="index.html" class="logo" alt="Mekanism Logo">MEKANISM</a>
+            <div class="nav-menu" id="mynav-menu">
+            <a href="index.html" class="active">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <div class="dropdown">
+              <button class="dropbtn">GUIDE
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Tools</a>
+                <a href="getting-started.html">Getting Started</a>
+                <a href="ore-processing.html">Ore Processing</a>
+                <a href="#">Reactors</a>
+                <a href="#">End Game</a>
+              </div>
+            </div>
+            <a href="download.html">DOWNLOAD</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -67,7 +47,7 @@
     </header>
 
     <a href="#top" class="pickaxe">
-        <img src="/assets/images/Minecraft_Pickaxe.png"
+        <img src="/assets/images/Minecraft_Pickaxe.webp"
             alt="A small image of a minecraft pickaxe acting as the return to top button" width="50" height="50">
     </a>
 
@@ -76,7 +56,7 @@
 
             <figure>
 
-                <img src="/assets/images/Osmium.png" alt="A picture of osmium ore blocks" class="guide-img">
+                <img src="/assets/images/Osmium.webp" alt="A picture of osmium ore blocks" class="guide-img">
 
                 <figcaption>Different types of Osmium Ore</figcaption>
 
@@ -110,7 +90,7 @@
 
             <figure>
 
-                <img src="/assets/images/HeatGenerator.png" alt="A picture of the heat generator"
+                <img src="/assets/images/HeatGenerator.webp" alt="A picture of the heat generator"
                     class="guide-img">
 
                 <figcaption>The Heat Generator</figcaption>
@@ -155,7 +135,7 @@
 
             <figure>
 
-                <img style="border-radius:0;" src="/assets/images/HeatGen_Craft.png"
+                <img style="border-radius:0;" src="/assets/images/HeatGen_Craft.webp"
                     alt="A picture of the crafting recipe for the heat generator" class="guide-img" >
 
                 <figcaption>Crafting the Heat Generator</figcaption>
@@ -181,7 +161,7 @@
 
         <section class="container">
             <figure>
-                <img style="border-radius:0;" src="/assets/images/HeatGenerator_UI.png"
+                <img style="border-radius:0;" src="/assets/images/HeatGenerator_UI.webp"
                     alt="A picture of the heat generator's UI" class="guide-img" >
                 <figcaption>The Heat Generator UI</figcaption>
             </figure>
@@ -197,7 +177,7 @@
 
             
  <figure>
-                <img style="border-radius:0;" src="/assets/images/MetallurgicInf_Craft.png"
+                <img style="border-radius:0;" src="/assets/images/MetallurgicInf_Craft.webp"
                     alt="A picture of the crafting recipe for the metallurgic infuserI" class="guide-img" >
                 <figcaption>Crafting the Metallurgic Infuser</figcaption>
             </figure>
@@ -220,7 +200,7 @@
         <section class="container">
            <figure>
 
-                <img src="/assets/images/MetallurgicInfuser.png" alt="A picture of the metallurgic infuser"
+                <img src="/assets/images/MetallurgicInfuser.webp" alt="A picture of the metallurgic infuser"
                     class="guide-img">
 
                 <figcaption>The Metallurgic Infuser</figcaption>
@@ -467,7 +447,7 @@
 
         <section class="container">
             <figure>
-                <img style="border-radius:0;" src="/assets/images/MetallurgicInfuser_UI_Carbon.png"
+                <img style="border-radius:0;" src="/assets/images/MetallurgicInfuser_UI_Carbon.webp"
                     alt="A picture of the player hovering over the fuel gauge in the Metallurgic Infuser's UI" class="guide-img" >
                 <figcaption>Hovering over the fuel gauge</figcaption>
             </figure>
@@ -496,7 +476,7 @@
 
             <figure>
 
-                <img style="border-radius:0;" src="/assets/images/MetallurgicInfuser_UI_EnrichedIron.png"
+                <img style="border-radius:0;" src="/assets/images/MetallurgicInfuser_UI_EnrichedIron.webp"
                     alt="A picture of the player making enriched iron" class="guide-img">
 
                 <figcaption>Making enriched iron</figcaption>
@@ -539,7 +519,7 @@
 
             <figure>
 
-                <img style="border-radius:0;" src="/assets/images/Alloys_Circuits.png"
+                <img style="border-radius:0;" src="/assets/images/Alloys_Circuits.webp"
                     alt="A picture of the player making basic alloys" class="guide-img">
 
                 <figcaption>Making basic alloys</figcaption>
@@ -578,7 +558,7 @@
 
             <figure>
 
-                <img style="border-radius:0;" src="/assets/images/CraftingTable_SteelFrame.png"
+                <img style="border-radius:0;" src="/assets/images/CraftingTable_SteelFrame.webp"
                     alt="A picture of the crafting recipe for the steel frame" class="guide-img">
 
                 <figcaption>Crafting the steel frame</figcaption>
@@ -611,7 +591,7 @@
 
             <figure>
 
-                <img style="border-radius:0;" src="/assets/images/CraftingTable_EnrichmentC.png"
+                <img style="border-radius:0;" src="/assets/images/CraftingTable_EnrichmentC.webp"
                     alt="A picture of the crafting recipe for the enrichment chamber" class="guide-img">
 
                 <figcaption>Crafting the enrichment chamber</figcaption>
@@ -635,7 +615,7 @@
 
 ​<section class="container">
     <figure>
-        <img style="border-radius:0;" src="/assets/images/EnrichmentChamber.png"
+        <img style="border-radius:0;" src="/assets/images/EnrichmentChamber.webp"
             alt="A picture of the player making enriched coal" class="guide-img" >
         <figcaption>Making enriched coal</figcaption>
     </figure>
@@ -657,7 +637,7 @@
 
             <figure>
 
-                <img src="/assets/images/Generators.png" alt="A picture of various power sources"
+                <img src="/assets/images/Generators.webp" alt="A picture of various power sources"
                     class="guide-img">
 
                 <figcaption>Various early-game power sources</figcaption>
@@ -692,7 +672,7 @@
 
             <figure>
 
-                <img style="border-radius:0;" src="/assets/images/EnergyTablet.png" alt="A picture of the energy tablet"
+                <img style="border-radius:0;" src="/assets/images/EnergyTablet.webp" alt="A picture of the energy tablet"
                     class="guide-img">
 
                 <figcaption>An energy tablet</figcaption>
@@ -734,7 +714,7 @@
 
             <figure>
 
-                <img style="border-radius:0;" src="/assets/images/SolarPanel.png"
+                <img style="border-radius:0;" src="/assets/images/SolarPanel.webp"
                     alt="A picture of the crafting recipe for solar panels" class="guide-img">
 
                 <figcaption>Crafting the solar panel</figcaption>
@@ -758,7 +738,7 @@
 
         ​<section class="container">
             <figure>
-                <img style="border-radius:0;" src="/assets/images/SolarGen.png"
+                <img style="border-radius:0;" src="/assets/images/SolarGen.webp"
                     alt="A picture of the crafting recipe for the solar generator" class="guide-img" >
                 <figcaption>Crafting the solar generator</figcaption>
             </figure>
@@ -775,7 +755,7 @@
 
             <figure>
 
-                <img style="border-radius:0;" src="/assets/images/AdvancedSolarGen.png"
+                <img style="border-radius:0;" src="/assets/images/AdvancedSolarGen.webp"
                     alt="A picture of the crafting recipe for the advanced solar generator" class="guide-img">
 
                 <figcaption>Crafting the advanced solar generator</figcaption>
@@ -812,7 +792,7 @@
 
             <figure>
 
-                <img style="border-radius:0;" src="/assets/images/WindGen_Craft.png"
+                <img style="border-radius:0;" src="/assets/images/WindGen_Craft.webp"
                     alt="A picture of the crafting recipe for the wind generator" class="guide-img">
 
                 <figcaption>Crafting a wind generator</figcaption>
@@ -847,7 +827,7 @@
         ​<section class="container">
             <figure>
 
-                <img style="border-radius:0;" src="/assets/images/BasicCable.png"
+                <img style="border-radius:0;" src="/assets/images/BasicCable.webp"
                     alt="A picture of the crafting recipe for the basic cable" class="guide-img">
 
                 <figcaption>Crafting a basic cable</figcaption>
@@ -874,7 +854,7 @@
 
             <figure>
 
-                <img style="border-radius:0;" src="/assets/images/BioGen.png"
+                <img style="border-radius:0;" src="/assets/images/BioGen.webp"
                     alt="A picture of the crafting recipe for the bio generator" class="guide-img">
 
                 <figcaption>Crafting the bio generator</figcaption>
@@ -918,7 +898,7 @@
         ​<section class="container">
             <figure>
 
-                <img style="border-radius:0;" src="/assets/images/Crusher.png" alt="A picture of the crafting recipe for the crusher"
+                <img style="border-radius:0;" src="/assets/images/Crusher.webp" alt="A picture of the crafting recipe for the crusher"
                     class="guide-img">
 
                 <figcaption>Crafting the crusher</figcaption>
@@ -941,7 +921,7 @@
 
             <figure>
 
-                <img style="border-radius:0;" src="/assets/images/Crusher_UI.png" alt="A picture of the player making biomass"
+                <img style="border-radius:0;" src="/assets/images/Crusher_UI.webp" alt="A picture of the player making biomass"
                     class="guide-img">
 
                 <figcaption>Making biomass</figcaption>
@@ -972,8 +952,14 @@
 
                 </p>
 
-                <p>
+            </div>
 
+        </section>
+
+        ​<section id="ore-processing" >
+            <div class="hero-text" style="margin-bottom:2em;">
+                <h2>MOVING ON</h2>
+                <p>
                     Once you have a basic power source, your basic crafting material making-machines and lots of
 
                     resources,
@@ -983,77 +969,43 @@
                     more advanced prospects of the mod, such as personal equipment like jetpacks or ore processing.
 
                 </p>
-
                 <a href="ore-processing.html" class="btn">NEXT SECTION</a>
 
             </div>
 
         </section>
 
-        ​
-
     </main>
 
     ​
-
     <footer>
-
         <div id="email">
-
-            <a href="mailto:laurenleighwoods@gmail.com" target="_blank" rel="noopener noreferrer"
-                alt="An icon of an envelope">
-
+            <a href="mailto:laurenleighwoods@gmail.com" target="_blank" rel="noopener noreferrer" alt="An icon of an envelope">
                 <i class="fa-solid fa-envelope"></i>
-
                 info@mekanism.com
-
             </a>
-
         </div>
-
         <ul class="socialicons">
-
             <li>
-
                 <a href="https://x.com/aidancbrady" target="_blank" rel="noopener noreferrer" alt="An icon of X's logo">
-
                     <i class="fa-brands fa-x-twitter"></i>
-
                 </a>
-
             </li>
-
             <li>
-
-                <a href="https://github.com/aidancbrady" target="_blank" rel="noopener noreferrer"
-                    alt="An icon of Github's logo">
-
+                <a href="https://github.com/aidancbrady" target="_blank" rel="noopener noreferrer" alt="An icon of Github's logo">
                     <i class="fa-brands fa-github"></i>
-
                 </a>
-
             </li>
-
             <li>
-
-                <a href="https://www.linkedin.com/in/aidancbrady/" target="_blank" rel="noopener noreferrer"
-                    alt="An icon of Linkedin's logo">
-
+                <a href="https://www.linkedin.com/in/aidancbrady/" target="_blank" rel="noopener noreferrer" alt="An icon of Linkedin's logo">
                     <i class="fa-brands fa-linkedin"></i>
-
                 </a>
-
             </li>
-
         </ul>
-
     </footer>
 
-    ​
-
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="assets/js/burger.js"></script>
-
-    ​
 
 </body>
 
