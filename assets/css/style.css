@@ -407,7 +407,6 @@ main#main-guide section {
 }
 
 #download-container img {
-    width: 50vw;
     object-fit: contain;
 }
 
@@ -528,7 +527,7 @@ main#main-guide section {
         transform: translateY(-5px);
         transition: all 0.55s ease-in-out;
     }
-    section.container p:not(.fueltabletext), h2:not(.fueltabletext,#moving-on), ul:not(#steel-ingots), div:not(.dropdown)  {
+    section.container:not(#main-page,#download-container,.hero-img) p:not(.fueltabletext), h2:not(#herotextmain,.fueltabletext,#moving-on,.btn), ul:not(#steel-ingots,.socialicons,.nav-menu), div:not(.dropdown,.nav-menu,) {
         padding-right:100px;
     }
     section figure:not(#download-container figure) {
@@ -563,7 +562,7 @@ main#main-guide section {
         font-size: 40px;
         margin-top: 1em;
     }
-    figure:not(video) {
+    figure:not(video, section#download-container figure) {
         width:50%;
     }
     figcaption {
@@ -590,7 +589,7 @@ main#main-guide section {
         width: 100%;
     }
     #download-container figure img {
-        max-height:300px;
+        max-height:500px;
         border-radius:2em;
         padding:1em;
       
@@ -625,7 +624,7 @@ main#main-guide section {
     footer {
         flex-direction: row;
         justify-content: space-around;
-        height: 111px;
+        height: 120px;
     }
 
     footer::before {
