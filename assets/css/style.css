@@ -169,10 +169,10 @@ a:not(footer a):not(header a):not(.btn) {
     color: #162844;
 }
 
-img {
+img:not(.guide-img, .noradius) {
     object-fit: contain;
     border-radius: 1em;
-    width: 100%;
+    width:100%;
 }
 
 figure {
@@ -272,7 +272,10 @@ video {
     cursor: pointer;
     border-radius: 50%;
 }
-
+.guide-img {
+    object-fit: contain;
+    border-radius: 1em;
+}
 section.container {
     padding: 0;
     display: flex;
@@ -415,6 +418,7 @@ main#main-guide section {
     footer {
         font-size: 1em;
     }
+   
 }
 
 /* https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
@@ -428,6 +432,9 @@ main#main-guide section {
     .nav-menu a.icon {
         float: right;
         display: block;
+    }
+    .guide-img, .noradius {
+        width:100%;
     }
 }
 
@@ -530,7 +537,7 @@ main#main-guide section {
     section.container:not(#main-page,#download-container,.hero-img) p:not(.fueltabletext), h2:not(#herotextmain,.fueltabletext,#moving-on,.btn), ul:not(#steel-ingots,.socialicons,.nav-menu), div:not(.dropdown,.nav-menu,) {
         padding-right:100px;
     }
-    section figure:not(#download-container figure) {
+    section figure:not(#download-container figure, #main-page figure) {
         padding-top:5em;
     }
     p.bold{
@@ -544,7 +551,9 @@ main#main-guide section {
     section.container#fuel-table {
         padding: 10em;
     }
-
+    img:not(.guide-img, .noradius){
+        margin-left:1em;
+    }
     video {
         width: 100%;
         margin-left:2em;
@@ -562,16 +571,17 @@ main#main-guide section {
         font-size: 40px;
         margin-top: 1em;
     }
-    figure:not(video, section#download-container figure) {
-        width:50%;
-    }
+    
     figcaption {
         font-size: 24px;
     }
-    .guide-img, img.noradius {
-        max-height:400px;
+    img.guide-img, img.noradius {
+        max-height:25em;
+        
     }
-    
+    .guide-img {
+        border-radius: 1em;
+    }
     .btn:hover:not(.dropbtn),
     .h2btn:hover {
         transform: translateY(-10px);
@@ -645,5 +655,8 @@ main#main-guide section {
         height: 150px;
         bottom: -27px;
     }
-
+    figure:not(video, section#download-container figure, section.container figure ) {
+        max-height:25em;
+        width:80%;
+    }
 }
