@@ -15,7 +15,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 function myFunction() {
   var x = document.getElementById("mynav-menu");
   if (x.className === "nav-menu") {
-    x.className += " responsive";
+    x.className += "responsive";
   } else {
     x.className = "nav-menu";
   }

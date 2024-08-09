@@ -88,15 +88,11 @@ header {
     line-height: 110%;
     transition: all .55s ease;
     float: left;
-    display: block;
+    display: none;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-.nav-menu .icon {
-    display: none;
 }
 
 .dropdown {
@@ -514,12 +510,11 @@ main#main-guide section {
         flex-grow: 4;
         justify-content: flex-end;
         align-items: baseline;
-        padding: 23px;
         position: unset;
         background-color: transparent;
         margin-bottom: 10px;
         margin-right: 20px;
-        gap: 2em;
+        gap: 1em;
     }
 
     .nav-menu a {
