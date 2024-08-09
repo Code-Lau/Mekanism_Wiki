@@ -55,6 +55,7 @@ header {
     padding: 17px 0px;
     background-color: transparent;
     align-items: right;
+    margin-top:1em;
 }
 
 .bar {
@@ -73,7 +74,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    top: 0;
+    top: -100px;
     left: 0;
     width: 100%;
     z-index: 10;
@@ -83,16 +84,19 @@ header {
     font-weight: 700;
 }
 
-.nav-menu {
+.nav-menuresponsive{
+    display:block;
+    flex-direction: column;
     font-weight: 700;
     line-height: 110%;
     transition: all .55s ease;
-    float: left;
-    display: none;
     color: white;
+    background-color: #162844;
+    top:400px;
+    left:0;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    width:100%;
 }
 
 .dropdown {
@@ -172,8 +176,7 @@ img:not(.guide-img, .noradius) {
 }
 
 figure {
-    padding: 1em;
-    width: 100%;
+   padding:2em;
 }
 
 .hero-text {
@@ -286,6 +289,7 @@ figcaption {
     line-height: 110%;
     color: #162844;
     text-align: center;
+    
 }
 
 .fueltable {
@@ -432,10 +436,6 @@ main#main-guide section {
     .guide-img, .noradius {
         width:100%;
     }
-}
-
-
-@media screen and (max-width: 979px) {
     .nav-menu.responsive {
         position: relative;
     }
@@ -465,6 +465,9 @@ main#main-guide section {
         width: 100%;
         text-align: left;
     }
+    img:not(.guide-img, .noradius, #download-container img){
+        max-height:20em;
+    }
 }
 
 @media only screen and (min-width: 980px) {
@@ -481,7 +484,7 @@ main#main-guide section {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        padding: 1em 0 2.5em 1em;
+        padding: 1em 1em 2.5em 1em;
         background-image: url("https://i.ibb.co/HGLsDxR/mainimgae.webp");
         background-position: center left;
         background-color: #162844;
@@ -509,12 +512,12 @@ main#main-guide section {
         flex-direction: row;
         flex-grow: 4;
         justify-content: flex-end;
-        align-items: baseline;
         position: unset;
         background-color: transparent;
-        margin-bottom: 10px;
+        margin-top:10px;
         margin-right: 20px;
         gap: 1em;
+        top:0;
     }
 
     .nav-menu a {
@@ -525,12 +528,17 @@ main#main-guide section {
     }
 
     .nav-menu a:hover,
-    .dropbtn:hover:not(.dropdown-content a) {
+    .dropbtn:hover {
         transform: translateY(-5px);
         transition: all 0.55s ease-in-out;
     }
-    section.container:not(#main-page,#download-container,.hero-img) p:not(.fueltabletext), h2:not(#herotextmain,.fueltabletext,#moving-on,.btn), ul:not(#steel-ingots,.socialicons,.nav-menu), div:not(.dropdown,.nav-menu,) {
+    section.container:not(#main-page,#download-container,.hero-img) 
+    p:not(.fueltabletext), h2:not(#herotextmain,.fueltabletext,.btn), 
+    ul:not(#steel-ingots,.socialicons,.nav-menu), div:not(.dropdown,.nav-menu,) {
         padding-right:100px;
+    }
+    #ore-processing p{
+        padding-right:30px;
     }
     section figure:not(#download-container figure, #main-page figure) {
         padding-top:5em;
@@ -546,8 +554,9 @@ main#main-guide section {
     section.container#fuel-table {
         padding: 10em;
     }
-    img:not(.guide-img, .noradius){
+    img:not(.guide-img, .noradius, #download-container img){
         margin-left:1em;
+        max-height:30em;
     }
     video {
         width: 100%;
@@ -566,7 +575,9 @@ main#main-guide section {
         font-size: 40px;
         margin-top: 1em;
     }
-    
+    figure {
+        padding: 2em 1em 2em 1em;
+    }
     figcaption {
         font-size: 24px;
     }
@@ -577,24 +588,24 @@ main#main-guide section {
     .guide-img {
         border-radius: 1em;
     }
-    .btn:hover:not(.dropbtn),
-    .h2btn:hover {
-        transform: translateY(-10px);
+    a.btn:hover {
+        transform: translateY(-8px);
         transition: all 0.55s ease-in-out;
         color: white;
-        background: #2E5592;
     }
    
     #download-container {
         flex-direction: row;
         margin-top:8em;
     }
-
+    #download-container:not(img) {
+        gap:1em;
+    }
     #download-container img {
         width: 100%;
     }
     #download-container figure img {
-        max-height:500px;
+        
         border-radius:2em;
         padding:1em;
       
@@ -602,8 +613,6 @@ main#main-guide section {
     .footer {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
         font-size: 2em;
         padding: 2em;
         margin-top: 1em;
@@ -612,7 +621,12 @@ main#main-guide section {
     footer ul li {
         margin-left: 1em;
     }
-
+    #email {
+        justify-content: flex-start;
+    }
+    .socialicons {
+        justify-content: flex-end;
+    }
     #email,
     .socialicons {
         margin-top: 1em;
@@ -628,7 +642,6 @@ main#main-guide section {
 @media only screen and (min-width: 1200px) {
     footer {
         flex-direction: row;
-        justify-content: space-around;
         height: 120px;
     }
 
@@ -650,8 +663,8 @@ main#main-guide section {
         height: 150px;
         bottom: -27px;
     }
-    figure:not(video, section#download-container figure, section.container figure ) {
-        max-height:25em;
-        width:80%;
+    section.container#main-page {
+        max-height:40em;
+        width:100%;
     }
 }
