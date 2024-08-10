@@ -56,7 +56,7 @@ For the social icons, originally I had edited some by hand in photoshop before I
 
     - The nav menu features a home link, a link to the about page, a guide button and a link to the downloads page. The guide button reveals the guide content through hovering on desktop, and a clickable dropdown menu on mobile. This shows five more items that link to the corresponding pages. This was implemented so that the user wouldn't have to go navigate the guide through the buttons only.
 
-![screenshot]()
+![screenshot](documentation/navmenuss.png)
 
 - **Guide Buttons**
 
