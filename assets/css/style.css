@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Saira Condensed', 'Trebuchet MS', 'sans-serif';
+    font-family: 'Saira Condensed', 'Tahoma', 'Verdana';
     list-style: none;
     text-decoration: none;
 }
@@ -49,7 +49,7 @@ header {
 
 .hamburger {
     display: block;
-    z-index: 12;
+    z-index: 5;
     cursor: pointer;
     position: relative;
     padding: 17px 0px;
@@ -77,35 +77,37 @@ header {
     top: -100px;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 3;
     background-color: #162844;
     overflow: hidden;
-    font-size: 34px;
     font-weight: 700;
 }
-
-.nav-menuresponsive{
-    display:block;
+.nav-menu:visited, .nav-menuresponsive:visited {
+    color:white;
+    background-color:transparent;
+}
+.nav-menuresponsive {
+    display:flex;
     flex-direction: column;
+    row-gap: 10px;
+    position: fixed;
+    font-size: 40px;
     font-weight: 700;
     line-height: 110%;
     transition: all .55s ease;
     color: white;
     background-color: #162844;
-    top:400px;
+    top:0;
     left:0;
     text-align: center;
-    text-decoration: none;
+    text-decoration:none;
     width:100%;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
+    z-index:4;
+    padding:1em;
 }
 
 .dropdown .dropbtn {
-    font-size: 34px;
+    font-size: 40px;
     font-weight: bold;
     border: none;
     outline: none;
@@ -114,7 +116,6 @@ header {
     font-family: inherit;
     margin: 0;
     overflow: hidden;
-
 }
 
 .dropdown-content {
@@ -125,6 +126,9 @@ header {
     z-index: 1;
     padding: 10px;
     border-radius: 5px;
+    width:100%;
+    left:0;
+    justify-content: center;
 
 }
 
@@ -134,16 +138,10 @@ header {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    text-align: center;
 }
 
-.dropdown-content a:hover {
-    background-color: #162844;
-    color: white;
-}
-
-
-.dropdown:hover .dropdown-content {
+.dropdown:active{
     display: block;
 }
 
@@ -264,7 +262,7 @@ video {
     position: fixed;
     right: 20px;
     bottom: 3vh;
-    z-index: 500;
+    z-index: 2;
     border: none;
     outline: none;
     background-color: transparent;
@@ -424,8 +422,7 @@ main#main-guide section {
 /* https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
 @media screen and (max-width: 979px) {
 
-    .nav-menu a:not(:first-child),
-    .dropdown .dropbtn {
+    .nav-menu a:not(:first-child), .dropdown-content {
         display: none;
     }
 
@@ -514,7 +511,7 @@ main#main-guide section {
         justify-content: flex-end;
         position: unset;
         background-color: transparent;
-        margin-top:10px;
+        margin-top:22px;
         margin-right: 20px;
         gap: 1em;
         top:0;
@@ -531,6 +528,14 @@ main#main-guide section {
     .dropbtn:hover {
         transform: translateY(-5px);
         transition: all 0.55s ease-in-out;
+    }
+    .dropdown-content a:hover {
+        background-color: #162844;
+        color: white;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
     }
     section.container:not(#main-page,#download-container,.hero-img) 
     p:not(.fueltabletext), h2:not(#herotextmain,.fueltabletext,.btn), 
@@ -666,5 +671,10 @@ main#main-guide section {
     section.container#main-page {
         max-height:40em;
         width:100%;
+    }
+}
+@media only screen and (min-width: 1450px) {
+    section.container#main-page {
+        margin:8em 0 5em 0;
     }
 }
