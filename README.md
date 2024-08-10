@@ -17,6 +17,8 @@ Mekanism is an independent tech mod created by Aiden Brady that brings low, mid,
 
 Mekanism was first released on May 27th, 2017 and since then has been a pillar of tech in modpacks. Despite this, there is only one very old wiki and almost next to no coverage of the details. For a new player, searching for information comes in the form of outdated youtube videos and reddit posts. This project will change that, giving players an up to date and relevant guide from the smallest details to large and complicated factories. The end goal for this project is to the be main site people come to for information. The hope is that no one will be confused, absorbing incorrect or outdated info and that it is user friendly and accessible to all who may need it.
 
+![screenshot](documentation/isitresponsivess.png)
+[Am I Responsive?](https://ui.dev/amiresponsive?url=https://code-lau.github.io/Mekanism_Wiki/)
 
 ## UX
 Given that this is a wiki/guide page and not a normal website that advertises products, the design was a delicate approach. I had to come up with something unqiue and eye-catching without it being too flashy or distracting. I was automatically locked out of a lot of designs due to the content on the page. I ended up deciding on the diagonal header and footer, I felt that not only did this look smart and match the theme, but that it framed the limited content better. These are automatically disabled in mobile and tablet versions so as to not crowd the screen, but the iconic blue stays. This is paired with a simple hamburger/bar menu that animates on touch.
@@ -64,6 +66,34 @@ For the social icons, originally I had edited some by hand in photoshop before I
 
 ![screenshot](documentation/buttonss.png)
 
+- **Email**
+    -An email link is displayed at the bottom left of the screen to allow the users to contact the author. Users would ideally contact the author about bug fixes or suggestions. 
+
+![screenshot](documentation/emailss.png)
+
+-**Socials**
+    -An icon for X (Twitter), Github and LinkedIn are displayed at the bottom right of the screen to allow the users to get in touch via those platforms, or to simply follow the production of the mod. 
+![screenshot](documentation/socialiconsss.png)   
+
+-**Guide Page**
+    -The guide page contains content that users can follow to accomplish their goals or figure out how their machines work. It contains many images relevant to the guide text and is written in a clear and consise way.
+![screenshot](documentation/guidess.png)
+
+    -On the guide page is a detailed table showing users what each item is worth in terms of fuel. By structuring this information in a table, the content is much more digestable to users.
+![screenshot](documentation/tabless.png)
+
+-**Back to the top**
+    -On the guide page and any other page with a lot of scrollable content, there is a small icon of a Minecraft Diamond Pickaxe that acts as a button to return the user to the top of the screen. This allows users to navigate through the site quickly by bringing them to back to the nav menu whenever they like. 
+![screenshot](documentation/pickaxess.png)
+
+-**About Page**
+    -The about page explains and encourages users to use Mekanism whilst also displaying a video to introduce them to the mod. The video is interactable, allowing the users to pause, play, expand it to fullscreen and to turn up and down the volume.
+![screenshot](documentation/videoss.png)
+
+-**Downloads Page**    
+    -The downloads page includes four download links, each with their own clickable title and clickable image that leads to the respective content. Below this is a comprehensive guide on how to install these mods.
+![screenshot](documentation/downloadsss.png)
+
 
 
 ### Future Features
@@ -92,3 +122,50 @@ For this project, I mainly used gitpod to code in, and github to host my reposit
 - [![Fluid Typography Calculator](https://royalfig.github.io/fluid-typography-calculator/)]used for box content.
 - [![Figma](https://img.shields.io/badge/Figma-grey?logo=figma&logoColor=F24E1E)](https://www.figma.com) used for creating wireframes.
 - [![Font Awesome](https://img.shields.io/badge/Font_Awesome-grey?logo=fontawesome&logoColor=528DD7)](https://fontawesome.com) used for the icons.
+
+## Testing
+    Please refer to the [TESTING.md](TESTING.md) file.
+
+## Deployment
+This site was deployed to [GitHub Pages.](https://code-lau.github.io/Mekanism_Wiki/)
+
+## Credits
+    -All code referenced does not belong to me and is borrowed expressly for learning purposes.
+
+    |[W3Schools](https://www.w3schools.com/css/css3_variables.asp)|HTML img tag, Border Color, CSS Syntax, CSS Borders, CSS Introduction, Colors, HTML Styles CSS, CSS Margin Collapse, CSS Border Sides, CSS Border Width, Fixed Sidebar, Flex-wrap Property, Web Safe Fonts, CSS Vertical Navigation Bar, CSS Horizontal Navigation Bar, CSS Line-height Property, Styling Links|
+
+    |[CodePen](https://codepen.io/miguelznunez/pen/QWvPmEx)|Responsive Navigation Menu|Used on all html pages and burger.js|
+
+    |[YouTube](https://www.youtube.com/watch?v=samof05Dy6A)|Create a Responsive Dropdown Menu|Dropdown Menu used in all html pages.|
+    
+    |[Youtube](https://www.youtube.com/watch?v=0gCMLAivggc)|Non-Rectangular Header Using CSS Polygon|Used in all html pages|
+
+    |[YouTube](https://www.youtube.com/watch?v=IXucQAEkIMo&t=358s)|Responsive Website Using HTML And CSS|Logo, Navbar and Hamburger Menu used in all html pages. Scroll Reveal used in all html pages and script.js|
+
+    |[YouTube](https://www.youtube.com/watch?v=YesSVqjcDts&t=803s)How to create the side navigation bar using html and css|Used on all html pages|
+
+    |[Stack Overflow](https://stackoverflow.com/questions/2237540/how-do-i-load-external-fonts-into-an-html-document)|How to load external fonts into an HTML document?|
+
+    |[Stack Overflow](https://stackoverflow.com/questions/34957568/how-to-write-html-in-uk-english)|How to write HTML in UK English?|Used in all html pages|
+
+    |[Stack Overflow](https://stackoverflow.com/questions/2237540/how-do-i-load-external-fonts-into-an-html-document)|How do I load external fonts into an HTML document?|Used in style.css|
+
+## Content
+    -Minecraft, and all Minecraft names, related logos, fonts, textures, graphics, images, models, sounds and any other distinctive characteristics of any part of their name and games belong to Mojang AB and the Microsoft Corporation. This project is not official or approved by, endorsed by, associated with, supported by or connected to Mojang and Microsoft. I am not associated with with Mojang or Microsoft in any way. 
+    
+    -The Mekanism mod was created by Aiden Brady. All guide images and video clips are from this mod and are owned by Aiden Brady and his team. I am not associated with Mekanism or it's creator/team in any way.
+
+    |[Minecraft Wiki](https://minecraft.wiki/)|Used in getting-started.html|
+
+    |[Mekanism Curseforge Page](https://www.curseforge.com/minecraft/mc-mods/mekanism)|Used in getting-started.html|
+
+    
+## Media
+    |[Minecraft Wiki](https://minecraft.fandom.com/ru/wiki/Mekanism)|Mekanism V10 Logo|
+    |[YouTube](https://www.youtube.com/watch?v=Jve-WgrF4Lc)|Audio used in showcase video|
+    |[Mekanism Curseforge Page](https://www.curseforge.com/minecraft/mc-mods/mekanism)|All screenshots are taken from the Mekanism mod software|
+
+## Acknowledgements
+- I would like to thank my (very cool) Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his support throughout the development of this project.
+- I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
+- I would like to thank my friends Craig and Stephen, for believing in me, encouraging me and offering advice, ideas and solutions.
