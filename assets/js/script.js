@@ -12,6 +12,9 @@ sr.reveal('.hero-text',{delay:200, origin:'top'});
 sr.reveal('.hero-img',{delay:300, origin:'top'});
 sr.reveal('.email',{delay:400, origin:'left'});
 sr.reveal('.socialicons',{delay:400, origin:'right'});
+sr.reveal('video',{delay:400, origin:'left'});
+sr.reveal('.guide-img',{delay:400, origin:'left'});
+sr.reveal('.download-container',{delay:400, origin:'top'});
 
 // Arrow Jump back to Top
 const mybutton = document.getElementById("pickaxe");
