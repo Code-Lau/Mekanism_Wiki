@@ -6,9 +6,12 @@ const sr = ScrollReveal ({
   reset:true
 });
 
+sr.reveal('.logo',{delay:200, origin:'top'});
+sr.reveal('.nav-menu',{delay:200, origin:'top'});
 sr.reveal('.hero-text',{delay:200, origin:'top'});
 sr.reveal('.hero-img',{delay:300, origin:'top'});
-sr.reveal('.navlist-2',{delay:400, origin:'left'});
+sr.reveal('.email',{delay:400, origin:'left'});
+sr.reveal('.socialicons',{delay:400, origin:'right'});
 
 // Arrow Jump back to Top
 const mybutton = document.getElementById("pickaxe");
