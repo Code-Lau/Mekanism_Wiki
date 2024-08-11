@@ -177,7 +177,7 @@ img:not(.guide-img, .noradius) {
 }
 
 figure {
-   padding:2em;
+   padding:2em 0 2em 0;
 }
 
 .hero-text {
@@ -257,7 +257,6 @@ footer ul li {
 /* About */
 video {
     width: 100%;
-    height: 45vh;
 }
 
 /* Guide */
