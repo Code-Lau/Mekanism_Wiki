@@ -15,11 +15,11 @@ Mekanism is an independent tech mod created by Aiden Brady that brings low, mid,
 <br>
 -Learn how to best use equipment and modify them.
 
-Mekanism was first released on May 27th, 2017 and since then has been a pillar of tech in modpacks. Despite this, there is only one very old wiki and almost next to no coverage of the details. For a new player, searching for information comes in the form of outdated youtube videos and reddit posts. This project will change that, giving players an up to date and relevant guide from the smallest details to large and complicated factories. The end goal for this project is to the be main site people come to for information. The hope is that no one will be confused, absorbing incorrect or outdated info and that it is user friendly and accessible to all who may need it.
+Mekanism was first released on May 27th, 2017 and since then has been a pillar of tech in modpacks. Despite this, there is only one very old wiki and almost next to no coverage of the details. For a new player, searching for information comes in the form of outdated youtube videos and reddit posts. This project will change that, giving players an up to date and relevant guide from the smallest details to large and complicated factories. The end goal for this project is to be the main site people come to for information. The hope is that no one will be confused, absorbing incorrect or outdated info and that it is user friendly and accessible to all who may need it.
 
 ![screenshot](documentation/isitresponsivess.png)
 
-[Am I Responsive?](https://ui.dev/amiresponsive?url=https://code-lau.github.io/Mekanism_Wiki/)
+Here is a demonstration of responsiveness, done through [Am I Responsive?](https://ui.dev/amiresponsive?url=https://code-lau.github.io/Mekanism_Wiki/), a website that showcases any website through the eyes of all viewports in an interactive manner.
 
 ## UX
 Given that this is a wiki/guide page and not a normal website that advertises products, the design was a delicate approach. I had to come up with something unqiue and eye-catching without it being too flashy or distracting. I was automatically locked out of a lot of designs due to the content on the page. I ended up deciding on the diagonal header and footer, I felt that not only did this look smart and match the theme, but that it framed the limited content better. These are automatically disabled in mobile and tablet versions so as to not crowd the screen, but the iconic blue stays. This is paired with a simple hamburger/bar menu that animates on touch.
@@ -43,62 +43,63 @@ The font used primarily on this website is [Saira Condensed.](https://fonts.goog
 
 
 For the social icons, originally I had edited some by hand in photoshop before I understood that I could call upon websites and their icons, such as [FontAwesome.](https://fontawesome.com/) FontAwesome became my go-to for the social icons.
+
 ![screenshot](documentation/oldicons.png)
 
 ## Features
 
 ### Existing Features
 
-- **Logo**
+**Logo**
 
     - The logo bears the title and when clicked, brings the user to the main page. This was implemented in case the user wanted a quick way to return to the main page without using the home link.
 
 ![screenshot](documentation/logoss.png)
 
-- **Nav Menu**
+**Nav Menu**
 
-    - The nav menu features a home link, a link to the about page, a guide button and a link to the downloads page. The guide button reveals the guide content through hovering on desktop, and a clickable dropdown menu on mobile. This shows five more items that link to the corresponding pages. This was implemented so that the user wouldn't have to go navigate the guide through the buttons only.
+    - The nav menu features a home link, a link to the about page, a guide button and a link to the downloads page. The guide button reveals the guide content through hovering on desktop, and a clickable dropdown menu on mobile. This shows five more items that link to the corresponding pages. This was implemented so that the user wouldn't have to navigate the guide through the buttons only.
 
 ![screenshot](documentation/navmenuss.png)
 
-- **Guide Buttons**
+**Guide Buttons**
 
     - I created buttons that direct you straight to the guide page rather than making the user search for it. That way the user can move to whatever section they need to at the suggested pace.
 
 ![screenshot](documentation/buttonss.png)
 
-- **Email**
+**Email**
 
-    -An email link is displayed at the bottom left of the screen to allow the users to contact the author. Users would ideally contact the author about bug fixes or suggestions. 
+    - An email link is displayed at the bottom left of the screen to allow the users to contact the author. Users would ideally contact the author about bug fixes or suggestions. 
 
 ![screenshot](documentation/emailss.png)
 
--**Socials**
+**Socials**
 
-    -An icon for X (Twitter), Github and LinkedIn are displayed at the bottom right of the screen to allow the users to get in touch via those platforms, or to simply follow the production of the mod. 
+    An icon for X (Twitter), Github and LinkedIn are displayed at the bottom right of the screen to allow the users to get in touch via those platforms, or to simply follow the production of the mod. 
 ![screenshot](documentation/socialiconsss.png)   
 
--**Guide Page**
+**Guide Page**
 
-    -The guide page contains content that users can follow to accomplish their goals or figure out how their machines work. It contains many images relevant to the guide text and is written in a clear and consise way.
+    The guide page contains content that users can follow to accomplish their goals or figure out how to solve their problems. It contains many images relevant to the guide text and is written in a clear and consise way.
 ![screenshot](documentation/guidess.png)
 
-    -On the guide page is a detailed table showing users what each item is worth in terms of fuel. By structuring this information in a table, the content is much more digestable to users.
+    On the guide page is a detailed table showing users what each item is worth in terms of fuel. By structuring this information in a table, the content is much more digestable to users. The colours, though gaudy, represent the corresponding items, making it easier for users to hone in on exactly what they're looking for through colour association.
 ![screenshot](documentation/tabless.png)
 
--**Back to the top**
+**Back to the top**
 
-    -On the guide page and any other page with a lot of scrollable content, there is a small icon of a Minecraft Diamond Pickaxe that acts as a button to return the user to the top of the screen. This allows users to navigate through the site quickly by bringing them to back to the nav menu whenever they like. 
+    On the guide page and any other page with a lot of scrollable content, there is a small icon of a Minecraft Diamond Pickaxe that acts as a button to return the user to the top of the screen. This allows users to navigate through the site quickly by bringing them to back to the nav menu whenever they like. 
 ![screenshot](documentation/pickaxess.png)
 
--**About Page**
+**About Page**
 
-    -The about page explains and encourages users to use Mekanism whilst also displaying a video to introduce them to the mod. The video is interactable, allowing the users to pause, play, expand it to fullscreen and to turn up and down the volume.
+    The about page explains and encourages users to use Mekanism whilst also displaying a video to introduce them to the mod. The video is interactable, allowing the users to pause, play, expand it to fullscreen and to turn up and down the volume.
 ![screenshot](documentation/videoss.png)
 
--**Downloads Page**    
+**Downloads Page**    
 
-    -The downloads page includes four download links, each with their own clickable title and clickable image that leads to the respective content. Below this is a comprehensive guide on how to install these mods.
+    The downloads page includes four download links, each with their own clickable title and clickable image that leads to the respective content. Below this is a comprehensive guide on how to install these mods.
 ![screenshot](documentation/downloadsss.png)
 
 
@@ -106,13 +107,13 @@ For the social icons, originally I had edited some by hand in photoshop before I
 ### Future Features
 
 - **An Item and Material List**
-    -Ideally I would like to add a page for every item and material added in the mod, complete with descriptions, guides on how to aquire said items and links to corresponding items or machines. These items would all be listed by category on a single parent page.
+    - Ideally I would like to add a page for every item and material added in the mod, complete with descriptions, guides on how to aquire said items and links to corresponding items or machines. These items would all be listed by category on a single parent page.
 - **Search Bar**
-    -This would also warrent the implementation of a search bar in case the user only wishes to search for certain items. This would likely be alongside the nav menu.
+    - This would also warrent the implementation of a search bar in case the user only wishes to search for certain items. This would likely be alongside the nav menu.
 
 
 ## Tools & Technologies Used
-For this project, I mainly used gitpod to code in, and github to host my repository. GitHub Pages was used for deployment of the front-end site. For the main site content, I used HTML. CSS for the design and layout and Javascript for functionality. I used TinyPng and Webp Converter for all images used on the site to make them smaller and webp format respectively. I used the Fluid Typography Calculator when following guides and swapping to more efficient units of measurement I wasn't used to, such as em, vh, vw and rem. I used Figma to design the wireframe. Lastly I used Font Awesome for all the social icons.
+For this project, I mainly used gitpod to code in, and github to host my repository. GitHub Pages was used for deployment of the front-end site. For the main site content, I used HTML. CSS for the design and layout and Javascript for functionality. I used TinyPng and Webp Converter for all images used on the site to make them smaller and webp format respectively. I used the Fluid Typography Calculator when following guides and swapping to more efficient units of measurement I wasn't used to, such as em, vh, vw and rem. I used Figma to design the wireframe. Lastly, I used Font Awesome for all the social icons.
 
 - [![Markdown Builder](https://img.shields.io/badge/Markdown_Builder-grey?logo=markdown&logoColor=000000)](https://tim.2bn.dev/markdown-builder) used to generate README and TESTING templates.
 - [![Git](https://img.shields.io/badge/Git-grey?logo=git&logoColor=F05032)](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
@@ -162,15 +163,17 @@ This site was deployed to [GitHub Pages.](https://code-lau.github.io/Mekanism_Wi
     
     -The Mekanism mod was created by Aiden Brady. All guide images and video clips are from this mod and are owned by Aiden Brady and his team. I am not associated with Mekanism or it's creator/team in any way.
 
-    |[Minecraft Wiki](https://minecraft.wiki/)|Used in getting-started.html|
+    |[Minecraft Wiki](https://minecraft.wiki/)
 
-    |[Mekanism Curseforge Page](https://www.curseforge.com/minecraft/mc-mods/mekanism)|Used in getting-started.html|
+    |[Mekanism Curseforge Page](https://www.curseforge.com/minecraft/mc-mods/mekanism)
 
     
 ## Media
-    |[Minecraft Wiki](https://minecraft.fandom.com/ru/wiki/Mekanism)|Mekanism V10 Logo|
+    |[Minecraft Wiki](https://minecraft.fandom.com/ru/wiki/Mekanism)|Mekanism V10 Logo and Minecraft Diamond Pickaxe icon|
+
     |[YouTube](https://www.youtube.com/watch?v=Jve-WgrF4Lc)|Audio used in showcase video|
-    |[Mekanism Curseforge Page](https://www.curseforge.com/minecraft/mc-mods/mekanism)|All screenshots are taken from the Mekanism mod software|
+    
+    |[Mekanism Curseforge Page](https://www.curseforge.com/minecraft/mc-mods/mekanism)|All screenshots and footage are taken directly from the Mekanism mod software|
 
 ## Acknowledgements
 - I would like to thank my (very cool) Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his support throughout the development of this project.
