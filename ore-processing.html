@@ -29,69 +29,34 @@
 </head>
     <body id="top">
 
-    <header>
-
-        <a href="index.html" class="logo" alt="Mekanism Logo">MEKANISM</a>
-
-        <ul class="nav-menu">
-
-            <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
-
-            <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
-
-            <li class="nav-item dropdown">
-
-                <a href="getting-started.html" class="dropbtn">GUIDE</a>
-
-                <ul class="dropdown-content">
-
-                    <li><a href="#the-heat-generator">The Heat Generator</a></li>
-
-                    <li><a href="#the-metallurgic-infuser">The Metallurgic Infuser</a></li>
-
-                    <li><a href="#fuel-table">Fuel Table</a></li>
-
-                    <li><a href="#steel-ingots">Steel Ingots</a></li>
-
-                    <li><a href="#fuel-efficiency">Fuel Efficiency</a></li>
-
-                    <li><a href="#steel-frames">Steel Frames</a></li>
-
-                    <li><a href="#the-enrichment-chamber">The Enrichment Chamber</a></li>
-
-                    <li><a href="#power">Power</a></li>
-
-                    <li><a href="#energy-per-tick">Energy Per Tick</a></li>
-
-                    <li><a href="#the-solar-gen">The Solar Gen</a></li>
-
-                    <li><a href="#the-advanced-solar-gen">Advanced Solar Gen</a></li>
-
-                    <li><a href="#the-wind-generator">The Wind Generator</a></li>
-
-                    <li><a href="#the-bio-generator">The Bio Generator</a></li>
-
-                    <li><a href="#the-crusher">The Crusher</a></li>
-
-                </ul>
-
-            </li>
-
-            <li class="nav-item"><a href="download.html" class="nav-link">DOWNLOAD</a></li>
-
-        </ul>
-
-        <div class="hamburger">
-
-            <span class="bar"></span>
-
-            <span class="bar"></span>
-
-            <span class="bar"></span>
-
-        </div>
-
-    </header>
+        <header>
+            <a href="index.html" class="logo" alt="Mekanism Logo">MEKANISM</a>
+            <div class="nav-menu" id="mynav-menu">
+                <a href="index.html" class="active">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <div>
+                    <div class="dropdown">
+                        <button class="dropbtn">GUIDE
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="tools.html">Tools</a>
+                            <a href="getting-started.html">Getting Started</a>
+                            <a href="ore-processing.html">Ore Processing</a>
+                            <a href="reactors.html">Reactors</a>
+                            <a href="end-game.html">End Game</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="download.html">DOWNLOAD</a>
+            </div>
+            
+            <div class="hamburger" onclick="myFunction()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </header>
     <a href="#top" class="arrow">
 
         <img src="https://i.ibb.co/4mpCXNx/minecraft-pickaxe.webp"
