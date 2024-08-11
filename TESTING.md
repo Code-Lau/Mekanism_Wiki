@@ -3,20 +3,20 @@
 
 # Responsiveness
     -[Home - Desktop](documentation/homedesktop.png)
-    -[Home - Tablet]()
-    -[Home - Mobile]()
+    -[Home - Tablet](documentation/hometablet.png)
+    -[Home - Mobile](documentation/homemobile.png)
 
     -[About - Desktop](documentation/aboutdesktop.png)
-    -[About - Tablet]()
-    -[About - Mobile]()
+    -[About - Tablet](documentation/abouttablet.png)
+    -[About - Mobile](documentation/aboutmobile.png)
 
     -[Guide Page #1 - Desktop](documentation/guidedesktop.png)
-    -[Guide Page #1 - Tablet]()
-    -[Guide Page #1 - Mobile]()
+    -[Guide Page #1 - Tablet](documentation/guidetablet.png)
+    -[Guide Page #1 - Mobile](documentation/guidemobile.png)
 
     -[Download - Desktop](documentation/downloaddesktop.png)
-    -[Download - Tablet]()
-    -[Download - Mobile]()
+    -[Download - Tablet](documentation/downloadstablet.png)
+    -[Download - Mobile](documentation/downloadsmobile.png)
 
 # Manual Testing
 
