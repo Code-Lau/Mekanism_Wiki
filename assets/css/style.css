@@ -263,8 +263,8 @@ video {
 /* Guide */
 .pickaxe {
     position: fixed;
-    right: 20px;
-    bottom: 3vh;
+    right: 0.5em;
+    bottom: 1em;
     z-index: 2;
     border: none;
     outline: none;
@@ -567,7 +567,7 @@ main#main-guide section {
     #ore-processing p{
         padding-right:30px;
     }
-    section figure:not(#download-container figure, #main-page figure) {
+    section figure:not(#download-container figure, #main-page figure, #about-page figure) {
         padding-top:5em;
     }
     p.bold{
@@ -581,13 +581,9 @@ main#main-guide section {
     section.container#fuel-table {
         padding: 10em;
     }
-    img:not(.guide-img, .noradius, #download-container img){
+    img:not(.guide-img, .noradius, #download-container img, .pickaxe img), video{
         margin-left:1em;
         max-height:30em;
-    }
-    video {
-        width: 100%;
-        margin-left:2em;
     }
 
     .hero-text {
@@ -609,17 +605,23 @@ main#main-guide section {
     }
     img.guide-img, img.noradius {
         max-height:25em;
-        
     }
     .guide-img {
         border-radius: 1em;
+    }
+    video {
+        padding-left:1em;
+        padding-bottom:2em;
     }
     a.btn:hover {
         transform: translateY(-8px);
         transition: all 0.55s ease-in-out;
         color: white;
     }
-   
+    .pickaxe {
+        right:1.5em;
+        bottom:1em; 
+    }
     #download-container {
         flex-direction: row;
         margin-top:8em;
@@ -693,9 +695,11 @@ main#main-guide section {
         max-height:40em;
         width:100%;
     }
+    
 }
 @media only screen and (min-width: 1450px) {
     section.container#main-page {
         margin:8em 0 5em 0;
     }
+    
 }
