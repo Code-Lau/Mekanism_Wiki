@@ -18,6 +18,7 @@ Mekanism is an independent tech mod created by Aiden Brady that brings low, mid,
 Mekanism was first released on May 27th, 2017 and since then has been a pillar of tech in modpacks. Despite this, there is only one very old wiki and almost next to no coverage of the details. For a new player, searching for information comes in the form of outdated youtube videos and reddit posts. This project will change that, giving players an up to date and relevant guide from the smallest details to large and complicated factories. The end goal for this project is to the be main site people come to for information. The hope is that no one will be confused, absorbing incorrect or outdated info and that it is user friendly and accessible to all who may need it.
 
 ![screenshot](documentation/isitresponsivess.png)
+
 [Am I Responsive?](https://ui.dev/amiresponsive?url=https://code-lau.github.io/Mekanism_Wiki/)
 
 ## UX
@@ -35,7 +36,7 @@ For the colour scheme, I went with a dark blue to make it feel industrial and te
 ![screenshot](documentation/mekanismwikipalette.png)
 
 ### Typography
-The font used primarily on this website is [Saira Condensed.](https://fonts.google.com/specimen/Saira) I chose this font specifically because it closely matches what the creator chose for his logo. It also encapsulates the feeling of "tech" and "sci-fi" with it's harsh edges and tall line-height. This is used for all texts, and should the user's browser not support it, it defaults to [Tahoma]() and [Verdana]() as the backups.
+The font used primarily on this website is [Saira Condensed.](https://fonts.google.com/specimen/Saira) I chose this font specifically because it closely matches what the creator chose for his logo. It also encapsulates the feeling of "tech" and "sci-fi" with it's harsh edges and tall line-height. This is used for all texts, and should the user's browser not support it, it defaults to Tahoma and Verdana as the backups.
 
 
 ![screenshot](documentation/mekanismblacklogo.png)
@@ -67,15 +68,18 @@ For the social icons, originally I had edited some by hand in photoshop before I
 ![screenshot](documentation/buttonss.png)
 
 - **Email**
+
     -An email link is displayed at the bottom left of the screen to allow the users to contact the author. Users would ideally contact the author about bug fixes or suggestions. 
 
 ![screenshot](documentation/emailss.png)
 
 -**Socials**
+
     -An icon for X (Twitter), Github and LinkedIn are displayed at the bottom right of the screen to allow the users to get in touch via those platforms, or to simply follow the production of the mod. 
 ![screenshot](documentation/socialiconsss.png)   
 
 -**Guide Page**
+
     -The guide page contains content that users can follow to accomplish their goals or figure out how their machines work. It contains many images relevant to the guide text and is written in a clear and consise way.
 ![screenshot](documentation/guidess.png)
 
@@ -83,14 +87,17 @@ For the social icons, originally I had edited some by hand in photoshop before I
 ![screenshot](documentation/tabless.png)
 
 -**Back to the top**
+
     -On the guide page and any other page with a lot of scrollable content, there is a small icon of a Minecraft Diamond Pickaxe that acts as a button to return the user to the top of the screen. This allows users to navigate through the site quickly by bringing them to back to the nav menu whenever they like. 
 ![screenshot](documentation/pickaxess.png)
 
 -**About Page**
+
     -The about page explains and encourages users to use Mekanism whilst also displaying a video to introduce them to the mod. The video is interactable, allowing the users to pause, play, expand it to fullscreen and to turn up and down the volume.
 ![screenshot](documentation/videoss.png)
 
 -**Downloads Page**    
+
     -The downloads page includes four download links, each with their own clickable title and clickable image that leads to the respective content. Below this is a comprehensive guide on how to install these mods.
 ![screenshot](documentation/downloadsss.png)
 
@@ -117,9 +124,9 @@ For this project, I mainly used gitpod to code in, and github to host my reposit
 - [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-grey?logo=githubpages&logoColor=222222)](https://pages.github.com) used for hosting the deployed front-end site.
 - [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-grey?logo=postgresql&logoColor=4169E1)](https://www.postgresql.org) used as the relational database management.
 - [![PostgreSQL by Code Institute](https://img.shields.io/badge/PostgreSQL_by_Code_Institute-grey?logo=okta&logoColor=F05223)](https://dbs.ci-dbs.net) used as the Postgres database from Code Institute.
-- [![TinyPNG](https://tinypng.com/)]used for the images.
-- [![Webp Converter](https://cloudconvert.com/webp-converter)]used for the images.
-- [![Fluid Typography Calculator](https://royalfig.github.io/fluid-typography-calculator/)]used for box content.
+- [![TinyPNG](https://tinypng.com/)] used for the images.
+- [![Webp Converter](https://cloudconvert.com/webp-converter)] used for the images.
+- [![Fluid Typography Calculator](https://royalfig.github.io/fluid-typography-calculator/)] used for box content.
 - [![Figma](https://img.shields.io/badge/Figma-grey?logo=figma&logoColor=F24E1E)](https://www.figma.com) used for creating wireframes.
 - [![Font Awesome](https://img.shields.io/badge/Font_Awesome-grey?logo=fontawesome&logoColor=528DD7)](https://fontawesome.com) used for the icons.
 
