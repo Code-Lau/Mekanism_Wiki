@@ -129,9 +129,6 @@ For the social icons, originally I had edited some by hand in photoshop before I
 - [![CSS](https://img.shields.io/badge/CSS-grey?logo=css3&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
 - [![JavaScript](https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoColor=F7DF1E)](https://www.javascript.com) used for user interaction on the site.
 - [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-grey?logo=githubpages&logoColor=222222)](https://pages.github.com) used for hosting the deployed front-end site
-- [![TinyPNG](https://tinypng.com/)] used for the images.
-- [![Webp Converter](https://cloudconvert.com/webp-converter)] used for the images.
-- [![Fluid Typography Calculator](https://royalfig.github.io/fluid-typography-calculator/)] used for box content.
 - [![Figma](https://img.shields.io/badge/Figma-grey?logo=figma&logoColor=F24E1E)](https://www.figma.com) used for creating wireframes.
 - [![Font Awesome](https://img.shields.io/badge/Font_Awesome-grey?logo=fontawesome&logoColor=528DD7)](https://fontawesome.com) used for the icons.
 
@@ -139,7 +136,7 @@ For the social icons, originally I had edited some by hand in photoshop before I
 Please refer to the [TESTING.md](/workspace/Mekanism_Wiki/TESTING.md) file.
 
 ## Deployment
-This site was deployed to [GitHub Pages.](https://code-lau.github.io/Mekanism_Wiki/)
+This site was deployed to GitHub Pages. The live link can be found [here](https://code-lau.github.io/Mekanism_Wiki)
 
 ### Local Deployment
 
@@ -176,27 +173,20 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-After testing both the local version hosted by Gitpod, and the live version hosted by GitHub Pages I observed no notable differences.
+After testing both the local version hosted by Gitpod, and the live version hosted by GitHub Pages I observed no notable differences. This was tested on Firefox.
 
 ## Credits
 All code referenced does not belong to me and is borrowed expressly for learning purposes.
-
-| [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | HTML img tag, Border Color, CSS Syntax, CSS Borders, CSS Introduction, Colors, HTML Styles CSS, CSS Margin Collapse, CSS Border Sides, CSS Border Width, Fixed Sidebar, Flex-wrap Property, Web Safe Fonts, CSS Vertical Navigation Bar, CSS Horizontal Navigation Bar, CSS Line-height Property, Styling Links|
-
+| Source | Content | Location |
+| --- | --- | --- |
+| [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | HTML img tag, Border Color, CSS Syntax, CSS Borders, CSS Introduction, Colors, HTML Styles CSS, CSS Margin Collapse, CSS Border Sides, CSS Border Width, Fixed Sidebar, Flex-wrap Property, Web Safe Fonts, CSS Vertical Navigation Bar, CSS Horizontal Navigation Bar, CSS Line-height Property, Styling Links| Used in all html pages and the style sheet. |
 | [CodePen](https://codepen.io/miguelznunez/pen/QWvPmEx) | Responsive Navigation Menu | Used on all html pages and burger.js |
-
-| [YouTube](https://www.youtube.com/watch?v=samof05Dy6A) | Create a Responsive Dropdown Menu | Dropdown Menu used in all html pages. |
-    
+| [YouTube](https://www.youtube.com/watch?v=samof05Dy6A) | Create a Responsive Dropdown Menu | Dropdown Menu used in all html pages. | 
 | [Youtube](https://www.youtube.com/watch?v=0gCMLAivggc) | Non-Rectangular Header Using CSS Polygon | Used in all html pages |
-
 | [YouTube](https://www.youtube.com/watch?v=IXucQAEkIMo&t=358s) | Responsive Website Using HTML And CSS | Logo, Navbar and Hamburger Menu used in all html pages. Scroll Reveal used in all html pages and script.js |
-
 | [YouTube](https://www.youtube.com/watch?v=YesSVqjcDts&t=803s) | How to create the side navigation bar using html and css | Used on all html pages |
-
 | [Stack Overflow](https://stackoverflow.com/questions/2237540/how-do-i-load-external-fonts-into-an-html-document) | How to load external fonts into an HTML document? | Used in style.css |
-
 | [Stack Overflow](https://stackoverflow.com/questions/34957568/how-to-write-html-in-uk-english) | How to write HTML in UK English? | Used in all html pages |
-
 | [Stack Overflow](https://stackoverflow.com/questions/2237540/how-do-i-load-external-fonts-into-an-html-document) | How do I load external fonts into an HTML document? | Used in style.css |
 
 ## Content
@@ -208,13 +198,12 @@ All code referenced does not belong to me and is borrowed expressly for learning
 
 - [Mekanism Curseforge Page](https://www.curseforge.com/minecraft/mc-mods/mekanism)
 
-    
 ## Media
-| [Minecraft Wiki](https://minecraft.fandom.com/ru/wiki/Mekanism) | Mekanism V10 Logo and Minecraft Diamond Pickaxe icon |
-
-| [YouTube](https://www.youtube.com/watch?v=Jve-WgrF4Lc) | Audio used in showcase video |
-    
-| [Mekanism Curseforge Page](https://www.curseforge.com/minecraft/mc-mods/mekanism) | All screenshots and footage are taken directly from the Mekanism mod software |
+| Source | Content | Location |
+| --- | --- | --- |
+| [Minecraft Wiki](https://minecraft.fandom.com/ru/wiki/Mekanism) | Mekanism V10 Logo and Minecraft Diamond Pickaxe icon | Used on all guide pages.
+| [YouTube](https://www.youtube.com/watch?v=Jve-WgrF4Lc) | Audio used in showcase video | Used on the about page.
+| [Mekanism Curseforge Page](https://www.curseforge.com/minecraft/mc-mods/mekanism) | All screenshots and footage are taken directly from the Mekanism mod software | Used on all html pages.
 
 ## Acknowledgements
 - I would like to thank my (very cool) Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his support throughout the development of this project.
