@@ -586,7 +586,7 @@ main#main-guide section {
     }
 
     .hero-text {
-        margin: 1em;
+        padding: 0 1em 0 1em;
         font-size: 24px;
         word-spacing: 25%;
         line-height: 130%;
@@ -681,6 +681,18 @@ main#main-guide section {
         width: 100%;
         height: 111px;
         background: white;
+        clip-path: polygon(0 0, 100% 0, -400% 150%, 0 0);
+    }
+
+    footer#downloadfooter::before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: -1px;
+        left: 0;
+        width: 100%;
+        height: 111px;
+        background: powderblue;
         clip-path: polygon(0 0, 100% 0, -400% 150%, 0 0);
     }
 
