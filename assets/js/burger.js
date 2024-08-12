@@ -1,4 +1,6 @@
-/* //Burger Menu in mobile */
+/* jshint esversion: 11 */
+
+//Burger Menu in mobile
 let hamburger = document.querySelector('.hamburger');
 let header = document.querySelector('header');
 
@@ -11,7 +13,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   hamburger.classList.remove("active");
   header.classList.remove("active");
 })) 
-/* Toggle between adding and removing the "responsive" class to nav-menu when the user clicks on the icon */
+//Toggle between adding and removing the "responsive" class to nav-menu when the user clicks on the icon
 function myFunction() {
   var x = document.getElementById("mynav-menu");
   if (x.className === "nav-menu") {
