@@ -1,3 +1,5 @@
+/* jshint esversion: 11 */
+
 //Scroll Reveal on load
 const sr = ScrollReveal ({
   distance:'65px',
@@ -16,7 +18,7 @@ sr.reveal('video',{delay:400, origin:'left'});
 sr.reveal('.guide-img',{delay:400, origin:'left'});
 sr.reveal('.download-container',{delay:400, origin:'top'});
 
-// Arrow Jump back to Top
+//Arrow Jump back to Top
 const mybutton = document.getElementById("pickaxe");
 
 window.onscroll = function() {scrollFunction()};
