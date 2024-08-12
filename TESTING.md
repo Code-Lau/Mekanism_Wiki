@@ -4,25 +4,25 @@ Return back to the [README.md](README.md) file.
 
 ## Responsiveness
 
-## Home
+### Home
 
 | Desktop | Tablet | Mobile |
 | --- | --- | --- |
 | ![Home - Desktop](documentation/homedesktop.png) | ![Home - Tablet](documentation/hometablet.png) | ![Home - Mobile](documentation/homemobile.png) |
 
-## About
+### About
 
 | Desktop | Tablet | Mobile |
 | --- | --- | --- |
 | ![About - Desktop](documentation/aboutdesktop.png) | ![About - Tablet](documentation/abouttablet.png) | ![About - Mobile](documentation/aboutmobile.png) |
 
-## Guide Page 
+### Guide Page 
 
 | Desktop | Tablet | Mobile |
 | --- | --- | --- |
 | ![Guide Page - Desktop](documentation/guidedesktop.png) |  ![Guide Page - Tablet](documentation/guidetablet.png) | ![Guide Page - Mobile](documentation/guidemobile.png) |
 
-## Download
+### Download
 
 | Desktop | Tablet | Mobile |
 | --- | --- | --- |
@@ -46,30 +46,51 @@ Return back to the [README.md](README.md) file.
 
 ## Compatibility Testing
 
-    Here I manually tested all functionality and features across all responsive sizes and browsers. For this, I used Chrome, Opera, Firefox and Edge.
+Here I manually tested all functionality and features across all responsive sizes and browsers. For this, I used Chrome, Opera, Firefox and Edge.
 
-    -[Chrome](documentation/CHROME.md)
-    -[Opera](documentation/OPERA.md)
-    -[Firefox](documentation/FIREFOX.md)
-    -[Edge](documentation/EDGE.md)
-    
-    Site Speed Tests
-    For this, I used [Catchpoint's Site Performance Service.](https://www.webpagetest.org/) This allows you to test site performance, speed, core web vitals and visual comparisons on all devices. 
+**Firefox**
 
-    For device compatibilty I tested the following devices:
-        -Two desktop computers using Firefox and Chrome respectively
-        -A Samsung Galaxy S20 FE
-        -ASUS Notebook PC using Chrome
-        -Samsung A12
-        -Samsung M12
-        -Samsung A03
-    All of these devices had no issues running the site or interacting with features.
+![screenshot](documentation/firefoxtest.png)
+
+**Chrome**
+
+![screenshot](documentation/googlechrometest.png)
+
+**Opera**
+
+![screenshot](documentation/operatest.png)
+
+**Edge** 
+
+![screenshot](documentation/edgetest.png)
+
+### Site Speed Tests
+For this, I used [Catchpoint's Site Performance Service.](https://www.webpagetest.org/) This allows you to test site performance, speed, core web vitals and visual comparisons on all devices. 
+
+![screenshot](documentation/pageperformance.png)
+
+![screenshot](documentation/waterfallview.png)
+
+For device compatibilty I tested the following devices:
+-Two desktop computers using Firefox and Chrome respectively
+
+-ASUS Notebook PC using Chrome 
+
+-Samsung Galaxy S20 FE
+
+-Samsung Galaxy A12
+
+-Samsung Galaxy M12
+
+-Samsung Galaxy A03
+
+All of these devices had no issues running the site or interacting with features.
     
 ## User Experience Testing
 
-    -I asked some family and friends to load the website on their devices and to test anything that seemed like it was interactable. The feedback was unanimous in that there were no issues.
-    -The design was clear and easy to understand, they had no issue navigating the site or information presented. 
-    -They offered some suggestions for design and content that I hope to implement in the future, such as creating a dedicated thumbnail for the showcase video.
+- I asked some family and friends to load the website on their devices and to test anything that seemed like it was interactable. The feedback was unanimous in that there were no issues.
+- The design was clear and easy to understand, they had no issue navigating the site or information presented. 
+- They offered some suggestions for design and content that I hope to implement in the future, such as creating a dedicated thumbnail for the showcase video.
 
 ## Regression Testing:
 
@@ -85,8 +106,35 @@ All files were put through the appropriate validators and came back with no erro
 
 HTML: For all HTML files, I used the recommended [HTML W3C Validator.](https://validator.w3.org)
 
+Home Page
+![screenshot]()
+
+About Page
+![screenshot]()
+
+Guide Page #1
+![screenshot]()
+
+Guide Page #2
+![screenshot]()
+
+Download Page
+![screenshot]()
+
+Error Page
+![screenshot]()
+
 CSS: For the style sheet I used the [CSS Jigsaw Validator.](https://jigsaw.w3.org/css-validator)
 
+Style Sheet
+![screenshot]()
+
 Javascript: For Javascript I used the [JShint Validator.](https://jshint.com)
+
+Burgermenu Script
+![screenshot](documentation/burgertest.png)
+
+Scrollreveal Script
+![screenshot](documentation/scripttest.png)
 
     
