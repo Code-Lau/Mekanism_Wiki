@@ -1,83 +1,51 @@
 # Testing
 
-# Responsiveness
-    -[Home - Desktop](documentation/homedesktop.png)
-    -[Home - Tablet](documentation/hometablet.png)
-    -[Home - Mobile](documentation/homemobile.png)
+Return back to the [README.md](README.md) file.
 
-    -[About - Desktop](documentation/aboutdesktop.png)
-    -[About - Tablet](documentation/abouttablet.png)
-    -[About - Mobile](documentation/aboutmobile.png)
+## Responsiveness
 
-    -[Guide Page #1 - Desktop](documentation/guidedesktop.png)
-    -[Guide Page #1 - Tablet](documentation/guidetablet.png)
-    -[Guide Page #1 - Mobile](documentation/guidemobile.png)
+## Home
 
-    -[Download - Desktop](documentation/downloaddesktop.png)
-    -[Download - Tablet](documentation/downloadstablet.png)
-    -[Download - Mobile](documentation/downloadsmobile.png)
+| Desktop | Tablet | Mobile |
+| --- | --- | --- |
+| ![Home - Desktop](documentation/homedesktop.png) | ![Home - Tablet](documentation/hometablet.png) | ![Home - Mobile](documentation/homemobile.png) |
 
-# Manual Testing
-<table>
-    <thead>
-        <tr>
-            <th>Test</th>
-            <th>Goal</th>
-            <th>Outcome</th>
-        <tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Responsiveness</td>
-            <td>Website should be responsive to all screen sizes</td>
-            <td>Passed</td>
-        </tr>
-        <tr>
-            <td>Logo</td>
-            <td>The logo should redirect the user to the home page if clicked</td>
-            <td>Passed</td>
-        </tr>
-        <tr>
-            <td>Nav Links</td>
-            <td>All navigational links should direct the user to the intended source</td>
-            <td>Passed</td>
-        </tr>
-        <tr>
-            <td>Buttons</td>
-            <td>All buttons should direct the user to the intended source</td>
-            <td>Passed</td>
-        </tr>
-        <tr>
-            <td>Social Icons</td>
-            <td>All social icons should open a seperate tab to the appropriate social media</td>
-            <td>Passed</td>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td>The envelope icon and email should open a seperate tab to gmail</td>
-            <td>Passed</td>
-        </tr>
-        <tr>
-            <td>Video</td>
-            <td>The user should be able to click on, play/pause, adjust volume/mute, search for a timestamp and enlarge any videos.</td>
-            <td>Passed</td>
-        </tr>
-        <tr>
-            <td>Jump to top</td>
-            <td>The user should be brought back to the top of the page upon clicking the icon</td>
-            <td>Passed</td>
-        </tr>
-        <tr>
-            <td>Download Links</td>
-            <td>When either the title or image is clicked, a new tab should be opened to the appropriate link.</td>
-            <td>Passed</td>
-        </tr>
-    </tbody>
-<table>
+## About
+
+| Desktop | Tablet | Mobile |
+| --- | --- | --- |
+| ![About - Desktop](documentation/aboutdesktop.png) | ![About - Tablet](documentation/abouttablet.png) | ![About - Mobile](documentation/aboutmobile.png) |
+
+## Guide Page 
+
+| Desktop | Tablet | Mobile |
+| --- | --- | --- |
+| ![Guide Page - Desktop](documentation/guidedesktop.png) |  ![Guide Page - Tablet](documentation/guidetablet.png) | ![Guide Page - Mobile](documentation/guidemobile.png) |
+
+## Download
+
+| Desktop | Tablet | Mobile |
+| --- | --- | --- |
+| ![Download - Desktop](documentation/downloaddesktop.png) | ![Download - Tablet](documentation/downloadstablet.png) | ![Download - Mobile](documentation/downloadsmobile.png) |
+
+## Manual Testing
+
+| Test | Goal | Outcome |
+| --- | --- | --- |
+| Responsiveness | Website should be responsive to all screen sizes | Passed |
+| Logo | The logo should redirect the user to the home page if clicked | Passed |
+| Nav Links | All navigational links should direct the user to the intended source | Passed |
+| Buttons | All buttons should direct the user to the intended source | Passed |
+| Social Icons | All social icons should open a separate tab to the appropriate social media | Passed |
+| Email | The envelope icon and email should open a seperate tab to gmail | Passed |
+| Video | The user should be able to click on, play/pause, adjust volume/mute, search for a timestamp and enlarge any videos. | Passed |
+| Jump to top | The user should be brought back to the top of the page upon clicking the icon | Passed |
+| Download Links | When either the title or image is clicked, a new tab should be opened to the appropriate link. | Passed |
 
 ![screenshot](documentation/firefoxtest.png)
 
-# Compatibility Testing
+## Compatibility Testing
+
     Here I manually tested all functionality and features across all responsive sizes and browsers. For this, I used Chrome, Opera, Firefox and Edge.
 
     -[Chrome](documentation/CHROME.md)
@@ -97,32 +65,28 @@
         -Samsung A03
     All of these devices had no issues running the site or interacting with features.
     
-# User Experience Testing
+## User Experience Testing
+
     -I asked some family and friends to load the website on their devices and to test anything that seemed like it was interactable. The feedback was unanimous in that there were no issues.
     -The design was clear and easy to understand, they had no issue navigating the site or information presented. 
     -They offered some suggestions for design and content that I hope to implement in the future, such as creating a dedicated thumbnail for the showcase video.
 
-# Regression Testing
-    -
+## Regression Testing:
 
-# Documentation and Logs
-    -
+After implementing fixes or updates, ensure that previous features and functionalities still work as intended. This prevents new changes from breaking existing features.
 
-# Code Validation
-    All files were put through the appropriate validators and came back with no errors. 
+## Documentation and Logs:
 
-    HTML: For all HTML files, I used the recommended [HTML W3C Validator.](https://validator.w3.org)
-        -[Homepage]()
-        -[About Page]()
-        -[Getting Started Guide Page]()
-        -[Ore Processing Guide Page]()
-        -[Download Page]()
+Maintain records of testing procedures, results, and any bugs encountered along with their resolutions. This helps demonstrate a systematic approach to testing and problem-solving.
+User Feedback Incorporation:
 
-    CSS: For the style sheet I used the [CSS Jigsaw Validator.](https://jigsaw.w3.org/css-validator)
-        -[Style Sheet]()
+## Code Validation
+All files were put through the appropriate validators and came back with no errors. 
 
-    Javascript: For Javascript I used the [JShint Validator.](https://jshint.com)
-        -[Script]()
-        -[Burger Menu]()
+HTML: For all HTML files, I used the recommended [HTML W3C Validator.](https://validator.w3.org)
+
+CSS: For the style sheet I used the [CSS Jigsaw Validator.](https://jigsaw.w3.org/css-validator)
+
+Javascript: For Javascript I used the [JShint Validator.](https://jshint.com)
 
     
