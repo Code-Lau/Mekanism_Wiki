@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
-    font-family:'Saira Condensed', 'Tahoma', 'Verdana';
-    list-style:none;
-    text-decoration:none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Condensed', 'Tahoma', 'Verdana';
+    list-style: none;
+    text-decoration: none;
 }
 
 html {
@@ -15,7 +15,7 @@ html {
     scroll-behavior: smooth;
 }
 
-html, 
+html,
 body {
     height: 100%;
 }
@@ -44,7 +44,7 @@ header {
     font-weight: 700;
     color: white;
     cursor: pointer;
-    padding-right:20px;
+    padding-right: 20px;
 }
 
 
@@ -55,8 +55,7 @@ header {
     position: relative;
     padding: 17px 0;
     background-color: transparent;
-    align-items: right;
-    margin-top:1em;
+    margin-top: 1em;
 }
 
 .bar {
@@ -82,14 +81,17 @@ header {
     background-color: #162844;
     overflow: hidden;
     font-weight: 700;
-    
+
 }
-.nav-menu:visited, .nav-menuresponsive:visited {
-    color:white;
-    background-color:transparent;
+
+.nav-menu:visited,
+.nav-menuresponsive:visited {
+    color: white;
+    background-color: transparent;
 }
+
 .nav-menuresponsive {
-    display:flex;
+    display: flex;
     flex-direction: column;
     row-gap: 10px;
     position: fixed;
@@ -99,12 +101,12 @@ header {
     transition: all .55s ease;
     color: white;
     background-color: #162844;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     text-align: center;
-    width:100%;
-    z-index:4;
-    padding:1em;
+    width: 100%;
+    z-index: 4;
+    padding: 1em;
 }
 
 .dropdown .dropbtn {
@@ -128,8 +130,8 @@ header {
     z-index: 1;
     padding: 10px;
     border-radius: 5px;
-    width:100%;
-    left:0;
+    width: 100%;
+    left: 0;
     justify-content: center;
 
 }
@@ -142,13 +144,13 @@ header {
     text-align: center;
 }
 
-.dropdown:hover{
+.dropdown:hover {
     display: block;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-}  
+}
 
 .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -162,26 +164,38 @@ header {
     transform: translateY(-10px) rotate(-45deg);
 }
 
+main {
+    margin: 1em;
+}
+
+main#main-guide {
+    margin: 0;
+}
+
 footer a,
 .nav-menu a,
-.btn, header a, a:visited {
+.btn,
+header a,
+a:visited {
     color: white;
 }
 
 a:not(footer a):not(header a):not(.btn) {
     color: #162844;
 }
+
 a:visited {
-    color:#fff;
+    color: #fff;
 }
+
 img:not(.guide-img, .noradius) {
     object-fit: contain;
     border-radius: 1em;
-    width:100%;
+    width: 100%;
 }
 
 figure {
-   padding:2em 0 2em 0;
+    padding: 2em 0 2em 0;
 }
 
 .hero-text {
@@ -189,9 +203,9 @@ figure {
     color: #162844;
     font-size: 20px;
     text-align: center;
-    word-spacing: 2px;
     line-height: 110%;
     font-weight: 300;
+    word-spacing: 5px;
 }
 
 .hero-text p {
@@ -203,21 +217,17 @@ figure {
 .hero-text p a {
     font-weight: bold;
     text-decoration: underline;
-    
+
 }
+
 .hero-text p a.btn {
     text-decoration: none;
 }
 
-.noradius {
-    border-radius: 0;
+.hero-text p.bold {
+    font-weight: bold;
 }
-main {
-    margin: 1em;
-}
-#errorol li{
-    text-decoration: dotted;
-}
+
 .btn {
     background-color: #162844;
     border: 1px solid transparent;
@@ -226,7 +236,7 @@ main {
     text-transform: uppercase;
     transition: all .5s ease;
     padding: 10px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 /* Ripple Effect referenced here https://codepen.io/finnhvman/post/pure-css-ripple-with-minimal-effort */
@@ -260,12 +270,18 @@ footer ul li {
     margin: 0.5em;
 }
 
+
+
 /* About */
 video {
     width: 100%;
 }
 
 /* Guide */
+main#main-guide section {
+    padding: 3em 2em;
+}
+
 .pickaxe {
     position: fixed;
     right: 0.5em;
@@ -277,10 +293,16 @@ video {
     cursor: pointer;
     border-radius: 50%;
 }
+
 .guide-img {
     object-fit: contain;
     border-radius: 1em;
 }
+
+.noradius {
+    border-radius: 0;
+}
+
 section.container {
     padding: 0;
     display: flex;
@@ -295,7 +317,6 @@ figcaption {
     line-height: 110%;
     color: #162844;
     text-align: center;
-    
 }
 
 .fueltable {
@@ -318,15 +339,7 @@ th,
 tr {
     color: #162844;
 }
-th.material {
-    width:300px;
-}
-th.fuel {
-    width:200px;
-}
-th.amount {
-    width:250px;
-}
+
 thead {
     background-color: white;
 }
@@ -361,16 +374,6 @@ thead {
 
 .any {
     background-color: thistle;
-}
-.hero-text p.bold{
-    font-weight:bold;
-}
-main#main-guide {
-    margin: 0;
-}
-
-main#main-guide section {
-    padding: 3em 2em;
 }
 
 .container:nth-child(even) {
@@ -419,18 +422,24 @@ main#main-guide section {
     object-fit: contain;
 }
 
+/* Error */
+#errorol li {
+    text-decoration: dotted;
+}
+
 /* Media Queries */
 @media screen and (max-width:555px) {
     footer {
         font-size: 1em;
     }
-   
+
 }
 
 /* https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
 @media screen and (max-width: 979px) {
 
-    .nav-menu a:not(:first-child), .dropdown-content {
+    .nav-menu a:not(:first-child),
+    .dropdown-content {
         display: none;
     }
 
@@ -438,9 +447,7 @@ main#main-guide section {
         float: right;
         display: block;
     }
-    .guide-img, .noradius {
-        width:100%;
-    }
+
     .nav-menu.responsive {
         position: relative;
     }
@@ -470,8 +477,14 @@ main#main-guide section {
         width: 100%;
         text-align: left;
     }
-    img:not(.guide-img, .noradius, #download-container img){
-        max-height:20em;
+
+    img:not(.guide-img, .noradius, #download-container img) {
+        max-height: 20em;
+    }
+
+    .guide-img,
+    .noradius {
+        width: 100%;
     }
 }
 
@@ -480,6 +493,7 @@ main#main-guide section {
     main {
         margin: 5em 1em 5em 1em;
     }
+
     .hamburger,
     .bar {
         display: none;
@@ -519,14 +533,15 @@ main#main-guide section {
         justify-content: flex-end;
         position: unset;
         background-color: transparent;
-        margin-top:22px;
+        margin-top: 22px;
         margin-right: 20px;
         gap: 1em;
-        top:0;
-        font-size:40px;
+        top: 0;
+        font-size: 40px;
     }
+
     .nav-menuresponsive {
-        display:flex;
+        display: flex;
         flex-direction: column;
         row-gap: 10px;
         font-size: 40px;
@@ -536,40 +551,38 @@ main#main-guide section {
         color: white;
         background-color: #162844;
         text-align: center;
-        z-index:4;
-        float:left;
+        z-index: 4;
+        float: left;
     }
+
     .nav-menu a {
         font-weight: 700;
         transition: all .55s ease;
         margin: 0px;
         padding: 0px;
     }
-    
+
     .dropdown-content {
-        width:7em;
-        left:inherit;
+        width: 7em;
+        left: inherit;
         font-size: 30px;
     }
+
     .nav-menu a:hover,
     .dropbtn:hover {
         transform: translateY(-5px);
         transition: all 0.55s ease-in-out;
     }
+
     .dropdown-content a:hover {
         background-color: #162844;
         color: white;
     }
 
-    #ore-processing p{
-        padding-right:30px;
-    }
     section figure:not(#download-container figure, #main-page figure, #about-page figure) {
-        padding-top:5em;
+        padding-top: 5em;
     }
-    p.bold{
-        margin:1em;
-    }
+
     section.container:not(#fuel-table) {
         flex-direction: row;
         justify-content: space-evenly;
@@ -578,15 +591,21 @@ main#main-guide section {
     section.container#fuel-table {
         padding: 10em;
     }
-    img:not(.guide-img, .noradius, #download-container img, .pickaxe img), video{
-        margin-left:1em;
-        max-height:30em;
+
+    img:not(.guide-img, .noradius, #download-container img, .pickaxe img),
+    video {
+        margin-left: 1em;
+        max-height: 30em;
+    }
+
+    img.guide-img,
+    img.noradius {
+        max-height: 25em;
     }
 
     .hero-text {
         padding: 0 1em 0 1em;
         font-size: 24px;
-        word-spacing: 25%;
         line-height: 130%;
     }
 
@@ -594,42 +613,57 @@ main#main-guide section {
         font-size: 40px;
         margin-top: 1em;
     }
+
     figure {
         padding: 2em 1em 2em 1em;
     }
+
     figcaption {
         font-size: 24px;
     }
-    img.guide-img, img.noradius {
-        max-height:25em;
+
+    #ore-processing p {
+        padding-right: 30px;
     }
+
+    p.bold {
+        margin: 1em;
+    }
+
     .guide-img {
         border-radius: 1em;
     }
+
     video {
-        padding-left:1em;
-        padding-bottom:2em;
+        padding-left: 1em;
+        padding-bottom: 2em;
     }
+
     .pickaxe {
-        right:1.5em;
-        bottom:1em; 
+        right: 1.5em;
+        bottom: 1em;
     }
+
     #download-container {
         flex-direction: row;
-        margin-top:8em;
+        margin-top: 8em;
     }
+
     #download-container:not(img) {
-        gap:1em;
+        gap: 1em;
     }
+
     #download-container img {
         width: 100%;
     }
+
     #download-container figure img {
-        
-        border-radius:2em;
-        padding:1em;
-      
+
+        border-radius: 2em;
+        padding: 1em;
+
     }
+
     .footer {
         display: flex;
         flex-direction: row;
@@ -641,12 +675,15 @@ main#main-guide section {
     footer ul li {
         margin-left: 1em;
     }
+
     #email {
         justify-content: flex-start;
     }
+
     .socialicons {
         justify-content: flex-end;
     }
+
     #email,
     .socialicons {
         margin-top: 1em;
@@ -695,15 +732,17 @@ main#main-guide section {
         height: 150px;
         bottom: -27px;
     }
+
     section.container#main-page {
-        max-height:40em;
-        width:100%;
+        max-height: 40em;
+        width: 100%;
     }
-    
+
 }
+
 @media only screen and (min-width: 1450px) {
     section.container#main-page {
-        margin:8em 0 5em 0;
+        margin: 8em 0 5em 0;
     }
-    
+
 }
