@@ -142,9 +142,13 @@ header {
     text-align: center;
 }
 
-.dropdown:active{
+.dropdown:hover{
     display: block;
 }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}  
 
 .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -160,7 +164,7 @@ header {
 
 footer a,
 .nav-menu a,
-.btn {
+.btn, header a, a:visited {
     color: white;
 }
 
@@ -211,7 +215,9 @@ figure {
 main {
     margin: 1em;
 }
-
+#errorol li{
+    text-decoration: dotted;
+}
 .btn {
     background-color: #162844;
     border: 1px solid transparent;
@@ -372,8 +378,8 @@ main#main-guide section {
     position: relative;
 }
 
-.container:nth-child(even)::after,
-.container:nth-child(even)::before {
+.container:nth-child(even):not(:last-child)::after,
+.container:nth-child(even):not(:last-child)::before {
     position: absolute;
     content: '';
     width: 100px;
@@ -383,12 +389,12 @@ main#main-guide section {
     z-index: -1;
 }
 
-.container:nth-child(even)::before {
+.container:nth-child(even):not(:last-child)::before {
     right: 50%;
     transform: skew(0, 20deg);
 }
 
-.container:nth-child(even)::after {
+.container:nth-child(even):not(:last-child)::after {
     left: 50%;
     transform: skew(0, -20deg);
 }
@@ -554,15 +560,7 @@ main#main-guide section {
         background-color: #162844;
         color: white;
     }
-    
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    section.container:not(#main-page,#download-container,.hero-img) 
-    p:not(.fueltabletext), h2:not(#herotextmain,.fueltabletext,.btn), 
-    ul:not(#steel-ingots,.socialicons,.nav-menu), div:not(.dropdown,.nav-menu,) {
-        padding-right:100px;
-    }
+
     #ore-processing p{
         padding-right:30px;
     }
@@ -611,11 +609,6 @@ main#main-guide section {
     video {
         padding-left:1em;
         padding-bottom:2em;
-    }
-    a.btn:hover {
-        transform: translateY(-8px);
-        transition: all 0.55s ease-in-out;
-        color: white;
     }
     .pickaxe {
         right:1.5em;
