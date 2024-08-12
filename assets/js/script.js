@@ -18,10 +18,10 @@ sr.reveal('video',{delay:400, origin:'left'});
 sr.reveal('.guide-img',{delay:400, origin:'left'});
 sr.reveal('.download-container',{delay:400, origin:'top'});
 
-//Arrow Jump back to Top
+// Arrow Jump back to Top
 const mybutton = document.getElementById("pickaxe");
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction();};
 
 function scrollFunction() {
 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
