@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mekanism mod page">
+    <meta name="keywords" content="minecraft, mod, modding, modded, mekanism, mekanism:generators, modded minecraft, guide, 
+        modded minecraft guide, mekanism guide, mekanism walkthrough, video game,">
+    <meta name="author" content="Lauren Woods">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/infusedalloy.webp" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Mekanism Mod Page</title>
+</head>
+
+<body><!-- https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <header>
+        <a href="index.html" class="logo" alt="Mekanism Logo">MEKANISM</a>
+        <div class="nav-menu" id="mynav-menu">
+            <a href="index.html" class="active">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <div>
+                <div class="dropdown">
+                    <button class="dropbtn">GUIDE
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="tools.html">Tools</a>
+                        <a href="getting-started.html">Getting Started</a>
+                        <a href="ore-processing.html">Ore Processing</a>
+                        <a href="reactors.html">Reactors</a>
+                        <a href="end-game.html">End Game</a>
+                    </div>
+                </div>
+            </div>
+            <a href="download.html">DOWNLOAD</a>
+        </div>
+        
+        <div class="hamburger" onclick="myFunction()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+    <main>
+        <section class="container" id="main-page">
+            <figure>
+                <img src="assets/images/variousmachines.webp" class="hero-img" alt="A picture of various Mekanism machines">
+            </figure>
+            <div class="hero-text" id="herotextmain">
+                <h2>Uh oh!</h2>
+                <p>You must've taken a wrong turn in the mines! Here's what you can do:
+                    <ol id="errorol">
+                    <li>Check your coordinates and try again.</li>
+                    <li>Return to the home page and start your journey anew.</li>
+                    <li>Maybe take a break and build something in-game</li>
+                    </ol>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="email">
+            <a href="mailto:laurenleighwoods@gmail.com" target="_blank" rel="noopener noreferrer" alt="An icon of an envelope">
+                <i class="fa-solid fa-envelope"></i>
+                info@mekanism.com
+            </a>
+        </div>
+        <ul class="socialicons">
+            <li>
+                <a href="https://x.com/aidancbrady" target="_blank" rel="noopener noreferrer" alt="An icon of X's logo">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/aidancbrady" target="_blank" rel="noopener noreferrer" alt="An icon of Github's logo">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/aidancbrady/" target="_blank" rel="noopener noreferrer" alt="An icon of Linkedin's logo">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/burger.js"></script>
+</body>
+</html>
