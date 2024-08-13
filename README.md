@@ -1,5 +1,5 @@
 
-# [THE MEKANISM WIKI](https://code-lau.github.io/Mekanism_Wiki)
+# [THE MEKANISM WIKI](https://code-lau.github.io/The_Mekanism_Wiki/index.html)
 
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Code-Lau/Mekanism_Wiki)](https://github.com/Code-Lau/Mekanism_Wiki/commits/main)
 [![GitHub last commit](https://img.shields.io/github/last-commit/Code-Lau/Mekanism_Wiki)](https://github.com/Code-Lau/Mekanism_Wiki/commits/main)
@@ -7,13 +7,13 @@
 
 Mekanism is an independent tech mod created by Aiden Brady that brings low, mid, and high tier machinery to Minecraft. Mekanism excels at making your life easier with automation through a scientific and chemistry based approach. This project aims to encapsulate everything Mekanism has to offer in a concise and detailed guide. This project is a guide first, wiki second, and will be receiving dedicated item pages in the near future. This guide is specifically for those who are playing the mod individually or as part of a modpack. From following this guide players will be able to:
 
--Follow guides on how to install Mekanism individually or through launchers/modpacks.
+- Follow guides on how to install Mekanism individually or through launchers/modpacks.
 
--Follow guides on the processes of machine-making.
+- Follow guides on the processes of machine-making.
 
--Build factories for automation and power.
+- Build factories for automation and power.
 
--Learn how to best use equipment and modify them.
+- Learn how to best use equipment and modify them.
 
 Mekanism was first released on May 27th, 2017 and since then has been a pillar of tech in modpacks. Despite this, there is only one very old wiki and almost next to no coverage of the details. For a new player, searching for information comes in the form of outdated youtube videos and reddit posts. This project will change that, giving players an up to date and relevant guide from the smallest details to large and complicated factories. The end goal for this project is to be the main site people come to for information. The hope is that no one will be confused, absorbing incorrect or outdated info and that it is user friendly and accessible to all who may need it.
 
@@ -58,9 +58,9 @@ For the social icons, originally I had edited some by hand in photoshop before I
 
 **Nav Menu**
 
- - The nav menu features a home link, a link to the about page, a guide button and a link to the downloads page. The guide button reveals the guide content through hovering on desktop, and a clickable dropdown menu on mobile. This shows five more items that link to the corresponding pages. This was implemented so that the user wouldn't have to navigate the guide through the buttons only.
+ - The nav menu features a home link, a link to the about page, a guide button and a link to the downloads page. The guide button reveals the guide content through hovering on desktop, and a clickable dropdown menu on mobile. This shows two items that link to their corresponding pages. This was implemented so that the user wouldn't have to navigate the guide through the buttons only.
 
-![screenshot](documentation/navmenuss.png)
+![screenshot](documentation/navmenucutdownss.png)
 
 **Guide Buttons**
 
@@ -110,6 +110,10 @@ For the social icons, originally I had edited some by hand in photoshop before I
 
 
 ### Future Features
+**More Content**
+- First and foremost, I would like to finish the guide pages and add more content. Here's a mockup of what that might look like:
+
+![screenshot](documentation/navmenuss.png)
 
 **An Item and Material List**
 - Ideally I would like to add a page for every item and material added in the mod, complete with descriptions, guides on how to aquire said items and links to corresponding items or machines. These items would all be listed by category on a single parent page.
@@ -136,7 +140,7 @@ For the social icons, originally I had edited some by hand in photoshop before I
 Please refer to the [TESTING.md](/workspace/Mekanism_Wiki/TESTING.md) file.
 
 ## Deployment
-This site was deployed to GitHub Pages. The live link can be found [here](https://code-lau.github.io/Mekanism_Wiki)
+This site was deployed to GitHub Pages. The live link can be found [here.](https://code-lau.github.io/The_Mekanism_Wiki/index.html)
 
 ### Local Deployment
 
@@ -152,12 +156,12 @@ You can clone the repository by following these steps:
 4. Open Git Bash or Terminal
 5. Change the current working directory to the one where you want the cloned directory
 6. In your IDE Terminal, type the following command to clone my repository:
-	- `git clone https://github.com/Code-Lau/Mekanism_Wiki.git`
+	- `git clone https://github.com/Code-Lau/The_Mekanism_Wiki.git`
 7. Press Enter to create your local clone.
 
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Code-Lau/Mekanism_Wiki)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Code-Lau/The_Mekanism_Wiki)
 
 Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
 A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
@@ -167,7 +171,7 @@ A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/conf
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
 You can fork this repository by using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Code-Lau/Mekanism_Wiki)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Code-Lau/The_Mekanism_Wiki)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
