@@ -1,5 +1,6 @@
 /* jshint esversion: 11 */
 
+/* Responsive Website - Burger Menu https://www.youtube.com/watch?v=IXucQAEkIMo&t=358s */
 //Burger Menu in mobile
 let hamburger = document.querySelector('.hamburger');
 let header = document.querySelector('header');
