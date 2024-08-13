@@ -104,37 +104,43 @@ User Feedback Incorporation:
 ## Code Validation
 All files were put through the appropriate validators and came back with no errors. 
 
-HTML: For all HTML files, I used the recommended [HTML W3C Validator.](https://validator.w3.org)
+### HTML: For all HTML files, I used the recommended [HTML W3C Validator.](https://validator.w3.org)
 
-Home Page
-![screenshot]()
+**Home Page**
 
-About Page
-![screenshot]()
+![screenshot](documentation/indextest.png)
 
-Guide Page #1
-![screenshot]()
+**About Page**
 
-Guide Page #2
-![screenshot]()
+![screenshot](documentation/abouttest.png)
 
-Download Page
-![screenshot]()
+**Guide Page #1**
+For the guide page, a lot of errors were thrown however none of these are actually an issue or relevant. The sections do not have headers on purpose and the classes being duplicated was due to the necessity to maintain a style throughout the guide. These do not cause any issues with the site functionality or user experience. All other guide pages are identical to this one structure and code wise, only differing in content.
 
-Error Page
-![screenshot]()
+![screenshot](documentation/getstarttest.png)
 
-CSS: For the style sheet I used the [CSS Jigsaw Validator.](https://jigsaw.w3.org/css-validator)
+**Download Page**
 
-Style Sheet
-![screenshot]()
+![screenshot](documentation/downloadtest.png)
 
-Javascript: For Javascript I used the [JShint Validator.](https://jshint.com)
+**Error Page**
 
-Burgermenu Script
-![screenshot](documentation/burgertest.png)
+![screenshot](documentation/errortest.png)
 
-Scrollreveal Script
+### CSS: For the style sheet I used the [CSS Jigsaw Validator.](https://jigsaw.w3.org/css-validator)
+
+**Style Sheet**
+
+![screenshot](documentation/csstest.png)
+
+### Javascript: For Javascript I used the [JShint Validator.](https://jshint.com)
+
+**Burgermenu Script**
+
+![screenshot](documentation/burgertest.webp)
+
+**Scrollreveal Script**
+
 ![screenshot](documentation/scripttest.png)
 
     
