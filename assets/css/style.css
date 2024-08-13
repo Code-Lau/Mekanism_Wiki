@@ -733,7 +733,7 @@ thead {
         bottom: -27px;
     }
 
-    section.container#main-page {
+    section.container#main-page, #about-page {
         max-height: 40em;
         width: 100%;
     }
@@ -741,7 +741,7 @@ thead {
 }
 
 @media only screen and (min-width: 1450px) {
-    section.container#main-page {
+    section.container#main-page, #about-page {
         margin: 8em 0 5em 0;
     }
 
