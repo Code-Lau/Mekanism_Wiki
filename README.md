@@ -191,7 +191,6 @@ All code referenced does not belong to me and is borrowed expressly for learning
 | [YouTube](https://www.youtube.com/watch?v=YesSVqjcDts&t=803s) | How to create the side navigation bar using html and css | Used on all html pages |
 | [Stack Overflow](https://stackoverflow.com/questions/2237540/how-do-i-load-external-fonts-into-an-html-document) | How to load external fonts into an HTML document? | Used in style.css |
 | [Stack Overflow](https://stackoverflow.com/questions/34957568/how-to-write-html-in-uk-english) | How to write HTML in UK English? | Used in all html pages |
-| [Stack Overflow](https://stackoverflow.com/questions/2237540/how-do-i-load-external-fonts-into-an-html-document) | How do I load external fonts into an HTML document? | Used in style.css |
 
 ## Content
 - Minecraft, and all Minecraft names, related logos, fonts, textures, graphics, images, models, sounds and any other distinctive characteristics of any part of their name and games belong to Mojang AB and the Microsoft Corporation. This project is not official or approved by, endorsed by, associated with, supported by or connected to Mojang and Microsoft. I am not associated with with Mojang or Microsoft in any way. 
