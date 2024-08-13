@@ -1,5 +1,6 @@
 /* jshint esversion: 11 */
 
+/* Responsive Website - Scroll Reveal https://www.youtube.com/watch?v=IXucQAEkIMo&t=358s */
 //Scroll Reveal on load
 const sr = ScrollReveal ({
   distance:'65px',
