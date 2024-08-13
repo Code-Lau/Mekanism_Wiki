@@ -7,12 +7,14 @@ let header = document.querySelector('header');
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   header.classList.toggle('active');
-})
+  myFunction();
+});
 
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
   hamburger.classList.remove("active");
   header.classList.remove("active");
-})) 
+}));
+
 //Toggle between adding and removing the "responsive" class to nav-menu when the user clicks on the icon
 function myFunction() {
   var x = document.getElementById("mynav-menu");
