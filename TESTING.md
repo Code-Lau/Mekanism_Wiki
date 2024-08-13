@@ -92,14 +92,10 @@ All of these devices had no issues running the site or interacting with features
 - The design was clear and easy to understand, they had no issue navigating the site or information presented. 
 - They offered some suggestions for design and content that I hope to implement in the future, such as creating a dedicated thumbnail for the showcase video.
 
-## Regression Testing:
-
-After implementing fixes or updates, ensure that previous features and functionalities still work as intended. This prevents new changes from breaking existing features.
-
-## Documentation and Logs:
-
-Maintain records of testing procedures, results, and any bugs encountered along with their resolutions. This helps demonstrate a systematic approach to testing and problem-solving.
-User Feedback Incorporation:
+### User Feedback Incorporation:
+Some suggestions for features I have taken on board include 
+- The icon for the return to top button being a Minecraft pickaxe
+- The showcase video should have a thumbnail
 
 ## Code Validation
 All files were put through the appropriate validators and came back with no errors. 
