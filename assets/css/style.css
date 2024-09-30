@@ -9,6 +9,7 @@
     font-family: 'Saira Condensed', 'Tahoma', 'Verdana';
     list-style: none;
     text-decoration: none;
+    color:#fff;
 }
 
 html {
@@ -167,61 +168,34 @@ header {
 }
 
 /* Body */
-main {
-    margin: 1em;
+.guide-img, figure img {
+    width:100%;
+    max-height: 20em;
+    border-radius: 1em;
+    object-fit:contain;
+    margin-top:1em;
 }
 
-
-footer a,
-.nav-menu a,
-.btn,
-header a,
-a:visited {
-    color: white;
-}
-
-a:not(footer a):not(header a):not(.btn) {
+h1 {
     color: #162844;
 }
 
-figure img {
-    display:flex;
-    flex-direction: row;
-    object-fit:fill;
-    max-height: 20em;
-    padding: 2em 0 2em 0;
+h2 {
+    color: #162844;
+    margin:1em;
 }
-
-.guide-img {
-    border-radius: 1em;
-    object-fit:fill;
-    max-height: 20em;
-}
-
-.hero-text:not(h2){
-    width: 100%;
+.hero-text p {
     color: #162844;
     font-size: 20px;
+}
+
+.hero-text {
+    color: #162844;
     text-align: center;
     line-height: 110%;
     font-weight: 300;
     word-spacing: 5px;
-    margin: 1em 0 2em 0;
-}
-
-.hero-text p a {
-    font-weight: bold;
-    text-decoration: underline;
-    margin:
-
-}
-
-.hero-text p a.btn {
-    text-decoration: none;
-}
-
-.hero-text p.bold {
-    font-weight: bold;
+    margin:1em;
 }
 
 .btn {
@@ -229,7 +203,6 @@ figure img {
     border: 1px solid transparent;
     font-size: 24px;
     border-radius: 1em;
-    text-transform: uppercase;
     transition: all .5s ease;
     padding: 10px;
     font-weight: bold;
@@ -247,6 +220,7 @@ figure img {
     transition: 0s;
 }
 
+/* Footer */
 footer {
     display: flex;
     align-items: center;
@@ -254,7 +228,7 @@ footer {
     width: 100%;
     padding: 1.5em;
     background: #162844;
-    font-size: 2em;
+    font-size: 17px;
 }
 
 footer ul {
@@ -265,8 +239,6 @@ footer ul {
 footer ul li {
     margin: 0.5em;
 }
-
-
 
 /* About */
 video {
@@ -417,10 +389,6 @@ thead {
 /* Media Queries */
 @media only screen and (min-width: 980px) {
 
-    main {
-        margin: 5em 1em 5em 1em;
-    }
-
     .hamburger,
     .bar {
         display: none;
@@ -530,10 +498,6 @@ thead {
         margin-top: 1em;
     }
 
-    figure {
-        padding: 2em 1em 2em 1em;
-    }
-
     figcaption {
         font-size: 24px;
     }
@@ -547,10 +511,10 @@ thead {
     }
 
     .guide-img {
+        width:50vw;
+        max-height: 20em;
         border-radius: 1em;
-        object-fit: contain;
-        max-height: 50px;
-        
+        object-fit:contain;
     }
 
     video {
@@ -596,10 +560,12 @@ thead {
 
     #email {
         justify-content: flex-start;
+        font-size: 24px;
     }
 
     .socialicons {
         justify-content: flex-end;
+        font-size: 30px;
     }
 
     #email,
