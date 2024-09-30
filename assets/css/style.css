@@ -185,13 +185,8 @@ a:not(footer a):not(header a):not(.btn) {
     color: #162844;
 }
 
-a:visited {
-    color: #fff;
-}
-
-img:not(.guide-img) {
-    object-fit: contain;
-    border-radius: 1em;
+figure {
+    padding: 1em;
     width: 100%;
 }
 
@@ -293,10 +288,6 @@ main#main-guide section {
     background-color: transparent;
     cursor: pointer;
     border-radius: 50%;
-}
-
-.guide-img {
-    object-fit: contain;
 }
 
 section.container {
@@ -424,65 +415,6 @@ thead {
 }
 
 /* Media Queries */
-@media screen and (max-width:555px) {
-    footer {
-        font-size: 1em;
-    }
-
-}
-
-/* https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
-@media screen and (max-width: 979px) {
-
-    .nav-menu a:not(:first-child),
-    .dropdown-content {
-        display: none;
-    }
-
-    .nav-menu a.icon {
-        float: right;
-        display: block;
-    }
-
-    .nav-menu.responsive {
-        position: relative;
-    }
-
-    .nav-menu.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .nav-menu.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-
-    .nav-menu.responsive .dropdown {
-        float: none;
-    }
-
-    .nav-menu.responsive .dropdown-content {
-        position: relative;
-    }
-
-    .nav-menu.responsive .dropdown .dropbtn {
-        display: block;
-        width: 100%;
-        text-align: left;
-    }
-
-    img:not(.guide-img, #download-container img) {
-        max-height: 20em;
-    }
-
-    .guide-img {
-        width: 100%;
-    }
-}
-
 @media only screen and (min-width: 980px) {
 
     main {
@@ -584,17 +516,7 @@ thead {
     }
 
     section.container#fuel-table {
-        padding: 10em;
-    }
-
-    img:not(.guide-img, #download-container img, .pickaxe img),
-    video {
-        margin-left: 1em;
-        max-height: 30em;
-    }
-
-    img.guide-img {
-        max-height: 25em;
+        padding-top: 5em;
     }
 
     .hero-text {

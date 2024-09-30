@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-GB">
 <head>
     <meta charset="UTF-8">
@@ -13,518 +14,216 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Mekanism Mod Page</title>
 </head>
-    <body>
-        <header>
-            <a href="index.html" class="logo">MEKANISM</a>
-            <div class="nav-menu" id="mynav-menu">
-                <a href="index.html" class="active">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <div>
-                    <div class="dropdown">
-                        <button class="dropbtn">GUIDE
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="getting-started.html">Getting Started</a>
-                            <a href="ore-processing.html">Ore Processing</a>
-                        </div>
-                    </div>
-                </div>
-                <a href="download.html">DOWNLOAD</a>
-            </div>
-            
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </header>
+    <body id="top">
 
-    <a href="#top" class="pickaxe">
-        <img src="assets/images/minecraft_pickaxe.webp"
-            alt="Return to top button" width="50" height="50">
+    <header>
+
+        <a href="index.html" class="logo" alt="Mekanism Logo">MEKANISM</a>
+
+        <ul class="nav-menu">
+
+            <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+
+            <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+
+            <li class="nav-item dropdown">
+
+                <a href="getting-started.html" class="dropbtn">GUIDE</a>
+
+                <ul class="dropdown-content">
+
+                    <li><a href="#the-heat-generator">The Heat Generator</a></li>
+
+                    <li><a href="#the-metallurgic-infuser">The Metallurgic Infuser</a></li>
+
+                    <li><a href="#fuel-table">Fuel Table</a></li>
+
+                    <li><a href="#steel-ingots">Steel Ingots</a></li>
+
+                    <li><a href="#fuel-efficiency">Fuel Efficiency</a></li>
+
+                    <li><a href="#steel-frames">Steel Frames</a></li>
+
+                    <li><a href="#the-enrichment-chamber">The Enrichment Chamber</a></li>
+
+                    <li><a href="#power">Power</a></li>
+
+                    <li><a href="#energy-per-tick">Energy Per Tick</a></li>
+
+                    <li><a href="#the-solar-gen">The Solar Gen</a></li>
+
+                    <li><a href="#the-advanced-solar-gen">Advanced Solar Gen</a></li>
+
+                    <li><a href="#the-wind-generator">The Wind Generator</a></li>
+
+                    <li><a href="#the-bio-generator">The Bio Generator</a></li>
+
+                    <li><a href="#the-crusher">The Crusher</a></li>
+
+                </ul>
+
+            </li>
+
+            <li class="nav-item"><a href="download.html" class="nav-link">DOWNLOAD</a></li>
+
+        </ul>
+
+        <div class="hamburger">
+
+            <span class="bar"></span>
+
+            <span class="bar"></span>
+
+            <span class="bar"></span>
+
+        </div>
+
+    </header>
+    <a href="#top" class="arrow">
+
+        <img src="https://i.ibb.co/4mpCXNx/minecraft-pickaxe.png"
+
+            alt="a small image of a minecraft pickaxe acting as the return to top button" width="50" height="50">
+
     </a>
+                <a href="/index.html" class="logo">MEKANISM</a>
+                <ul class="navlist">
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/Main_Pages/about.html">ABOUT</a></li>
+                    <li><a href="/Main_Pages/getting-started.html">GUIDE</a></li>
+                    <li><a href="/Main_Pages/download.html">DOWNLOAD</a></li>
+                    <div><i class="fa-solid fa-bars" id="menu-icon"></i></div>
+                </ul>
+    
+<main class="wrapper" id="main-guide">
+<section id="getting-started" class="container">
 
-    <main id="main-guide">
-        <section class="container">
             <figure>
                 <img src="assets/images/minecraft_fortunechart.webp" alt="A picture of Minecraft's Fortune table" class="guide-img">
                 <figcaption>Minecraft's Fortune Table</figcaption>
             </figure>
             <div class="hero-text">
-                <h2>ORE PROCESSING</h2>
-                <p> 
-                    One of the main draws to Mekanism is its unique and scientific based approach to ore multiplying.
-                    In the base game, we have the fortune enchantment. With no enchantment on a pickaxe, you would get
-                    just 1 diamond from a diamond ore block. With fortune 3, that jumps up to an average of 2, with the
-                    maximum of 4. However it’s not guaranteed to get 4 or even 2 every time. With ore processing, not
-                    only are the conversion rates the same every time, but at the maximum tier, 3 raw ores will give
-                    you 10 ingots.
-                </p>
-            </div>
-        </section>
 
-        <section class="container">
-            <figure>
-                <img src="assets/images/oreprocessingflowchart.webp" alt="A picture of Mekanism's ore processing flowchart" class="guide-img">
-                <figcaption>Ore Processing Flowchart</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>CABLES</h2>
-                <p> The flowchart shown here is a bit of a scary image, but we will be going through it step by step,
-                    tier by tier. We've already been introduced to the universal cable, which transfers energy, but there 
-                    are 4 more types of cables in Mekanism. The logistical transporter, the thermodynamic conductor, the 
-                    mechanical pipe and the pressurised tube. Like the universal cable, all of these cables have have four 
-                    tiers, each holding more of and transferring their respective contents faster with each tier.
-                </p>
-            </div>
-        </section>
+                <h5>GETTING STARTED</h5>
 
-        <section class="container">
-            <figure>
-                <img  src="assets/images/logisticaltransporter.webp" alt="A picture of the crafting recipe for the logistical transporter cable" class="guide-img">
-                <figcaption>Logistical Transporter</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>THE LOGISTICAL TRANSPORTER</h2>
-                <p> The logistical transporter is for transferring items from one point to another. Items can be taken from 
-                    dedicated storage systems or outputs from machines and sent to wherever you want. This is a great way to 
-                    automate certain processes.
-                </p>
-            </div>
-        </section>
-        
-        <section class="container">
-            <figure>
-                <img  src="assets/images/thermodynamicconductor.webp" alt="A picture of the crafting recipe for the thermodynamic conductor cable" class="guide-img">
-                <figcaption>Thermodynamic Conductor</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>THE THERMODYNAMIC CONDUCTOR</h2>
                 <p>
-                    The thermodynamic conductor transfers power in the form of heat. The conductor is affected by weather, 
-                    warmer biomes speed up the process while colder biomes slow it down. This shouldn't be too great of a 
-                    concern, but if it is, you can always make more heat sources.
-                    
-                </p>
-            </div>
-        </section>
 
-        <section class="container">
-            <figure>
-                <img  src="assets/images/mechanicalpipe.webp" alt="A picture of the crafting recipe for the mechanical pipe" class="guide-img">
-                <figcaption>Mechanical Pipe</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>THE MECHANICAL PIPE</h2>
-                <p>The mechanical pipe is strictly for fluid transfer and can be connected to any block that supports fluid
-                     transfer.
-                </p>
-            </div>
-        </section>
+                    Mekanism adds a few ores to the mix, but the most important one is Osmium ore.
 
-        <section class="container">
-            <figure>
-                <img  src="assets/images/presurrisedtube.webp" alt="A picture of the crafting recipe for the pressurised tube" class="guide-img">
-                <figcaption>Pressurised Tube</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>THE PRESSURISED TUBE</h2>
-                <p>The pressurised tube is strictly for gas transfer and can be connected to any block that supports gas 
-                    transfer.
-                </p>
-            </div>
-        </section>
+                    Though brittle in real life, this is the key metal in Mekanism crafting alongside Iron.
 
-        <section class="container">
-            <figure>
-                <img  src="assets/images/configurator.webp" alt="A picture of the crafting recipe for the configurator" class="guide-img">
-                <figcaption>Configurator</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>THE CONFIGURATOR</h2>
-                <p>In order to choose what these cables will do once they're placed down, we can use the configurator. 
-                    The configurator is a handy tool that acts as Mekanism's wrench. It can do a variety of things such 
-                    as changing the input/output state of a machine by looking at it, rather than going into the UI. 
-                    Changing the mode of a cable's transport, by shift right clicking a cable you can change it to: push, 
-                    pull, none or back to normal. You can tell cables to be activated on redstone, empty machines or 
-                    rotate them.
-                </p>
-            </div>
-        </section>
+                    It is recommended to collect a lot of it throughout your trip to the mines.
 
-        <section class="container">
-            <figure>
-                <img  src="assets/images/enrichmentchamber.webp" alt="A picture of the crafting recipe for the enrichment chamber" class="guide-img">
-                <figcaption>Crafting the enrichment chamber</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>TIER ONE</h2>
-                <p> Tier one only involves a machine we already have: the enrichment chamber. As we know, we can place some 
-                    materials in and get their enriched versions, but we can also place raw ore inside. Inserting 3 raw ore 
-                    will give you four of its corresponding dusts. Those dusts can then be smelted into ingots, and thus, you 
-                    have an extra ore. If you’re not interested in making many machines and processes in the chart above, 
-                    you can stop here. Having an extra ore is already pretty good, but we can make that 5x. Its worth noting
-                    that whatever stage of the process you're at, remember to set your machines to auto eject items so they
-                    can work away without needing you. You can place the enrichment chamber right next to your energized smelter
-                    or furnace to speed up the process.
+                    Once you’re set up and ready to start, the first step is to get some basic machines up and running.
+
+                    These machines will enable you to make key crafting components for the rest of the
+
+                    modded items and machinery.
 
                 </p>
-            </div>
-        </section>
 
-        <section class="container">
-            <figure>
-                <img  src="assets/images/purificationchamber.webp" alt="A picture of the crafting recipe for the purification chamber" class="guide-img">
-                <figcaption>Crafting the purification chamber</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>TIER TWO</h2>
-                <p>Tier two uses the crusher and a new machine, the purification chamber. The purification chamber is the 
-                    first of many machines that will require a secondary input. In this case, of oxygen gas. The purification chamber's main
-                    component in crafting is another enrichment chamber.
+            </div>
 
-                </p>
-            </div>
         </section>
+</main>
+            <section class="type-a" id="minecraft-fortune">
+                <div class="container-w" style="margin-top:30px;">
+                        <figure class="img-col">
+                            <img src="" alt="A picture of Minecraft's Fortune table" class="img" style="height:450px;width:530px;">
+                            <figcaption>Minecraft's Fortune Table</figcaption>
+                        </figure>
+                        <div class="text-col">
+                            <h2 style="margin-bottom: 30px;">ORE PROCESSING</h2>
+                            <span class="textbluebody">
+                                One of the main draws to Mekanism is its unique and scientific based approach to ore multiplying. 
+                                In the base game, we have the fortune enchantment. With no enchantment on a pickaxe, you would get 
+                                just 1 diamond from a diamond ore block. With fortune 3, that jumps up to an average of 2, with the 
+                                maximum of 4. However it’s not guaranteed to get 4 or even 2 every time. With ore processing, not 
+                                only are the conversion rates the same every time, but at the maximum tier, 3 raw ores will give 
+                                you 10 ingots. 
+                            </span>
+                        </div>       
+                </div>
+            </section>
 
-        <section class="container">
-            <figure>
-                <img  src="assets/images/electrolyticseparator.webp" alt="A picture of the crafting recipe for the electrolytic separator" class="guide-img">
-                <figcaption>Crafting the electrolytic separator</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>THE ELECTROLYTIC SEPARATOR</h2>
-                <p>Oxygen can be generated through an electrolytic (ell-eck-tro-lit-ic) separator. This machine takes an 
-                    input of fluid and outputs two gases. To make oxygen, we want to input water, which will separate it 
-                    into hydrogen and oxygen. If the internal storage for the gases are filled up, the machine will stop 
-                    working. We will be using the oxygen, but what about the hydrogen? Hydrogen will be useful to use later, 
-                    but if you want, you can simply hit “DUMP” or “DUMP EXCESS”. This will empty the tank constantly allowing 
-                    the machine to continue working. If you want to store it for later, we can make a chemical tank.
-                </p>
-            </div>
-        </section>
+            <section class="type-a" id="flowchart">
+                <div class="container-b">
+                        <div class="text-col">
+                            <h2 style="margin-bottom: 30px;">TIER ONE</h2>
+                            <span class="textbluebody">
+                                The flowchart shown here is a bit of a scary image, but we will be going through it step by step, 
+                                tier by tier. Tier one only involves a machine we already have: the enrichment chamber. As we know, 
+                                we can place some materials in and get their enriched versions, but we can also place raw ore inside. 
+                                Inserting 3 raw ore will give you 4 of its corresponding dusts. Those dusts can then be smelted 
+                                into ingots, and thus, you have multiplied your ore by 1.3x. If you’re not interested in making many machines 
+                                and processes in the chart, you can stop here. Having an extra ingot is already pretty good, 
+                                but we can multiply that by 3.33x.
+                            </span>
+                        </div>    
+                        <aside>
+                            <figure class="img-col-r">
+                                <img src="https://i.ibb.co/3ynHwp3/Mekanism-flowchart-v7-1.png" alt="A picture of the ore processing flowchart" style="height:500px;width:700px;">
+                                <figcaption>The Ore Processing Flowchart</figcaption>
+                            </figure>
+                        </aside>     
+                </div>
+            </section>
 
-        <section class="container">
-            <figure>
-                <img  src="assets/images/electrolyticcore.webp" alt="A picture of the crafting recipe for the electrolytic core" class="guide-img">
-                <figcaption>Crafting the electrolytic core</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>ELECTROLYTIC CORE</h2>
-                <p>In order to craft the electrolytic separator, we will need an electrolytic core which is the main component of the
-                    machine. This is made from 5 basic alloys, 2 tin dusts, 1 iron dust and 1 gold dusts. All these dusts can be made by 
-                    crushing either the ore block, the raw ore or an ingot of the corresponding type. 
-                </p>
-            </div>
-        </section>
+            <section class="type-a">
+                <div class="container-w">
+                        <figure class="img-col">
+                            <img src="" alt="A picture of " class="guideimg">
+                            <figcaption></figcaption>
+                        </figure>
+                        <div class="text-col">
+                            <h2 style="margin-bottom: 30px;">TIER TWO</h2>
+                            <span class="textbluebody">
+                                Tier two involes 3 machines added onto the enrichment chamber: the crusher, the purification chamber and the electrolytic seperator. (Ell-eck-tro-lit-ic)
+                            </span>
+                        </div>    
+                        <aside>
+                            <figure class="img-col-r">
+                                <img src="" alt="A picture of " class="guideimg">
+                                <figcaption></figcaption>
+                            </figure>
+                        </aside>    
+                </div>
+            </section>
 
-        <section class="container">
-            <figure>
-                <img  src="assets/images/chemicaltank.webp" alt="A picture of the crafting recipe for the chemical tank" class="guide-img">
-                <figcaption>Crafting the chemical tank</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>CHEMICAL TANKS</h2>
-                <p>Chemical tanks come in four tiers of gas storage. They are placable, have an interface and can be filled or 
-                    emptied with pressurised tubes. So for now, you could place pressurised tubes between a tank and the 
-                    electrolytic separator to store hydrogen for later.
-                </p>
-            </div>
-        </section>
-    
-        <section  class="container">
-            <figure>
-                <img  src="assets/images/electricpump.webp" alt="A picture of the crafting recipe for the electric pump" class="guide-img">
-                <figcaption>Crafting the electric pump</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>THE ELECTRIC PUMP</h2>
-                <p>If we want to automate the oxygen production, we need a way to constantly input water. We can do this a 
-                    variety of ways in modpacks, but in this we'll simply cover the electric pump. The electric pump is a 
-                    powered single block device that will pump any fluid underneath it (or around it). Place the pump above 
-                    a water source block, and input a power cable on the side that has the green square. The fluids will be 
-                    pumped out through a mechanical pipe placed on top. We then want to connect the mechanical pipe to the 
-                    electrolytic separator.
-                    
-                </p>
-            </div>
-        </section>
-        
-        <section class="container">
-            <div class="hero-text">
-                <h2>CHOOSING GAS PATHS</h2>
-                <p>With power and water supplied to the electrolytic separator, it will now begin to automatically generate 
-                    hydrogen and oxygen. These are gases, so we use the pressurised tube. In the input and output UI, when a machine 
-                    has two possible outputs, they will be 
-                    labelled 1 and 2. Whatever is on the left will be output 1 and output 2 is whatever is on the right. If 
-                    you have a chemical tank for hydrogen storage hooked up, you would want to select the pressurised tube 
-                    connected to the tank and click it until it says, “Output 1”. For the pressurised tube going to the purification 
-                    chamber, you want to click on that until it says, “Output 2”.
-                </p>
-            </div>
-        </section>
+            <section class="type-a">
+                <div class="container-b">
+                        <figure class="img-col">
+                            <img src="" alt="A picture of " class="guideimg">
+                            <figcaption></figcaption>
+                        </figure>
+                        <div class="text-col">
+                            <h2 style="margin-bottom: 30px;"></h2>
+                            <span class="textbluebody">
+                                
+                            </span>
+                        </div>    
+                        <aside>
+                            <figure class="img-col-r">
+                                <img src="" alt="A picture of " class="guideimg">
+                                <figcaption></figcaption>
+                            </figure>
+                        </aside>    
+                </div>
+            </section>
 
-        <section class="container">
-            <div class="hero-text">
-                <h2>TIER TWO COMPLETE</h2>
-                <p>Now that the purification chamber has an oxygen supply, it will turn its contents into their clump forms. At this 
-                    stage, inputting one raw ore will give you 2 clumps, which in turn gives you 2 dirty dusts, 2 dusts, 2 ingots. This might not 
-                    seem like an increase at first, but remember that the enrichment chamber was giving us 4 ingots for 3 raw ores. 
-                    3 raw ores through the purification chamber now gives us 6 ingots. The purification chamber can be placed right next to
-                    the crusher, which in turn can be placed next to the enrichment chamber and the smelter of your choice. Set the 
-                    appropriate pathing and turn on auto-eject.
-                </p>
-            </div>
-        </section>
-       
-        <section class="container">
-            <div class="hero-text">
-                <h2>TIER THREE</h2>
-                <p>The next tier involves 3 machines and one multi block structure. In this stage we will make brine, convert 
-                    that brine into hydrogen and chlorine, turn that into hydrogen chloride which will be inputted into a machine
-                     and used to make ore shards. This is the tier that starts to use a lot of iron and steel.
-                </p>
-            </div>
-        </section>
-        
-        <section class="container">
-            <figure>
-                <img src="assets/images/TEP.webp" alt="A picture of Mekanism's thermal evaporation plant" class="guide-img">
-                <figcaption>The thermal evaporation plant</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>THE THERMAL EVAPORATION PLANT</h2>
-                <p>First let's talk about the multi block structure, the thermal evaporation plant, or TEP for short. The TEP is 
-                    constructed with a minimum of a 4x4 base and 3x3 height. This is made with thermal evaporation blocks, one thermal 
-                    evaporation controller and a minimum of two thermal evaporation valves. The structure can be as tall as 18 blocks, 
-                    and the higher you build it, the more mb per tick it will produce. Being a multi block structure, the TEP will emit 
-                    redstone particles to indicate it has been built in a functional capacity.
-                </p>
-            </div>
-        </section>
-        <section class="container">
-            <figure>
-                <img  src="assets/images/tepblock.webp" alt="A picture of the crafting recipe for the tep block" class="guide-img">
-                <figcaption>Crafting the TEP block</figcaption>
-            </figure>
-            <figure>
-                <img  src="assets/images/tepcontrol.webp" alt="A picture of the crafting recipe for the tep controller" class="guide-img">
-                <figcaption>Crafting the TEP controller</figcaption>
-            </figure>
-            <figure>
-                <img  src="assets/images/tepvalve.webp" alt="A picture of the crafting recipe for the tep valve" class="guide-img">
-                <figcaption>Crafting the TEP valve</figcaption>
-            </figure>
-        </section>
-        <section class="container">
-            <figure>
-                <img  src="assets/images/resistiveheater.webp" alt="A picture of the crafting recipe for the resistive heater" class="guide-img">
-                <figcaption>Crafting the resistive heater</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>THE RESISTIVE HEATER</h2>
-                <p>To accelerate the rate of production, the TEP needs a heat source. This can be done through the resistive heater. 
-                    The resistive heater generates heat based on the energy input you set it to. That max it can burn is 10MFE/t. To 
-                    input heat into the TEP, connect one end of a thermodynamic conductor on a valve and connect the other end to the 
-                    resistive heater, then supply the resistive heater with power.
-                </p>
-            </div>
-        </section>
 
-        <section class="container">
-            <div class="hero-text">
-                <h2>TOTAL COSTS</h2>
-                <p>Constructing the TEP will likely take up the bulk of your time in this tier. 4 thermal evaporation blocks take 4 
-                    steel and 1 copper. The controller takes 5 blocks, glass and 2 advanced circuits. A valve takes 4 blocks and an 
-                    advanced processor. So the materials are as follows:
-                    <br>
-                    <br>
-                    4x3: 37 blocks 1 controller 2 valves 
-                    62 blocks total = 248 steel 62 copper
-                    3 advanced processors and 1 glass pane
-                </p>
-            </div>
-        </section>
-
-        <section class="container">
-            <div class="hero-text">
-                <h2>BRINE</h2>
-                <p>The purpose of making the TEP is to convert water to brine. We can input water into one valve, output brine from a second valve and possibly have a third valve for increasing the temperature. We will be outputting the brine straight into an electrolytic separator via a mechanical pipe, the brine will be in the leftmost tank where the water normally is in our hydrogen/oxygen separator. This will give us sodium and chlorine.
-                </p>
-            </div>
-        </section>
-
-        <section class="container">
-            <figure>
-                <img src="assets/images/chlorineproduction.webp" alt="A picture of Mekanism's chlorine production inside a chemical infuser" class="guide-img">
-                <figcaption>Chlorine production</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>CHLORINE</h2>
-                <p>We then want to take the chlorine and transfer that to a new machine, the chemical infuser. It’s a gas so we use the pressurised tube. The chemical infuser does as the name implies, it combines two gases to make a new one. We want to combine chlorine and hydrogen to make hydrogen chloride. Luckily we already have a hydrogen production, if it’s convenient to your machine layout, you can pump hydrogen right to the infuser from the first electrolytic separator.
-                </p>
-            </div>
-        </section>
-
-        <section class="container">
-            <div class="hero-text">
-                <h2>RUNNING OUT OF POWER?</h2>
-                <p>At this point in the process, you might find that running all of these machines simultaneously on the same power source is taxing, and that you may be routinely running out of power and/or your machines are running slower due to the power being stretched very thin. If you haven't already, it might be worth investing in a small fission reactor and turbine combo. Reactors might seem scary due to the seemingly complicated nature and nuclear waste problem, but it's quite manageable with the right precautions.
-                </p>
-            </div>
-        </section>
-
-        <section class="container">
-            <figure>
-                <img src="assets/images/hydrogenchlorideproduction.webp" alt="A picture of Mekanism's hydrogen chloride production inside a chemical injection chamber" class="guide-img">
-                <figcaption>Hydrogen chloride production</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>HYDROGEN CHLORIDE</h2>
-                <p>Now that we have our hydrogen chloride, we will be pumping that into the final machine of the tier: the chemical injection chamber. Pressurised tube again, as it is also a gas. The chemical injection chamber will take the hydrogen chloride and make shards. Inputting raw ore here will grant you 8 shards for 3 raw ore. This should then feed into the purification chamber, which will grant you 8 clumps, then 8 dirty dusts, then 8 dusts and 8 ingots in the other machines respectively.
-                </p>
-            </div>
-        </section>
-
-        <section class="container">
-            <div class="hero-text">
-                <h2>TIER THREE</h2>
-                <p>In this tier we have three new main machines: the chemical washer, the chemical dissolution chamber and the chemical crystallizer. However, there will be far more machines used in this tier than these three. We’ll start from the beginning; we want to make dirty ore slurry. We then want to clean that ore slurry, and turn the clean ore slurry into crystals. We want to feed the crystals into the end of our system, the chemical injection chamber, which turns them into shards. 
-                    <br>
-                    <br>
-                    3 Raw Ore > 2000mb Dirty Ore Slurry > 2000mb Clean Ore Slurry > 10 Ore Crystals > 10 Ore Shards > 10 Ore Clumps > 10 Dirty Ore Dust > 10 Ore Dust > 10 Ingots
-                    
-                </p>
-            </div>
-        </section>
-
-        <section class="container">
-            <figure>
-                <img  src="assets/images/chemicaldissolutionchamber.webp" alt="A picture of the crafting recipe for the chemical dissolution chamber" class="guide-img">
-                <figcaption>Crafting the chemical dissolution chamber</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>DIRTY ORE SLURRY</h2>
-                <p>So how do we make dirty ore slurry? Dirty ore slurry is made using the chemical dissolution chamber, and once we’re done, will be the primary input for the whole process. We will put our ores in this machine to quintuple them. The slurry is made by melting the ores in sulfuric acid. Making sulfuric acid will be the most time consuming part of this tier. Similar to tier three, we need a chain to make hydrogen chloride and we need to mix that with a source of sulfur to get sulfur dioxide. We then combine sulfur dioxide with oxygen to get sulfur trioxide, and finally, we combine sulfur trioxide with water vapour to make sulfuric acid. 
-                </p>
-            </div>
-        </section>
-
-        <section class="container">
-            <div class="hero-text">
-                <h2>MORE HYDROGEN CHLORIDE</h2>
-                <p>So let’s start with hydrogen chloride. You can use the previous setup to fuel this but it will struggle to keep up, so if you want the whole process to run as quickly as it can, it’s recommended to make another setup. This of course is:
-
-                    Brine (From the TEP) into an electrolytic separator to make chlorine and water into another electrolytic separator to make hydrogen. Chlorine and hydrogen go into a chemical infuser to make hydrogen chloride. This will involve one TEP, two electrolytic separators, one chemical infuser and one electric pump outputting to both the TEP and the hydrogen/oxygen separator. 
-                    
-                </p>
-            </div>
-        </section>
-
-        <section class="container">
-            <div class="hero-text">
-                <h2>SULFUR</h2>
-                <p>Once we have our hydrogen chloride ready to go, we’re sending that into a new chemical injection chamber via a pressurised tube. This will be combined with gunpowder to make sulfur dioxide. Now, in order to quintuple the many stacks of ores in your storage, we will need a LOT of sulfuric acid, and for that, we need a constant supply of sulfur to mix. This can be a bottleneck of the process, and it is recommended to try and automate a supply. If you’re only playing Mekanism on its own, your main source of sulfur will be gunpowder. However, if you’re playing a modpack, it’s possible to automate gunpowder or sulfur itself in many ways. If you have a source of sulfur from the get-go, you can skip this entire process. It might be cheaper for you to make a sulfur dust farm than it is to make another hydrogen chloride chain. If you’d like to learn about alternative methods, check out the modpack page. Whatever your method may end up being, you can funnel the necessary items into the machine via a hopper or a logistical transporter.
-                </p>
-            </div>
-        </section>
-
-        <section class="container">
-            <figure>
-                <img  src="assets/images/chemicalinjectionchamber.webp" alt="A picture of the crafting recipe for the chemical injection chamber" class="guide-img">
-                <figcaption>Crafting the chemical injection chamber</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>SULFUR DIOXIDE</h2>
-                <p>In order to make sulfur dust, we’ll be combining the hydrogen chloride we made with gunpowder in the chemical injection chamber. Then, we’re sending that sulfur to the chemical oxidizer, which will turn it into sulfur dioxide, no other inputs needed. The main frame of the machine is made with a purification chamber.
-                </p>
-            </div>
-        </section>
-
-        <section class="container">
-            <figure>
-                <img  src="assets/images/chemicalinfuser.webp" alt="A picture of the crafting recipe for the chemical infuser" class="guide-img">
-                <figcaption>Crafting the chemical infuser</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>SULFUR TRIOXIDE</h2>
-                <p>Next we’re sending the sulfur dioxide to a chemical infuser via some more pressurised tubes. It needs to be mixed with oxygen in order to make sulfur trioxide. You should be able to use the oxygen from the second electrolytic separator you made for the second hydrogen chloride chain. If you skipped that part, it’s recommended to make another electrolytic separator to produce oxygen because if you try to run this chemical infuser off the very first separator you made (the one fuelling your purification chamber) it will struggle a lot, even with upgrades.
-                </p>
-            </div>
-        </section>
-
-        <section class="container">
-            <div class="hero-text">
-                <h2>WATER VAPOUR</h2>
-                <p>Now we’re sending the sulfur trioxide into another chemical infuser through a pressurised tube In real life sulfur trioxide exists in multiple forms, but in Mekanism we’re only concerned about the gas form. There are two chemical infusers back to back in this process. Instead of oxygen in this one however we’ll be mixing the sulfur trioxide with water vapour. In order to make water vapour, we need another machine.
-                </p>
-            </div>
-        </section>
-
-        <section class="container">
-            <figure>
-                <img  src="assets/images/rotarycondensentrator.webp" alt="A picture of the crafting recipe for the rotary condensentrator" class="guide-img">
-                <figcaption>Crafting the rotary condensentrator</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>THE ROTARY CONDENSENTRATOR</h2>
-                <p>The rotary condensentrator (con-den-sen-tray-tor) only takes an input of water and produces water vapour when set to decondensentrate mode. Decondensentrate mode turns liquids to gases. It can also be set to condensentrate, which turns gases back to liquids. With the water vapour and sulfur trioxide mixing in the chemical infuser, we now finally have sulfuric acid. Adding the water vapour makes sulfuric acid a liquid, so we’ll be transferring it via a mechanical pipe. This will be input into our chemical dissolution chamber to make dirty slurries.
-                </p>
-            </div>
-        </section>
-
-        <section class="container">
-            <figure>
-                <img  src="assets/images/chemicalwasher.webp" alt="A picture of the crafting recipe for the chemical washer" class="guide-img">
-                <figcaption>Crafting the chemical washer</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>THE CHEMICAL WASHER</h2>
-                <p>Placing 3 raw ore of any kind will reward you with 2000mb of dirty ore slurry, now we just need to clean it. We’ll be sending this dirty slurry into the chemical washer, which only requires an input of water. Once cleaned, we can move it into our next and final machine, the chemical crystallizer. Despite both of these having the name “slurry”, both need to be transported via the pressurised tube, not the mechanical pipe.
-                </p>
-            </div>
-        </section>
-
-        <section class="container">
-            <figure>
-                <img  src="assets/images/chemicalcrystallizer.webp" alt="A picture of the crafting recipe for the chemical crystallizer" class="guide-img">
-                <figcaption>Crafting the chemical crystallizer</figcaption>
-            </figure>
-            <div class="hero-text">
-                <h2>THE CHEMICAL CRYSTALLIZER</h2>
-                <p>The chemical crystallizer does not require any extra inputs, you can pour the clean ore slurry directly into the machine and it will turn it into crystals. 2000mb of clean slurry will give you 10 crystals, which officially starts your quintupling process. This machine can now be placed directly next to your chemical injection chamber and can be set to auto-eject items. Once run through all the machines you already have set up, you will have 10 ingots smelted at the end. Breathe a sigh of relief, because you’re done!
-                </p>
-            </div>
-        </section>
-    </main>
-        <footer id="downloadfooter">
-            <div id="email">
-                <a href="mailto:laurenleighwoods@gmail.com" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-solid fa-envelope"></i>
-                    info@mekanism.com
-                </a>
-            </div>
-            <ul class="socialicons">
-                <li>
-                    <a href="https://x.com/aidancbrady" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/aidancbrady" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/aidancbrady/" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="assets/js/burger.js"></script>
-   
-    </body>
-</html>
+            <section class="two"></section>
+            <section class="three">
+                <nav class="footemail">
+                <a href="mailto:laurenleighwoods@gmail.com"><i class="fa-solid fa-envelope" style=padding-right:10px></i>info@mekanism.com</a>
+                </nav>
+                <nav class="icons">
+                    <ul class="ulfoot">
+                        <li class="socialicons"><a href="https://x.com/aidancbrady" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li class="socialicons"><a href="https://github.com/aidancbrady" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li class="socialicons"><a href="https://www.linkedin.com/in/aidancbrady/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </nav> 
+            </section>
+        </body>
+        </html>
