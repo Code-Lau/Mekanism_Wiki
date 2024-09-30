@@ -189,7 +189,7 @@ a:visited {
     color: #fff;
 }
 
-img:not(.guide-img, .noradius) {
+img:not(.guide-img) {
     object-fit: contain;
     border-radius: 1em;
     width: 100%;
@@ -297,11 +297,6 @@ main#main-guide section {
 
 .guide-img {
     object-fit: contain;
-    border-radius: 1em;
-}
-
-.noradius {
-    border-radius: 0;
 }
 
 section.container {
@@ -479,12 +474,11 @@ thead {
         text-align: left;
     }
 
-    img:not(.guide-img, .noradius, #download-container img) {
+    img:not(.guide-img, #download-container img) {
         max-height: 20em;
     }
 
-    .guide-img,
-    .noradius {
+    .guide-img {
         width: 100%;
     }
 }
@@ -593,14 +587,13 @@ thead {
         padding: 10em;
     }
 
-    img:not(.guide-img, .noradius, #download-container img, .pickaxe img),
+    img:not(.guide-img, #download-container img, .pickaxe img),
     video {
         margin-left: 1em;
         max-height: 30em;
     }
 
-    img.guide-img,
-    img.noradius {
+    img.guide-img {
         max-height: 25em;
     }
 
