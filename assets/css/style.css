@@ -75,7 +75,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    top: -100px;
+    top: -200px;
     left: 0;
     width: 100%;
     z-index: 3;
@@ -192,6 +192,12 @@ figure {
 
 figure {
     padding: 2em 0 2em 0;
+}
+
+.guide-img {
+    border-radius: 1em;
+    object-fit:none;
+    max-height: 20em;
 }
 
 .hero-text {
@@ -548,6 +554,9 @@ thead {
 
     .guide-img {
         border-radius: 1em;
+        object-fit: contain;
+        max-height: 50px;
+        
     }
 
     video {
@@ -574,7 +583,6 @@ thead {
     }
 
     #download-container figure img {
-
         border-radius: 2em;
         padding: 1em;
 
