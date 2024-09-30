@@ -17,7 +17,7 @@ For all HTML files, I used the recommended [HTML W3C Validator.](https://validat
 ![screenshot](documentation/abouttest.png)
 
 **Guide Page #1**
-For the guide page, a lot of errors were thrown however none of these are actually an issue or relevant. The sections do not have headers on purpose and the classes being duplicated was due to the necessity to maintain a style throughout the guide. These do not cause any issues with the site functionality or user experience. All other guide pages are identical to this one structure and code wise, only differing in content.
+For the guide page, there were a few warnings displayed regarding the sections. The sections do not have headers on purpose, these do not cause any issues with the site functionality or user experience. All other guide pages are identical to this one structure and code wise, only differing in content.
 
 ![screenshot](documentation/getstarttest.png)
 
