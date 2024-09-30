@@ -26,6 +26,7 @@ body>footer {
     top: 100vh;
 }
 
+/* Header */
 header {
     width: 100%;
     display: flex;
@@ -165,13 +166,11 @@ header {
     transform: translateY(-10px) rotate(-45deg);
 }
 
+/* Body */
 main {
     margin: 1em;
 }
 
-main#main-guide {
-    margin: 0;
-}
 
 footer a,
 .nav-menu a,
@@ -185,22 +184,21 @@ a:not(footer a):not(header a):not(.btn) {
     color: #162844;
 }
 
-figure {
-    padding: 1em;
-    width: 100%;
-}
-
-figure {
+figure img {
+    display:flex;
+    flex-direction: row;
+    object-fit:fill;
+    max-height: 20em;
     padding: 2em 0 2em 0;
 }
 
 .guide-img {
     border-radius: 1em;
-    object-fit:none;
+    object-fit:fill;
     max-height: 20em;
 }
 
-.hero-text {
+.hero-text:not(h2){
     width: 100%;
     color: #162844;
     font-size: 20px;
@@ -208,17 +206,13 @@ figure {
     line-height: 110%;
     font-weight: 300;
     word-spacing: 5px;
-}
-
-.hero-text p {
-    text-align: center;
     margin: 1em 0 2em 0;
-
 }
 
 .hero-text p a {
     font-weight: bold;
     text-decoration: underline;
+    margin:
 
 }
 
