@@ -110,7 +110,6 @@ I did both a mobile and desktop lighthouse test for every page of the website an
 | Responsiveness | Website should be responsive to all screen sizes | Passed |
 | Logo | The logo should redirect the user to the home page if clicked | Passed |
 | Nav Links | All navigational links should direct the user to the intended source | Passed |
-| Buttons | All buttons should direct the user to the intended source | Passed |
 | Social Icons | All social icons should open a separate tab to the appropriate social media | Passed |
 | Email | The envelope icon and email should open a seperate tab to gmail | Passed |
 | Video | The user should be able to click on, play/pause, adjust volume/mute, search for a timestamp and enlarge any videos. | Passed |
