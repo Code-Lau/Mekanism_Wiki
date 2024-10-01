@@ -168,12 +168,27 @@ header {
 }
 
 /* Body */
-.guide-img, figure img {
+img:not(.pickaxe img) {
     width:100%;
-    max-height: 20em;
-    border-radius: 1em;
+    border-radius: 2em;
     object-fit:contain;
-    margin-top:1em;
+    padding:1em;
+}
+video {
+    width:100%;
+    border-radius: 2em;
+    object-fit:contain;
+    padding:1em; 
+}
+
+.guide-img {
+    margin-top:2em;
+}
+
+#bluetext {
+    color: #162844;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 h1 {
@@ -187,6 +202,7 @@ h2 {
 .hero-text p {
     color: #162844;
     font-size: 20px;
+    padding: 0.5em 1em;
 }
 
 .hero-text {
@@ -198,27 +214,6 @@ h2 {
     margin:1em;
 }
 
-.btn {
-    background-color: #162844;
-    border: 1px solid transparent;
-    font-size: 24px;
-    border-radius: 1em;
-    transition: all .5s ease;
-    padding: 10px;
-    font-weight: bold;
-}
-
-/* Ripple Effect referenced here https://codepen.io/finnhvman/post/pure-css-ripple-with-minimal-effort */
-.btn:hover:not(.dropbtn) {
-    background: #2E5592 radial-gradient(circle, transparent 1%, #162844 1%) center/15000%;
-    transform: translateY(6px);
-}
-
-.btn:active:not(.dropbtn) {
-    background-color: #2E5592;
-    background-size: 100%;
-    transition: 0s;
-}
 
 /* Footer */
 footer {
@@ -240,15 +235,8 @@ footer ul li {
     margin: 0.5em;
 }
 
-/* About */
-video {
-    width: 100%;
-}
 
 /* Guide */
-main#main-guide section {
-    padding: 3em 2em;
-}
 
 .pickaxe {
     position: fixed;
@@ -272,7 +260,7 @@ section.container {
 
 figcaption {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 110%;
     color: #162844;
     text-align: center;
@@ -292,6 +280,7 @@ table,
 th,
 td {
     border: 1px solid #162844;
+    color:#162844;
 }
 
 th,
@@ -384,6 +373,7 @@ thead {
 /* Error */
 #errorol li {
     text-decoration: dotted;
+    color: #162844;
 }
 
 /* Media Queries */
@@ -509,19 +499,12 @@ thead {
     p.bold {
         margin: 1em;
     }
-
-    .guide-img {
-        width:50vw;
-        max-height: 20em;
-        border-radius: 1em;
+    img:not(.pickaxe img) {
+        width:auto;
+        border-radius: 2em;
         object-fit:contain;
+        padding:1em;
     }
-
-    video {
-        padding-left: 1em;
-        padding-bottom: 2em;
-    }
-
     .pickaxe {
         right: 1.5em;
         bottom: 1em;
