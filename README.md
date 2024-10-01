@@ -62,12 +62,6 @@ For the social icons, originally I had edited some by hand in photoshop before I
 
 ![screenshot](documentation/navmenucutdownss.png)
 
-**Guide Buttons**
-
-- I created buttons that direct you straight to the guide page rather than making the user search for it. That way the user can move to whatever section they need to at the suggested pace.
-
-![screenshot](documentation/buttonss.png)
-
 **Email**
 
 - An email link is displayed at the bottom left of the screen to allow the users to contact the author. Users would ideally contact the author about bug fixes or suggestions. 
